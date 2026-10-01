@@ -447,9 +447,12 @@ function aggregate(list, key) {
     const name = (c[key] || '').trim();
     if (!name) continue;
     const k = name.toLowerCase();
-    if (!m.has(k)) m.set(k, { name, city: c.city, country: c.country, count: 0, last: 0, duos: new Set(), rep: new Set(), concerts: [] });
+    if (!m.has(k)) m.set(k, { name, city: c.city, country: c.country, count: 0, last: 0, duos: new Set(), rep: new Set(), concerts: [], keys: new Set() });
     const g = m.get(k);
-    g.count++; g.last = Math.max(g.last, c.year || 0);
+    // One booking = one duo engagement (a tour or run of dates in the same month counts once for orchestras/festivals/promoters)
+    g.keys.add(`${c.duo}|${key === 'venue' ? c.date : String(c.date).slice(0, 7)}`);
+    g.count = g.keys.size; g.last = Math.max(g.last, c.year || 0);
+    if (key !== 'venue' && g.city !== c.city) g.city = '';
     if (c.duo) g.duos.add(c.duo);
     (c.repertoire || []).forEach(r => g.rep.add(r));
     g.concerts.push(c);
@@ -489,11 +492,11 @@ function renderConcerts(v) {
       <input type="search" id="cq" placeholder="Search" value="${esc(cUI.q)}" style="flex:1;min-width:0">
     </div>
     ${concertCache.error ? '<div class="empty">Couldn’t load the concert data. If you’re offline, it will appear once you reconnect.</div>' :
-      rows.length ? `<div class="tablewrap"><table class="rank"><thead><tr><th>#</th><th>${BY[cUI.by].slice(0, -1)}</th><th>Duo concerts</th><th>Last</th><th>Duos</th><th>Repertoire</th></tr></thead><tbody>
+      rows.length ? `<div class="tablewrap"><table class="rank"><thead><tr><th>#</th><th>${BY[cUI.by].slice(0, -1)}</th><th>Duo bookings</th><th>Last</th><th>Duos</th><th>Repertoire</th></tr></thead><tbody>
       ${rows.map((r, i) => `<tr class="${DACH.has(r.country) ? 'dach' : ''}" data-row="${i}" style="cursor:pointer">
         <td>${i + 1}</td><td><b>${esc(r.name)}</b><div class="small muted">${esc([r.city, COUNTRY[r.country] || r.country].filter(Boolean).join(', '))}</div></td>
         <td>${r.count}</td><td>${r.last || '–'}</td><td class="small">${esc([...r.duos].join(', '))}</td><td class="small">${esc([...r.rep].slice(0, 4).join('; '))}${r.rep.size > 4 ? ' …' : ''}</td></tr>`).join('')}
-      </tbody></table></div><p class="small muted">Blue edge = DACH. Tap a row to see the individual concerts and sources.</p>` : '<div class="empty">No concerts match these filters yet</div>'}
+      </tbody></table></div><p class="small muted">Blue edge = DACH. A booking is one duo engagement: a tour or run of dates in the same month counts once. Tap a row for the concerts, duos, repertoire and sources.</p>` : '<div class="empty">No concerts match these filters yet</div>'}
   `;
   v.onclick = e => {
     const t = e.target.closest('[data-by],[data-region],[data-row],[data-export]');
@@ -511,7 +514,10 @@ function openGroup(g) {
   const cs = [...g.concerts].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
   openSheet(`
     <div class="sheet-h"><h2>${esc(g.name)}</h2><button class="icon-btn" data-close>✕</button></div>
-    <p class="muted">${esc([g.city, COUNTRY[g.country] || g.country].filter(Boolean).join(', '))} · ${g.count} duo concert${g.count > 1 ? 's' : ''} · last ${g.last}</p>
+    <p class="muted">${esc([g.city, COUNTRY[g.country] || g.country].filter(Boolean).join(', '))} · ${g.count} duo booking${g.count > 1 ? 's' : ''} · ${g.concerts.length} concert${g.concerts.length > 1 ? 's' : ''} · last ${g.last}</p>
+    <div class="small" style="margin-bottom:4px"><b>Duos:</b> ${esc([...g.duos].join(', '))}</div>
+    ${g.rep.size ? `<div class="small muted"><b>Repertoire:</b> ${esc([...g.rep].join('; '))}</div>` : ''}
+    <h3>Concerts</h3>
     ${cs.map(c => `<div class="card">
       <div class="spread"><b>${esc(c.duo || 'Piano duo')}</b><span class="small muted">${esc(c.date || c.year)}</span></div>
       <div class="small" style="margin-top:4px">${esc([c.venue, c.city].filter(Boolean).join(', '))}</div>
@@ -529,7 +535,7 @@ async function exportExcel(list) {
     const concertsRows = list.map(c => ({ Date: c.date || c.year, Year: c.year, Duo: c.duo, Venue: c.venue, City: c.city, Country: COUNTRY[c.country] || c.country, DACH: DACH.has(c.country) ? 'yes' : '', Festival: c.festival || '', Promoter: c.promoter || '', Orchestra: c.orchestra || '', Conductor: c.conductor || '', Repertoire: (c.repertoire || []).join('; '), Source: c.source || '' }));
     X.utils.book_append_sheet(wb, X.utils.json_to_sheet(concertsRows), 'Concerts');
     for (const [k, l] of Object.entries(BY)) {
-      const rows = aggregate(list, k).map(r => ({ [l.slice(0, -1)]: r.name, City: r.city || '', Country: COUNTRY[r.country] || r.country || '', DACH: DACH.has(r.country) ? 'yes' : '', 'Duo concerts': r.count, 'Last year': r.last, Duos: [...r.duos].join(', '), Repertoire: [...r.rep].join('; ') }));
+      const rows = aggregate(list, k).map(r => ({ [l.slice(0, -1)]: r.name, City: r.city || '', Country: COUNTRY[r.country] || r.country || '', DACH: DACH.has(r.country) ? 'yes' : '', 'Duo bookings': r.count, Concerts: r.concerts.length, 'Last year': r.last, Duos: [...r.duos].join(', '), Repertoire: [...r.rep].join('; ') }));
       X.utils.book_append_sheet(wb, X.utils.json_to_sheet(rows), l);
     }
     X.writeFile(wb, `piano-duo-concerts-${todayISO()}.xlsx`);
