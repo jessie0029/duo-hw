@@ -22,6 +22,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Lucas & Arthur Jussen 2011
 - [ ] Lucas & Arthur Jussen 2010
 - [x] Lucas & Arthur Jussen 2026 (to 1 Oct)
+- [x] Anna & Ines Walachowski 2022–2026 (walachowski.com/all-events, regional DACH presenters)
 - [ ] GrauSchumacher Piano Duo
 - [ ] Yaara Tal & Andreas Groethuysen
 - [ ] Silver-Garburg Piano Duo

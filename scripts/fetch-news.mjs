@@ -34,10 +34,12 @@ export function parseRss(xml, keyword, lang) {
   for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
     const x = m[1];
     const source = tag(x, 'source');
+    const sm = x.match(/<source[^>]*url="([^"]+)"/);
+    const sourceUrl = sm ? decode(sm[1]) : '';
     let title = tag(x, 'title');
     if (source && title.endsWith(' - ' + source)) title = title.slice(0, -(source.length + 3));
     const date = tag(x, 'pubDate');
-    items.push({ title, link: tag(x, 'link'), source, date: date ? new Date(date).toISOString() : null, keyword, lang });
+    items.push({ title, link: tag(x, 'link'), source, sourceUrl, date: date ? new Date(date).toISOString() : null, keyword, lang });
   }
   return items;
 }

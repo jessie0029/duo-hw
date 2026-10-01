@@ -41,6 +41,12 @@ YYYY-MM-DD|venue|city|countryISO2|orchestra|conductor|festival|promoter|repertoi
   - Lutosławski: Paganini Variations · Shostakovich: Concertino op. 94 · Schumann: Andante and Variations op. 46 · Vaughan Williams: Concerto for two pianos
 - Every file must have a real `#source=` URL that was actually read.
 
+## News articles
+
+Links in `data/news.json` are Google News redirect links, which can't be opened directly.
+To read an article, search its exact title with WebSearch (optionally limited to the
+`sourceUrl` domain) and open the publisher's page. Use that page's URL as the source.
+
 ## Where to look (in order of yield)
 
 1. Duo websites with year-by-year concert histories (best: complete, dated, with orchestras).
