@@ -12,4 +12,4 @@ export const FIREBASE_CONFIG = {
 export const VAPID_KEY = '';
 
 // Link to the Caption Studio page on claude.ai.
-export const CAPTION_STUDIO_URL = '';
+export const CAPTION_STUDIO_URL = 'https://claude.ai/artifact/LyXJc8AKpJzQvyHURjBTh5';
