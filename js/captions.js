@@ -80,38 +80,49 @@ async function askOnce(key, model, prompt) {
   } catch { throw new CaptionError('format', 'The answer came back in the wrong format. Press the button again.'); }
 }
 
-// Try each model; retry a busy model once after a short pause before moving on.
-async function ask(key, models, prompt) {
+// Remember the model that last worked (across sessions) and try it first.
+function rememberModel(m) { try { localStorage.setItem('pdhw:gemModel', JSON.stringify({ m, t: Date.now() })); } catch {} }
+function rememberedModel() { try { const x = JSON.parse(localStorage.getItem('pdhw:gemModel') || 'null'); return x && Date.now() - x.t < 3 * 864e5 ? x.m : null; } catch { return null; } }
+
+// Try every available model; if all are busy, wait and go round again (up to 3 rounds).
+async function ask(key, models, prompt, onStatus) {
+  const pref = rememberedModel();
+  if (pref && models.includes(pref) && models[0] !== pref) models.splice(0, models.length, pref, ...models.filter(m => m !== pref));
+  const waits = [0, 4000, 10000];
   let lastErr;
-  for (const model of models) {
-    for (let attempt = 0; attempt < 2; attempt++) {
+  for (let round = 0; round < waits.length; round++) {
+    if (waits[round]) {
+      for (let s = waits[round] / 1000; s > 0; s--) { onStatus && onStatus(`Gemini is busy. Trying again in ${s} s…`); await sleep(1000); }
+      onStatus && onStatus('Trying again…');
+    }
+    let allBusy = true;
+    for (const model of models) {
       try {
-        const r = await askOnce(key, model, prompt); lastModel = model;
-        // stick with the model that worked for the rest of this session
+        const r = await askOnce(key, model, prompt);
+        lastModel = model; rememberModel(model);
         if (modelCache && modelCache.models[0] !== model) modelCache.models = [model, ...modelCache.models.filter(m => m !== model)];
         models.splice(0, models.length, model, ...models.filter(m => m !== model));
         return r;
-      }
-      catch (e) {
+      } catch (e) {
         lastErr = e;
-        if (e.code === 'bad-key' || e.code === 'request' || e.code === 'empty' || e.code === 'network') throw e;
-        if (e.code === 'busy' && attempt === 0) { await sleep(1500); continue; }
-        break; // limit / model / format: next model
+        if (['bad-key', 'request', 'empty', 'network'].includes(e.code)) throw e;
+        if (e.code !== 'busy' && e.code !== 'limit') allBusy = false;
       }
     }
+    if (!allBusy && lastErr && lastErr.code === 'format') throw lastErr;
   }
   throw lastErr || new CaptionError('busy', 'Gemini is busy right now. Try again in a minute.');
 }
 
 const ctx = c => (c ? `\nPost context: ${c}\n` : '');
 
-export async function polishEnglish(key, models, draft, context) {
-  return ask(key, models, `You are editing an English social media caption written by ${WHO}.\n\n${EN_BRIEF}\n${ctx(context)}\nTask: improve the fluency and grammar of the draft and apply every rule above. Keep the duo's voice and the facts of the draft.\n\nReply with only JSON: {"text": "<polished caption>", "notes": ["<up to 4 very short notes on what you changed>"]}\n\nDraft:\n"""\n${draft}\n"""`);
+export async function polishEnglish(key, models, draft, context, onStatus) {
+  onStatus && onStatus('Polishing…');
+  return ask(key, models, `You are editing an English social media caption written by ${WHO}.\n\n${EN_BRIEF}\n${ctx(context)}\nTask: improve the fluency and grammar of the draft and apply every rule above. Keep the duo's voice and the facts of the draft.\n\nReply with only JSON: {"text": "<polished caption>", "notes": ["<up to 4 very short notes on what you changed>"]}\n\nDraft:\n"""\n${draft}\n"""`, onStatus);
 }
 
-export async function toGerman(key, models, english, context, onStep) {
-  onStep && onStep('Translating…');
-  const first = await ask(key, models, `Translate this English social media caption by ${WHO} into German.\n\n${DE_BRIEF}\n${ctx(context)}\nTask: this is the first step only: translate faithfully into German, keeping the emojis and hashtags. A second step will polish the German afterwards.\n\nReply with only JSON: {"text": "<German caption>"}\n\nEnglish caption:\n"""\n${english}\n"""`);
-  onStep && onStep('Making it sound native…');
-  return ask(key, models, `Here is a German social media caption by ${WHO}, translated from English.\n\n${DE_BRIEF}\n${ctx(context)}\nTask: review it and improve the flow and sentence structure so it reads as if a native German speaker (Austrian vocabulary preferred) had written it from scratch, applying every rule above. Do not add content or information.\n\nReply with only JSON: {"text": "<final German caption>", "notes": ["<up to 4 very short notes in English on what you changed>"]}\n\nGerman caption:\n"""\n${first.text}\n"""`);
+// One request instead of two: translate, then revise into native German, returning only the final version.
+export async function toGerman(key, models, english, context, onStatus) {
+  onStatus && onStatus('Translating and polishing…');
+  return ask(key, models, `Create the German version of this English social media caption by ${WHO}.\n\n${DE_BRIEF}\n${ctx(context)}\nWork in two steps internally: (1) translate the caption faithfully into German; (2) review your translation and improve the flow and sentence structure so it reads as if a native German speaker (Austrian vocabulary preferred) had written it from scratch, applying every rule above. Do not add content or information. Return only the final result of step 2.\n\nReply with only JSON: {"text": "<final German caption>", "notes": ["<up to 4 very short notes in English on choices you made>"]}\n\nEnglish caption:\n"""\n${english}\n"""`, onStatus);
 }

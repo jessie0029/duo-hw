@@ -324,8 +324,7 @@ function openPost(p) {
           const models = await pickModels(ai.key, ai.model);
           let r;
           if (t.dataset.ai === 'en') {
-            msg.textContent = 'Polishing…';
-            r = await polishEnglish(ai.key, models, src, context);
+            r = await polishEnglish(ai.key, models, src, context, st => { msg.textContent = st; });
             if (!p._enBefore) p._enBefore = $('#pEn').value;
             $('#pEn').value = r.text;
           } else {

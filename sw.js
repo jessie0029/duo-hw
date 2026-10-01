@@ -1,5 +1,5 @@
 // PIANO DUO HW service worker: offline app shell + cached data + background push
-const VERSION = 'pdhw-v8';
+const VERSION = 'pdhw-v9';
 const SHELL = ['./', 'index.html', 'app.css', 'js/app.js', 'js/store.js', 'js/presets.js', 'js/config.js', 'js/captions.js', 'js/caption-rules.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png'];
 
 self.addEventListener('install', e => {
