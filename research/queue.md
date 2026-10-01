@@ -29,7 +29,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Katia & Marielle Labèque
 - [ ] Duo Genova & Dimitrov
 - [ ] Klavierduo Stenzl
-- [ ] Piano Duo Takahashi|Lehmann
+- [ ] Piano Duo Takahashi / Lehmann (write the duo name without "|" in .psv files)
 - [ ] Duo d'Accord
 - [ ] Christina & Michelle Naughton (European dates)
 - [ ] Klavierduo Trenkner–Speidel
