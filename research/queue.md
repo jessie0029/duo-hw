@@ -21,7 +21,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Lucas & Arthur Jussen 2012
 - [ ] Lucas & Arthur Jussen 2011
 - [ ] Lucas & Arthur Jussen 2010
-- [ ] Lucas & Arthur Jussen 2026 (past dates only)
+- [x] Lucas & Arthur Jussen 2026 (to 1 Oct)
 - [ ] GrauSchumacher Piano Duo
 - [ ] Yaara Tal & Andreas Groethuysen
 - [ ] Silver-Garburg Piano Duo
