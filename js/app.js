@@ -1,6 +1,7 @@
 import { store } from './store.js';
 import { presetsForYear } from './presets.js';
 import { CAPTION_STUDIO_URL, VAPID_KEY } from './config.js';
+import { pickModel, polishEnglish, toGerman } from './captions.js';
 
 /* ---------- constants ---------- */
 export const TAGS = [
@@ -283,15 +284,26 @@ function openPost(p) {
     <div class="row" id="pTags">${TAGS.map(([t, col]) => `<button class="chip ${tagsSel.has(t) ? 'on' : ''}" data-t="${t}"><span class="dot" style="background:${col}"></span>${t}</button>`).join('')}</div>
     <label class="f"><span>Caption – English</span><textarea id="pEn" placeholder="Draft caption in English">${esc(p.captionEn)}</textarea></label>
     <label class="f"><span>Caption – German</span><textarea id="pDe" placeholder="Deutsche Fassung">${esc(p.captionDe)}</textarea></label>
-    ${CAPTION_STUDIO_URL ? `<div class="row" style="margin-top:8px"><button class="btn gold sm" data-studio>Open Caption Studio</button><span class="muted small">Copies the English caption and opens the studio</span></div>` : ''}
+    <div class="aibox">
+      <div class="row"><button class="btn gold sm" data-ai="en">✨ Polish English</button><button class="btn gold sm" data-ai="de">✨ English → German</button>
+      ${CAPTION_STUDIO_URL ? '<button class="btn ghost sm" data-studio>Caption Studio (Claude)</button>' : ''}</div>
+      <div class="small muted" id="aiMsg" style="margin-top:6px">${store.get('settings', 'ai')?.key ? 'Gemini rewrites the caption using your caption rules. Check the result before saving.' : 'Add your free Gemini API key in Settings to use the built-in caption assistant.'}</div>
+      <ul class="ainotes" id="aiNotes"></ul>
+    </div>
     <div style="margin-top:14px"><label class="check"><input type="checkbox" id="pOk" ${p.approved ? 'checked' : ''}>Approved by the duo</label></div>
     <div class="sheet-foot">
       ${isNew ? '<span></span>' : '<button class="btn danger" data-del>Delete</button>'}
       <div class="row"><button class="btn ghost" data-close>Cancel</button><button class="btn" data-save>Save</button></div>
     </div>`,
     async e => {
-      const t = e.target.closest('[data-type],[data-t],[data-save],[data-del],[data-studio]');
+      const t = e.target.closest('[data-type],[data-t],[data-save],[data-del],[data-studio],[data-ai],[data-undo]');
       if (!t) return;
+      if (t.dataset.undo) {
+        if (t.dataset.undo === 'en' && p._enBefore !== undefined) { $('#pEn').value = p._enBefore; delete p._enBefore; }
+        if (t.dataset.undo === 'de' && p._deBefore !== undefined) { $('#pDe').value = p._deBefore; delete p._deBefore; }
+        $('#aiMsg').textContent = 'Restored your previous text.'; $('#aiNotes').innerHTML = '';
+        return;
+      }
       if (t.dataset.type) {
         p.type = t.dataset.type;
         document.querySelectorAll('#pType button').forEach(b => b.classList.toggle('on', b.dataset.type === p.type));
@@ -299,6 +311,33 @@ function openPost(p) {
       } else if (t.dataset.t) {
         tagsSel.has(t.dataset.t) ? tagsSel.delete(t.dataset.t) : tagsSel.add(t.dataset.t);
         t.classList.toggle('on');
+      } else if (t.dataset.ai) {
+        const ai = store.get('settings', 'ai');
+        const msg = $('#aiMsg'), notes = $('#aiNotes');
+        if (!ai?.key) { msg.innerHTML = 'No Gemini key yet. Go to <b>Settings → Caption assistant</b> to add it.'; return; }
+        const src = $('#pEn').value.trim();
+        if (!src) { msg.textContent = 'Write the English caption first.'; $('#pEn').focus(); return; }
+        const btns = document.querySelectorAll('[data-ai]'); btns.forEach(b => b.disabled = true);
+        const context = [TYPES[p.type], $('#pTitle').value.trim(), [...tagsSel].join(', ')].filter(Boolean).join(' · ');
+        notes.innerHTML = '';
+        try {
+          const model = await pickModel(ai.key, ai.model);
+          let r;
+          if (t.dataset.ai === 'en') {
+            msg.textContent = 'Polishing…';
+            r = await polishEnglish(ai.key, model, src, context);
+            if (!p._enBefore) p._enBefore = $('#pEn').value;
+            $('#pEn').value = r.text;
+          } else {
+            r = await toGerman(ai.key, model, src, context, step => { msg.textContent = step; });
+            if (!p._deBefore) p._deBefore = $('#pDe').value;
+            $('#pDe').value = r.text;
+          }
+          notes.innerHTML = r.notes.map(n => `<li>${esc(n)}</li>`).join('');
+          msg.innerHTML = `Done with ${esc(model)}. Edit if you like, then Save. <button class="linkbtn" data-undo="${t.dataset.ai}">Undo</button>`;
+        } catch (err) {
+          msg.textContent = err.message || 'Something went wrong. Try again.';
+        } finally { btns.forEach(b => b.disabled = false); }
       } else if ('studio' in t.dataset) {
         const text = $('#pEn').value.trim();
         try { if (text) { await navigator.clipboard.writeText(text); toast('English caption copied'); } } catch {}
@@ -316,6 +355,7 @@ function openPost(p) {
           captionDe: $('#pDe').value,
           approved: $('#pOk').checked,
         };
+        delete o._enBefore; delete o._deBefore;
         if (!o.title) { $('#pTitle').focus(); return toast('Give the post a title'); }
         store.put('posts', o);
         closeSheet(); toast(isNew ? 'Post idea saved' : 'Saved');
@@ -369,7 +409,7 @@ function backupDue() {
   return !!since && Date.now() - since >= BACKUP_DAYS * 864e5;
 }
 function downloadBackup() {
-  const blob = new Blob([JSON.stringify({ app: 'PIANO DUO HW', exported: new Date().toISOString(), posts: store.all('posts'), occasions: store.all('occasions'), reminders: store.all('reminders'), starred: store.all('starred'), settings: store.all('settings').filter(x => x.id !== 'push') }, null, 2)], { type: 'application/json' });
+  const blob = new Blob([JSON.stringify({ app: 'PIANO DUO HW', exported: new Date().toISOString(), posts: store.all('posts'), occasions: store.all('occasions'), reminders: store.all('reminders'), starred: store.all('starred'), settings: store.all('settings').filter(x => x.id !== 'push' && x.id !== 'ai') }, null, 2)], { type: 'application/json' });
   const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `piano-duo-hw-backup-${todayISO()}.json`; a.click();
   store.setSetting('lastBackup', Date.now());
   toast('Backup downloaded');
@@ -652,14 +692,33 @@ function renderSettings(v) {
     <div class="card small">
       ${notif === 'granted' ? 'Notifications are on for this device.' : notif === 'denied' ? 'Notifications are blocked. Allow them in your browser or phone settings for this site.' : notif === 'unsupported' ? 'This browser doesn’t support notifications. On Android, install the app to your home screen first.' : '<div class="spread"><span>Get notified about due reminders and posts scheduled for tomorrow.</span><button class="btn sm" data-notif>Turn on</button></div>'}
     </div>
-    ${CAPTION_STUDIO_URL ? `<h3>Caption Studio</h3><div class="card small"><a href="${CAPTION_STUDIO_URL}" target="_blank" rel="noopener" style="color:var(--blue)">Open Caption Studio</a> — polish English, translate to German, polish German.</div>` : ''}
+    <h3>Caption assistant</h3>
+    <div class="card small">
+      <div>Built-in caption help in each post, powered by Google Gemini’s free tier. Get a free key at <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener" style="color:var(--blue)">aistudio.google.com/apikey</a> (sign in with Google → Create API key), then paste it here. ${store.status.mode === 'cloud' ? 'It is stored encrypted and synced to your devices.' : 'It is stored on this device.'}</div>
+      <div class="row" style="margin-top:10px;flex-wrap:nowrap"><input type="password" id="aiKey" placeholder="${store.get('settings', 'ai')?.key ? 'Key saved – paste a new one to replace it' : 'Paste your Gemini API key'}" autocomplete="off" style="flex:1"><button class="btn sm" data-aisave>Save</button></div>
+      ${store.get('settings', 'ai')?.key ? '<div class="row" style="margin-top:8px"><button class="btn ghost sm" data-aitest>Test key</button><button class="btn ghost sm" data-airemove>Remove key</button><span id="aiTestMsg" class="muted"></span></div>' : ''}
+      <div class="muted" style="margin-top:8px">On the free tier Google may use the text you send to improve its products. Fine for captions that will be public anyway.</div>
+      ${CAPTION_STUDIO_URL ? `<div style="margin-top:8px"><a href="${CAPTION_STUDIO_URL}" target="_blank" rel="noopener" style="color:var(--blue)">Open Caption Studio (Claude)</a> as an alternative.</div>` : ''}
+    </div>
     <h3>Backup</h3>
     <p class="small muted" style="margin-top:0">${store.setting('lastBackup', 0) ? 'Last backup: ' + new Date(store.setting('lastBackup', 0)).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) + '. ' : ''}You’ll be reminded to back up every ${BACKUP_DAYS} days.</p>
     <div class="row"><button class="btn ghost sm" data-backup>Download backup (JSON)</button><label class="btn ghost sm">Restore backup<input type="file" id="restore" accept="application/json" hidden></label></div>
     <p class="small muted" style="margin-top:24px">PIANO DUO HW · personal planning tool</p>`;
   v.onclick = async e => {
-    const t = e.target.closest('[data-pm],[data-link],[data-signout],[data-notif],[data-backup]');
+    const t = e.target.closest('[data-pm],[data-link],[data-signout],[data-notif],[data-backup],[data-aisave],[data-aitest],[data-airemove]');
     if (!t) return;
+    if ('aisave' in t.dataset) {
+      const k = $('#aiKey').value.trim();
+      if (k.length < 20) return toast('Paste the whole API key');
+      store.put('settings', { id: 'ai', key: k }); toast('Key saved'); return render();
+    }
+    if ('airemove' in t.dataset) { store.del('settings', 'ai'); toast('Key removed'); return render(); }
+    if ('aitest' in t.dataset) {
+      const m = $('#aiTestMsg'); m.textContent = 'Testing…';
+      try { const model = await pickModel(store.get('settings', 'ai').key); m.textContent = `Works. Using ${model}.`; }
+      catch (err) { m.textContent = err.message; }
+      return;
+    }
     if (t.dataset.pm) { store.setSetting('presetMode', t.dataset.pm); occCache.clear(); return render(); }
     if ('link' in t.dataset) {
       const em = $('#sEmail').value.trim();
@@ -675,7 +734,7 @@ function renderSettings(v) {
     try {
       const d = JSON.parse(await f.text());
       if (!confirm('Restore this backup? Entries with the same ID will be overwritten.')) return;
-      for (const c of ['posts', 'occasions', 'reminders', 'settings', 'starred']) (d[c] || []).filter(o => o.id !== 'push').forEach(o => store.put(c, o));
+      for (const c of ['posts', 'occasions', 'reminders', 'settings', 'starred']) (d[c] || []).filter(o => o.id !== 'push' && o.id !== 'ai').forEach(o => store.put(c, o));
       toast('Backup restored');
     } catch { toast('That file isn’t a valid backup'); }
   };
