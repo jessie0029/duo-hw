@@ -20,17 +20,14 @@ for (const u of users) {
   const tokens = push.exists ? (push.data().tokens || []) : [];
   if (!tokens.length) continue;
 
+  // Entries are end-to-end encrypted: only dates/status are readable here, so messages stay generic.
   const msgs = [];
   const rem = await u.collection('reminders').where('done', '==', false).get();
-  for (const d of rem.docs) {
-    const r = d.data();
-    if (r.due && r.due <= today) msgs.push({ title: r.due < today ? 'Overdue: follow up with the duo' : 'Follow up with the duo today', body: r.text, tag: `rem-${d.id}` });
-  }
+  const dueRem = rem.docs.map(d => d.data()).filter(r => r.due && r.due <= today);
+  const overdue = dueRem.filter(r => r.due < today).length;
+  if (dueRem.length) msgs.push({ title: 'Follow up with the duo', body: `${dueRem.length} reminder${dueRem.length > 1 ? 's' : ''} due${overdue ? ` (${overdue} overdue)` : ' today'}. Open the app to see what they owe you.`, tag: 'reminders' });
   const posts = await u.collection('posts').where('date', '==', tomorrow).get();
-  for (const d of posts.docs) {
-    const p = d.data();
-    msgs.push({ title: 'Post scheduled tomorrow', body: `${p.title || 'Untitled'}${p.approved ? '' : ' · not approved yet'}`, tag: `post-${d.id}` });
-  }
+  if (posts.size) msgs.push({ title: 'Post scheduled tomorrow', body: `${posts.size} post${posts.size > 1 ? 's' : ''} planned for tomorrow. Check captions and approval.`, tag: 'posts' });
   const main = await u.collection('settings').doc('main').get();
   const last = (main.exists && main.data().lastBackup) || push.data().since || 0;
   if (last && Date.now() - last >= 15 * 864e5) msgs.push({ title: 'Time to back up PIANO DUO HW', body: 'Open Reminders and tap “Back up now”.', tag: 'backup' });

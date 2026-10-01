@@ -71,6 +71,8 @@ store.on(() => occCache.clear());
 function render() {
   document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('active', b.dataset.tab === state.tab));
   const v = $('#view');
+  v.onkeydown = null;
+  if (['pending', 'locked', 'setup', 'offline-locked'].includes(store.status.mode)) { renderLock(v); updateBadge(); renderSync(); return; }
   ({ plan: renderPlan, reminders: renderReminders, news: renderNews, concerts: renderConcerts, settings: renderSettings })[state.tab](v);
   updateBadge();
   renderSync();
@@ -79,9 +81,43 @@ function renderSync() {
   const s = store.status, el = $('#syncState');
   el.className = 'sync';
   if (s.mode === 'cloud') { el.textContent = s.online ? 'Synced' : 'Offline · will sync'; el.classList.add(s.online ? 'on' : 'off'); }
-  else if (s.mode === 'connecting') el.textContent = 'Connecting…';
+  else if (s.mode === 'connecting' || s.mode === 'pending') el.textContent = 'Connecting…';
+  else if (['locked', 'setup', 'offline-locked'].includes(s.mode)) { el.textContent = 'Locked'; el.classList.add('off'); }
   else if (s.mode === 'signed-out') { el.textContent = 'Not signed in'; el.classList.add('off'); }
   else el.textContent = 'This device only';
+}
+
+/* ---- encryption lock screen ---- */
+function renderLock(v) {
+  v.ontouchstart = v.ontouchend = null;
+  const m = store.status.mode;
+  if (m === 'pending') { v.innerHTML = '<div class="empty">Opening your encrypted data…</div>'; v.onclick = null; return; }
+  if (m === 'offline-locked') { v.innerHTML = '<h2>Connect to unlock</h2><p class="muted">This device hasn’t been unlocked yet. Connect to the internet once to enter your passphrase.</p>'; v.onclick = null; return; }
+  const setup = m === 'setup';
+  v.innerHTML = `
+    <h2>${setup ? 'Protect your data' : 'Unlock your data'}</h2>
+    <div class="card">
+      <p class="small" style="margin-top:0">${setup
+        ? 'Choose a passphrase. Your posts, captions, occasions and reminders are encrypted with it on this device before they are synced, so nobody else can read them, including Google and GitHub. You enter it once on each device.'
+        : `Signed in as <b>${esc(store.status.user || '')}</b>. Enter your passphrase to decrypt your data on this device. You only need to do this once per device.`}</p>
+      ${setup ? '<p class="small" style="color:#a3261b"><b>If you forget the passphrase, your synced data can’t be recovered.</b> Write it down somewhere safe and keep your 15-day backups.</p>' : ''}
+      <label class="f"><span>Passphrase</span><input type="password" id="pp1" autocomplete="${setup ? 'new-password' : 'current-password'}" placeholder="At least 10 characters"></label>
+      ${setup ? '<label class="f"><span>Repeat passphrase</span><input type="password" id="pp2" autocomplete="new-password"></label>' : ''}
+      <div class="row" style="margin-top:14px"><button class="btn" data-go>${setup ? 'Encrypt and continue' : 'Unlock'}</button><span class="small muted" id="ppMsg"></span></div>
+    </div>
+    <p class="small muted">Wrong account? <button class="btn ghost sm" data-out>Sign out</button></p>`;
+  const go = async () => {
+    const p1 = $('#pp1').value, msg = $('#ppMsg');
+    if (setup) {
+      if (p1.length < 10) { msg.textContent = 'Use at least 10 characters.'; return; }
+      if (p1 !== $('#pp2').value) { msg.textContent = 'The two passphrases don’t match.'; return; }
+    }
+    msg.textContent = setup ? 'Encrypting…' : 'Unlocking…';
+    try { setup ? await store.setupEncryption(p1) : await store.unlock(p1); toast(setup ? 'Encryption is on' : 'Unlocked'); }
+    catch (e) { msg.textContent = e.message === 'wrong-passphrase' ? 'That passphrase is not correct.' : 'Something went wrong. Check your connection and try again.'; }
+  };
+  v.onclick = e => { if (e.target.closest('[data-go]')) go(); if (e.target.closest('[data-out]')) store.signOut(); };
+  v.onkeydown = e => { if (e.key === 'Enter') go(); };
 }
 
 /* ---- plan ---- */
@@ -419,10 +455,17 @@ function newsId(n) {
   for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) | 0;
   return 'n' + (h >>> 0).toString(36);
 }
-function newsCard(n, starred) {
+function readSet() { return new Set(store.get('settings', 'newsRead')?.ids || []); }
+function markRead(ids) {
+  const cur = store.get('settings', 'newsRead')?.ids || [];
+  const set = new Set(cur); let changed = false;
+  for (const id of ids) if (!set.has(id)) { set.add(id); changed = true; }
+  if (changed) store.put('settings', { id: 'newsRead', ids: [...set].slice(-400) });
+}
+function newsCard(n, starred, isNew) {
   return `<div class="news">
     <div class="spread" style="align-items:flex-start">
-      <a class="t" href="${esc(n.link)}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;flex:1;min-width:0">${esc(n.title)}</a>
+      <a class="t" href="${esc(n.link)}" target="_blank" rel="noopener" data-read="${newsId(n)}" style="color:inherit;text-decoration:none;flex:1;min-width:0">${isNew ? '<span class="newtag">NEW!</span> ' : ''}${esc(n.title)}</a>
       <button class="icon-btn star" data-star="${newsId(n)}" aria-label="${starred ? 'Remove star' : 'Star'}" title="${starred ? 'Remove star' : 'Star to keep'}" style="color:${starred ? 'var(--gold)' : 'var(--sand)'};margin:-6px -6px 0 0">${starred ? '★' : '☆'}</button>
     </div>
     <div class="meta"><span>${esc(n.source)}</span><span>${n.date ? new Date(n.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : ''}</span>${n.keyword ? `<span class="pill">${esc(n.keyword)}</span>` : ''}
@@ -444,21 +487,26 @@ function renderNews(v) {
   const latest = (newsCache.items || []).filter(n => !muted.includes(n.source)).slice(0, NEWS_LIMIT).filter(match);
   const starred = starredList.filter(match);
   const list = newsUI.view === 'starred' ? starred : latest;
+  const read = readSet();
+  const unread = latest.filter(n => !read.has(newsId(n)));
   v.innerHTML = `
     <div class="spread"><h2>News</h2><span class="muted small">${newsCache.updated ? 'Updated ' + new Date(newsCache.updated).toLocaleString('en-GB', { dateStyle: 'medium', timeStyle: 'short' }) : ''}</span></div>
-    <div class="seg" style="margin-bottom:10px"><button data-view="latest" class="${newsUI.view === 'latest' ? 'on' : ''}">Latest ${NEWS_LIMIT}</button><button data-view="starred" class="${newsUI.view === 'starred' ? 'on' : ''}">Starred${starredList.length ? ' (' + starredList.length + ')' : ''}</button></div>
+    <div class="seg" style="margin-bottom:10px"><button data-view="latest" class="${newsUI.view === 'latest' ? 'on' : ''}">Latest ${NEWS_LIMIT}${unread.length ? ' · ' + unread.length + ' new' : ''}</button><button data-view="starred" class="${newsUI.view === 'starred' ? 'on' : ''}">Starred${starredList.length ? ' (' + starredList.length + ')' : ''}</button></div>
     <div class="row" style="margin-bottom:10px;flex-wrap:nowrap">
       <div class="seg">${[['all', 'All'], ['en', 'EN'], ['de', 'DE']].map(([k, l]) => `<button data-lang="${k}" class="${newsUI.lang === k ? 'on' : ''}">${l}</button>`).join('')}</div>
       <input type="search" id="nq" placeholder="Search" value="${esc(newsUI.q)}" style="flex:1;min-width:0">
     </div>
     ${newsCache.error && newsUI.view === 'latest' ? '<div class="empty">Couldn’t load the news. If you’re offline, it will appear once you reconnect.</div>' : ''}
-    ${list.length ? list.map(n => newsCard(n, starredIds.has(newsId(n)))).join('') :
+    ${newsUI.view === 'latest' && unread.length ? '<div class="row" style="justify-content:flex-end;margin-bottom:4px"><button class="btn ghost sm" data-allread>Mark all as read</button></div>' : ''}
+    ${list.length ? list.map(n => newsCard(n, starredIds.has(newsId(n)), newsUI.view === 'latest' && !read.has(newsId(n)))).join('') :
       (newsUI.view === 'starred' ? '<div class="empty">No starred news yet. Tap ☆ on an article to keep it here.</div>' : newsCache.error ? '' : '<div class="empty">No news matches</div>')}
     ${muted.length && newsUI.view === 'latest' ? `<h3>Hidden sources</h3><div class="row">${muted.map(s => `<button class="chip" data-unmute="${esc(s)}">${esc(s)} ✕</button>`).join('')}</div>` : ''}
   `;
   v.onclick = e => {
-    const t = e.target.closest('[data-lang],[data-mute],[data-unmute],[data-view],[data-star]');
+    const t = e.target.closest('[data-lang],[data-mute],[data-unmute],[data-view],[data-star],[data-read],[data-allread]');
     if (!t) return;
+    if (t.dataset.read) { markRead([t.dataset.read]); return; } // link still opens
+    if ('allread' in t.dataset) { markRead(unread.map(newsId)); return; }
     if (t.dataset.star) {
       const id = t.dataset.star;
       if (starredIds.has(id)) { store.del('starred', id); toast('Star removed'); }
@@ -593,7 +641,7 @@ function renderSettings(v) {
     <h3>Sync</h3>
     <div class="card">
       ${!store.canSync ? '<div class="small">Sync isn’t set up yet. Everything is saved on this device for now.</div>' :
-        s.mode === 'cloud' ? `<div class="spread"><div class="small">Signed in as <b>${esc(s.user)}</b>. Phone and browser stay in sync, and the app works offline.</div><button class="btn ghost sm" data-signout>Sign out</button></div>` :
+        s.mode === 'cloud' ? `<div class="spread"><div class="small">Signed in as <b>${esc(s.user)}</b>. Phone and browser stay in sync, and the app works offline.<br>🔒 End-to-end encrypted: your entries are encrypted on your devices before syncing.</div><button class="btn ghost sm" data-signout>Sign out</button></div>` :
         `<div class="small">Sign in with your email to sync between your phone and browser. You’ll get a sign-in link by email; open it on this device.</div>
          <div class="row" style="margin-top:10px;flex-wrap:nowrap"><input type="email" id="sEmail" placeholder="you@example.com" value="${esc(localStorage.getItem('pdhw:email') || '')}" style="flex:1"><button class="btn" data-link>Send link</button></div>`}
     </div>

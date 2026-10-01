@@ -144,3 +144,4 @@ table.rank tr.dach td:first-child{box-shadow:inset 3px 0 0 var(--blue)}
 .stat span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
 
 @media (max-width:600px){table.rank th:nth-child(5),table.rank td:nth-child(5),table.rank th:nth-child(6),table.rank td:nth-child(6){display:none}}
+.newtag{display:inline-block;font-size:10px;font-weight:900;letter-spacing:.06em;color:#fff;background:var(--gold);border-radius:5px;padding:1px 5px;vertical-align:2px}
