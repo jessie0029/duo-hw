@@ -1,0 +1,42 @@
+plugins { id 'com.android.application' }
+
+def appUrl = 'https://jessie0029.github.io/duo-hw/'
+
+android {
+    namespace 'de.jessiehong.duohw'
+    compileSdk 34
+    defaultConfig {
+        applicationId 'de.jessiehong.duohw'
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+        manifestPlaceholders = [
+            hostName: 'jessie0029.github.io',
+            launchUrl: appUrl,
+        ]
+    }
+    signingConfigs {
+        release {
+            // Personal sideloaded app; the key only proves updates come from the same build.
+            storeFile file('../pdhw.keystore')
+            storePassword 'pdhw-duo-hw-2026'
+            keyAlias 'pdhw'
+            keyPassword 'pdhw-duo-hw-2026'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.5.0'
+}
