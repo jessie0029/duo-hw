@@ -601,15 +601,23 @@ async function enableNotifications() {
   const p = await Notification.requestPermission();
   if (p !== 'granted') return;
   checkLocalNotifications();
-  // Background push (works with the app closed) — needs sync + VAPID key
+  registerPush();
+}
+// Background push (works with the app closed) — needs sync + VAPID key
+let pushRegistered = false, pushTrying = false;
+async function registerPush() {
+  if (pushRegistered || !('Notification' in window) || Notification.permission !== 'granted') return;
+  const fb = store.firebase();
+  if (!fb || !fb.uid || !VAPID_KEY || !('serviceWorker' in navigator) || pushTrying) return;
+  pushTrying = true;
   try {
-    const fb = store.firebase();
-    if (fb && fb.uid && VAPID_KEY && 'serviceWorker' in navigator) {
-      const { getMessaging, getToken } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js');
-      const reg = await navigator.serviceWorker.ready;
-      const token = await getToken(getMessaging(fb.app), { vapidKey: VAPID_KEY, serviceWorkerRegistration: reg });
-      if (token) store.put('settings', { ...(store.get('settings', 'push') || {}), id: 'push', tokens: [...new Set([...(store.get('settings', 'push')?.tokens || []), token])] });
-    }
+    const { getMessaging, getToken } = await import('https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging.js');
+    const reg = await navigator.serviceWorker.ready;
+    const token = await getToken(getMessaging(fb.app), { vapidKey: VAPID_KEY, serviceWorkerRegistration: reg });
+    if (!token) return;
+    pushRegistered = true;
+    const cur = store.get('settings', 'push') || { id: 'push', tokens: [] };
+    if (!(cur.tokens || []).includes(token)) store.put('settings', { ...cur, tokens: [...(cur.tokens || []), token].slice(-5) });
   } catch (e) { console.warn('push', e); }
 }
 async function checkLocalNotifications() {
@@ -639,6 +647,7 @@ $('#tabs').onclick = e => {
 let rt;
 store.on(() => { cancelAnimationFrame(rt); rt = requestAnimationFrame(() => { if ($('#sheet').hidden) render(); else { updateBadge(); renderSync(); } }); });
 store.init().then(() => { render(); checkLocalNotifications(); });
+store.on(st => { if (st.mode === 'cloud') registerPush(); });
 setInterval(checkLocalNotifications, 30 * 60 * 1000);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) { checkLocalNotifications(); render(); } });
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
