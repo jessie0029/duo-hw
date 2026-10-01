@@ -1,6 +1,7 @@
 {
+  "id": "/piano-duo-hw/",
   "name": "PIANO DUO HW",
-  "short_name": "Duo HW",
+  "short_name": "PIANO DUO HW",
   "description": "Planning and research for Piano Duo Hua & Wei",
   "start_url": "./",
   "scope": "./",
@@ -8,8 +9,23 @@
   "background_color": "#F3EED9",
   "theme_color": "#790B1B",
   "icons": [
-    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }
