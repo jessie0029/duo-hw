@@ -1,7 +1,7 @@
 // Data layer: local-only (this device) or Firebase sync with offline cache.
 import { FIREBASE_CONFIG } from './config.js';
 
-const COLS = ['posts', 'occasions', 'reminders', 'settings'];
+const COLS = ['posts', 'occasions', 'reminders', 'settings', 'starred'];
 const FB = 'https://www.gstatic.com/firebasejs/10.12.2';
 const LS = 'pdhw:';
 

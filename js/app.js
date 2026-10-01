@@ -326,15 +326,27 @@ function openOccasion(id, ds) {
 }
 
 /* ---- reminders ---- */
+const BACKUP_DAYS = 15;
+function backupDue() {
+  let since = store.setting('lastBackup', 0);
+  if (!since) { try { since = +localStorage.getItem('pdhw:since') || 0; } catch {} }
+  return !!since && Date.now() - since >= BACKUP_DAYS * 864e5;
+}
+function downloadBackup() {
+  const blob = new Blob([JSON.stringify({ app: 'PIANO DUO HW', exported: new Date().toISOString(), posts: store.all('posts'), occasions: store.all('occasions'), reminders: store.all('reminders'), starred: store.all('starred'), settings: store.all('settings').filter(x => x.id !== 'push') }, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `piano-duo-hw-backup-${todayISO()}.json`; a.click();
+  store.setSetting('lastBackup', Date.now());
+  toast('Backup downloaded');
+}
 function dueItems() {
   const today = todayISO(), tomorrow = iso(addDays(new Date(), 1));
   const owed = store.all('reminders').filter(r => !r.done && r.due <= today);
   const postsTomorrow = store.all('posts').filter(p => p.date === tomorrow);
-  return { owed, postsTomorrow };
+  return { owed, postsTomorrow, backup: backupDue() };
 }
 function updateBadge() {
-  const { owed, postsTomorrow } = dueItems();
-  const n = owed.length + postsTomorrow.length, b = $('#remBadge');
+  const { owed, postsTomorrow, backup } = dueItems();
+  const n = owed.length + postsTomorrow.length + (backup ? 1 : 0), b = $('#remBadge');
   b.hidden = !n; b.textContent = n;
 }
 function renderReminders(v) {
@@ -352,6 +364,7 @@ function renderReminders(v) {
   };
   v.innerHTML = `
     <h2>Reminders</h2>
+    ${backupDue() ? `<div class="card spread" style="border-color:var(--gold)"><div><b>Time to back up</b><div class="small muted">${store.setting('lastBackup', 0) ? 'Your last backup was ' + Math.floor((Date.now() - store.setting('lastBackup', 0)) / 864e5) + ' days ago.' : 'You haven’t made a backup yet.'} Keep the file somewhere safe, e.g. your cloud drive.</div></div><button class="btn gold sm" style="white-space:nowrap;flex:none" data-backup>Back up now</button></div>` : ''}
     <div class="card">
       <label class="f" style="margin-top:0"><span>What do they owe you?</span><input type="text" id="rText" placeholder="e.g. Rehearsal video of Poulenc 1st mvt"></label>
       <div class="row" style="margin-top:10px;flex-wrap:nowrap">
@@ -365,8 +378,9 @@ function renderReminders(v) {
     ${done.length ? `<h3>Done</h3>${done.map(remRow).join('')}` : ''}
   `;
   v.onclick = e => {
-    const t = e.target.closest('[data-add],[data-done],[data-rem],[data-post]');
+    const t = e.target.closest('[data-add],[data-done],[data-rem],[data-post],[data-backup]');
     if (!t) return;
+    if ('backup' in t.dataset) return downloadBackup();
     if (t.dataset.post) return openPost(store.get('posts', t.dataset.post));
     if (t.dataset.done) { const r = store.get('reminders', t.dataset.done); store.put('reminders', { ...r, done: t.checked }); return; }
     if (t.dataset.rem) return editReminder(store.get('reminders', t.dataset.rem));
@@ -393,11 +407,26 @@ function editReminder(r) {
 
 /* ---- news ---- */
 let newsCache = null;
-const newsUI = { lang: 'all', q: '' };
+const NEWS_LIMIT = 50;
+const newsUI = { view: 'latest', lang: 'all', q: '' };
 async function loadJSON(path) {
   const r = await fetch(path, { cache: 'no-cache' });
   if (!r.ok) throw new Error(r.status);
   return r.json();
+}
+function newsId(n) {
+  let h = 0; const str = n.link || n.title;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) | 0;
+  return 'n' + (h >>> 0).toString(36);
+}
+function newsCard(n, starred) {
+  return `<div class="news">
+    <div class="spread" style="align-items:flex-start">
+      <a class="t" href="${esc(n.link)}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;flex:1;min-width:0">${esc(n.title)}</a>
+      <button class="icon-btn star" data-star="${newsId(n)}" aria-label="${starred ? 'Remove star' : 'Star'}" title="${starred ? 'Remove star' : 'Star to keep'}" style="color:${starred ? 'var(--gold)' : 'var(--sand)'};margin:-6px -6px 0 0">${starred ? '★' : '☆'}</button>
+    </div>
+    <div class="meta"><span>${esc(n.source)}</span><span>${n.date ? new Date(n.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : ''}</span>${n.keyword ? `<span class="pill">${esc(n.keyword)}</span>` : ''}
+    ${starred ? '' : `<button class="mute" data-mute="${esc(n.source)}">Hide this source</button>`}</div></div>`;
 }
 function renderNews(v) {
   v.ontouchstart = v.ontouchend = null;
@@ -408,28 +437,39 @@ function renderNews(v) {
     return;
   }
   const muted = store.setting('mutedSources', []);
+  const starredList = store.all('starred').sort((a, b) => (b.starredAt || 0) - (a.starredAt || 0));
+  const starredIds = new Set(starredList.map(x => x.id));
   const q = newsUI.q.toLowerCase();
-  const items = (newsCache.items || []).filter(n =>
-    !muted.includes(n.source) &&
-    (newsUI.lang === 'all' || n.lang === newsUI.lang) &&
-    (!q || (n.title + ' ' + n.source).toLowerCase().includes(q)));
+  const match = n => (newsUI.lang === 'all' || n.lang === newsUI.lang) && (!q || (n.title + ' ' + n.source).toLowerCase().includes(q));
+  const latest = (newsCache.items || []).filter(n => !muted.includes(n.source)).slice(0, NEWS_LIMIT).filter(match);
+  const starred = starredList.filter(match);
+  const list = newsUI.view === 'starred' ? starred : latest;
   v.innerHTML = `
     <div class="spread"><h2>News</h2><span class="muted small">${newsCache.updated ? 'Updated ' + new Date(newsCache.updated).toLocaleString('en-GB', { dateStyle: 'medium', timeStyle: 'short' }) : ''}</span></div>
+    <div class="seg" style="margin-bottom:10px"><button data-view="latest" class="${newsUI.view === 'latest' ? 'on' : ''}">Latest ${NEWS_LIMIT}</button><button data-view="starred" class="${newsUI.view === 'starred' ? 'on' : ''}">Starred${starredList.length ? ' (' + starredList.length + ')' : ''}</button></div>
     <div class="row" style="margin-bottom:10px;flex-wrap:nowrap">
-      <div class="seg">${[['all', 'All'], ['en', 'English'], ['de', 'Deutsch']].map(([k, l]) => `<button data-lang="${k}" class="${newsUI.lang === k ? 'on' : ''}">${l}</button>`).join('')}</div>
+      <div class="seg">${[['all', 'All'], ['en', 'EN'], ['de', 'DE']].map(([k, l]) => `<button data-lang="${k}" class="${newsUI.lang === k ? 'on' : ''}">${l}</button>`).join('')}</div>
       <input type="search" id="nq" placeholder="Search" value="${esc(newsUI.q)}" style="flex:1;min-width:0">
     </div>
-    ${newsCache.error ? '<div class="empty">Couldn’t load the news. If you’re offline, it will appear once you reconnect.</div>' : ''}
-    ${items.length ? items.map(n => `<a class="news" href="${esc(n.link)}" target="_blank" rel="noopener">
-      <div class="t">${esc(n.title)}</div>
-      <div class="meta"><span>${esc(n.source)}</span><span>${n.date ? new Date(n.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : ''}</span><span class="pill">${esc(n.keyword || '')}</span>
-      <button class="mute" data-mute="${esc(n.source)}">Hide this source</button></div></a>`).join('') : (newsCache.error ? '' : '<div class="empty">No news matches</div>')}
-    ${muted.length ? `<h3>Hidden sources</h3><div class="row">${muted.map(s => `<button class="chip" data-unmute="${esc(s)}">${esc(s)} ✕</button>`).join('')}</div>` : ''}
+    ${newsCache.error && newsUI.view === 'latest' ? '<div class="empty">Couldn’t load the news. If you’re offline, it will appear once you reconnect.</div>' : ''}
+    ${list.length ? list.map(n => newsCard(n, starredIds.has(newsId(n)))).join('') :
+      (newsUI.view === 'starred' ? '<div class="empty">No starred news yet. Tap ☆ on an article to keep it here.</div>' : newsCache.error ? '' : '<div class="empty">No news matches</div>')}
+    ${muted.length && newsUI.view === 'latest' ? `<h3>Hidden sources</h3><div class="row">${muted.map(s => `<button class="chip" data-unmute="${esc(s)}">${esc(s)} ✕</button>`).join('')}</div>` : ''}
   `;
   v.onclick = e => {
-    const t = e.target.closest('[data-lang],[data-mute],[data-unmute]');
+    const t = e.target.closest('[data-lang],[data-mute],[data-unmute],[data-view],[data-star]');
     if (!t) return;
-    if (t.dataset.mute) { e.preventDefault(); store.setSetting('mutedSources', [...new Set([...muted, t.dataset.mute])]); toast('Source hidden'); return; }
+    if (t.dataset.star) {
+      const id = t.dataset.star;
+      if (starredIds.has(id)) { store.del('starred', id); toast('Star removed'); }
+      else {
+        const n = (newsCache.items || []).find(x => newsId(x) === id);
+        if (n) { store.put('starred', { id, title: n.title, link: n.link, source: n.source, date: n.date, lang: n.lang, keyword: n.keyword, starredAt: Date.now() }); toast('Starred'); }
+      }
+      return;
+    }
+    if (t.dataset.view) { newsUI.view = t.dataset.view; return render(); }
+    if (t.dataset.mute) { store.setSetting('mutedSources', [...new Set([...muted, t.dataset.mute])]); toast('Source hidden'); return; }
     if (t.dataset.unmute) { store.setSetting('mutedSources', muted.filter(s => s !== t.dataset.unmute)); return; }
     newsUI.lang = t.dataset.lang; render();
   };
@@ -566,6 +606,7 @@ function renderSettings(v) {
     </div>
     ${CAPTION_STUDIO_URL ? `<h3>Caption Studio</h3><div class="card small"><a href="${CAPTION_STUDIO_URL}" target="_blank" rel="noopener" style="color:var(--blue)">Open Caption Studio</a> — polish English, translate to German, polish German.</div>` : ''}
     <h3>Backup</h3>
+    <p class="small muted" style="margin-top:0">${store.setting('lastBackup', 0) ? 'Last backup: ' + new Date(store.setting('lastBackup', 0)).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) + '. ' : ''}You’ll be reminded to back up every ${BACKUP_DAYS} days.</p>
     <div class="row"><button class="btn ghost sm" data-backup>Download backup (JSON)</button><label class="btn ghost sm">Restore backup<input type="file" id="restore" accept="application/json" hidden></label></div>
     <p class="small muted" style="margin-top:24px">PIANO DUO HW · personal planning tool</p>`;
   v.onclick = async e => {
@@ -579,17 +620,14 @@ function renderSettings(v) {
     }
     if ('signout' in t.dataset) { await store.signOut(); render(); }
     if ('notif' in t.dataset) { await enableNotifications(); render(); }
-    if ('backup' in t.dataset) {
-      const blob = new Blob([JSON.stringify({ posts: store.all('posts'), occasions: store.all('occasions'), reminders: store.all('reminders'), settings: store.all('settings') }, null, 2)], { type: 'application/json' });
-      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `piano-duo-hw-backup-${todayISO()}.json`; a.click();
-    }
+    if ('backup' in t.dataset) { downloadBackup(); render(); }
   };
   $('#restore').onchange = async e => {
     const f = e.target.files[0]; if (!f) return;
     try {
       const d = JSON.parse(await f.text());
       if (!confirm('Restore this backup? Entries with the same ID will be overwritten.')) return;
-      for (const c of ['posts', 'occasions', 'reminders', 'settings']) (d[c] || []).forEach(o => store.put(c, o));
+      for (const c of ['posts', 'occasions', 'reminders', 'settings', 'starred']) (d[c] || []).filter(o => o.id !== 'push').forEach(o => store.put(c, o));
       toast('Backup restored');
     } catch { toast('That file isn’t a valid backup'); }
   };
@@ -617,7 +655,7 @@ async function registerPush() {
     if (!token) return;
     pushRegistered = true;
     const cur = store.get('settings', 'push') || { id: 'push', tokens: [] };
-    if (!(cur.tokens || []).includes(token)) store.put('settings', { ...cur, tokens: [...(cur.tokens || []), token].slice(-5) });
+    if (!(cur.tokens || []).includes(token)) store.put('settings', { ...cur, since: cur.since || Date.now(), tokens: [...(cur.tokens || []), token].slice(-5) });
   } catch (e) { console.warn('push', e); }
 }
 async function checkLocalNotifications() {
@@ -628,6 +666,7 @@ async function checkLocalNotifications() {
   const msgs = [
     ...owed.map(r => [`rem:${r.id}:${today}`, 'Follow up with the duo', r.text]),
     ...postsTomorrow.map(p => [`post:${p.id}:${today}`, 'Post scheduled tomorrow', `${p.title}${p.approved ? '' : ' · not approved yet'}`]),
+    ...(backupDue() ? [[`backup:${today}`, 'Time to back up PIANO DUO HW', 'Open Reminders and tap “Back up now”.']] : []),
   ].filter(([k]) => !seen[k]);
   if (!msgs.length) return;
   const reg = 'serviceWorker' in navigator ? await navigator.serviceWorker.getRegistration() : null;
@@ -646,6 +685,7 @@ $('#tabs').onclick = e => {
 };
 let rt;
 store.on(() => { cancelAnimationFrame(rt); rt = requestAnimationFrame(() => { if ($('#sheet').hidden) render(); else { updateBadge(); renderSync(); } }); });
+try { if (!localStorage.getItem('pdhw:since')) localStorage.setItem('pdhw:since', String(Date.now())); } catch {}
 store.init().then(() => { render(); checkLocalNotifications(); });
 store.on(st => { if (st.mode === 'cloud') registerPush(); });
 setInterval(checkLocalNotifications, 30 * 60 * 1000);

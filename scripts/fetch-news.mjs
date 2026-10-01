@@ -4,7 +4,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 const FILE = new URL('../data/news.json', import.meta.url);
 const KEEP_DAYS = 365;
-const MAX_ITEMS = 600;
+const MAX_ITEMS = 150;
 
 // [query, edition, lang]
 const EDITIONS = {

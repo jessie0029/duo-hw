@@ -31,6 +31,9 @@ for (const u of users) {
     const p = d.data();
     msgs.push({ title: 'Post scheduled tomorrow', body: `${p.title || 'Untitled'}${p.approved ? '' : ' · not approved yet'}`, tag: `post-${d.id}` });
   }
+  const main = await u.collection('settings').doc('main').get();
+  const last = (main.exists && main.data().lastBackup) || push.data().since || 0;
+  if (last && Date.now() - last >= 15 * 864e5) msgs.push({ title: 'Time to back up PIANO DUO HW', body: 'Open Reminders and tap “Back up now”.', tag: 'backup' });
   if (!msgs.length) continue;
 
   const dead = new Set();
