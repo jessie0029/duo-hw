@@ -603,7 +603,8 @@ function renderConcerts(v) {
   }
   const list = filteredConcerts();
   const rows = aggregate(list, cUI.by);
-  const years = [...new Set((concertCache.concerts || []).map(c => c.year))].filter(Boolean).sort();
+  const thisYear = new Date().getFullYear();
+  const years = Array.from({ length: thisYear - 2005 + 1 }, (_, i) => thisYear - i);
   v.innerHTML = `
     <div class="spread"><h2>Concerts</h2><button class="btn ghost sm" data-export>Export to Excel</button></div>
     <div>
@@ -615,7 +616,7 @@ function renderConcerts(v) {
     <div class="chips" style="margin-top:6px">${Object.entries(BY).map(([k, l]) => `<button class="chip ${cUI.by === k ? 'on' : ''}" data-by="${k}">${l}</button>`).join('')}</div>
     <div class="row" style="margin:6px 0 12px;flex-wrap:nowrap">
       <div class="seg"><button data-region="europe" class="${cUI.region === 'europe' ? 'on' : ''}">Europe</button><button data-region="dach" class="${cUI.region === 'dach' ? 'on' : ''}">DACH</button></div>
-      <select id="cFrom" style="width:auto">${[2005, ...years.filter(y => y > 2005)].filter((y, i, a) => a.indexOf(y) === i).map(y => `<option value="${y}" ${+cUI.from === y ? 'selected' : ''}>From ${y}</option>`).join('')}</select>
+      <select id="cFrom" style="width:auto">${years.map(y => `<option value="${y}" ${+cUI.from === y ? 'selected' : ''}>${y === 2005 ? 'All years (from 2005)' : 'From ' + y}</option>`).join('')}</select>
       <input type="search" id="cq" placeholder="Search" value="${esc(cUI.q)}" style="flex:1;min-width:0">
     </div>
     ${concertCache.error ? '<div class="empty">Couldn’t load the concert data. If you’re offline, it will appear once you reconnect.</div>' :
