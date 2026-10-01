@@ -145,7 +145,7 @@ function renderPlan(v) {
         <div class="seg"><button data-mode="month" class="${state.calMode === 'month' ? 'on' : ''}">Month</button><button data-mode="week" class="${state.calMode === 'week' ? 'on' : ''}">Week</button></div>
       </div>
     </div>
-    <div class="chips">
+    <div class="filters">
       ${TAGS.map(([t, col]) => `<button class="chip ${state.tagFilter.has(t) ? 'on' : ''}" data-tag="${t}"><span class="dot" style="background:${col}"></span>${t}</button>`).join('')}
       <button class="chip ${state.showOcc ? 'on' : ''}" data-occ="1"><span class="dot" style="background:var(--gold)"></span>Occasions</button>
     </div>
