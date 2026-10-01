@@ -1,7 +1,7 @@
 # PIANO DUO HW
 
 Personal planning and research app for Piano Duo Hua & Wei (华&薇).
-Live at https://jessie0029.github.io/piano-duo-hw/ — installable on Android (Chrome → ⋮ → Add to Home screen) and works offline.
+Live at https://jessie0029.github.io/duo-hw/ — installable on Android (Chrome → ⋮ → Add to Home screen) and works offline.
 
 - **Plan** – month/week calendar of post ideas (tags, platforms, reel/carousel, EN/DE captions, approval) and occasions (preloaded composer anniversaries + your own dates)
 - **Reminders** – what the duo owes you, plus posts coming up; notifications one day before a post

@@ -37,7 +37,7 @@ for (const u of users) {
   for (const m of msgs) {
     const res = await getMessaging().sendEachForMulticast({
       tokens,
-      webpush: { notification: { title: m.title, body: m.body, icon: 'https://jessie0029.github.io/piano-duo-hw/icons/icon-192.png', tag: m.tag }, fcmOptions: { link: 'https://jessie0029.github.io/piano-duo-hw/' } },
+      webpush: { notification: { title: m.title, body: m.body, icon: 'https://jessie0029.github.io/duo-hw/icons/icon-192.png', tag: m.tag }, fcmOptions: { link: 'https://jessie0029.github.io/duo-hw/' } },
     });
     res.responses.forEach((r, i) => {
       if (r.success) sent++;
