@@ -8,7 +8,7 @@ const MAX_ITEMS = 150;
 
 // [query, edition, lang]
 const EDITIONS = {
-  en: [['GB', 'en-GB', 'GB:en'], ['US', 'en-US', 'US:en']],
+  en: [['GB', 'en-GB', 'GB:en'], ['IE', 'en-IE', 'IE:en']],
   de: [['DE', 'de', 'DE:de'], ['AT', 'de', 'AT:de'], ['CH', 'de', 'CH:de']],
   it: [['IT', 'it', 'IT:it']],
 };
