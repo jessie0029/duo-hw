@@ -1,7 +1,7 @@
 import { store } from './store.js';
 import { presetsForYear } from './presets.js';
 import { CAPTION_STUDIO_URL, VAPID_KEY } from './config.js';
-import { pickModel, polishEnglish, toGerman } from './captions.js';
+import { pickModel, pickModels, usedModel, polishEnglish, toGerman } from './captions.js';
 
 /* ---------- constants ---------- */
 export const TAGS = [
@@ -321,20 +321,20 @@ function openPost(p) {
         const context = [TYPES[p.type], $('#pTitle').value.trim(), [...tagsSel].join(', ')].filter(Boolean).join(' · ');
         notes.innerHTML = '';
         try {
-          const model = await pickModel(ai.key, ai.model);
+          const models = await pickModels(ai.key, ai.model);
           let r;
           if (t.dataset.ai === 'en') {
             msg.textContent = 'Polishing…';
-            r = await polishEnglish(ai.key, model, src, context);
+            r = await polishEnglish(ai.key, models, src, context);
             if (!p._enBefore) p._enBefore = $('#pEn').value;
             $('#pEn').value = r.text;
           } else {
-            r = await toGerman(ai.key, model, src, context, step => { msg.textContent = step; });
+            r = await toGerman(ai.key, models, src, context, step => { msg.textContent = step; });
             if (!p._deBefore) p._deBefore = $('#pDe').value;
             $('#pDe').value = r.text;
           }
           notes.innerHTML = r.notes.map(n => `<li>${esc(n)}</li>`).join('');
-          msg.innerHTML = `Done with ${esc(model)}. Edit if you like, then Save. <button class="linkbtn" data-undo="${t.dataset.ai}">Undo</button>`;
+          msg.innerHTML = `Done with ${esc(usedModel())}. Edit if you like, then Save. <button class="linkbtn" data-undo="${t.dataset.ai}">Undo</button>`;
         } catch (err) {
           msg.textContent = err.message || 'Something went wrong. Try again.';
         } finally { btns.forEach(b => b.disabled = false); }
