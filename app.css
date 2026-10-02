@@ -1,7 +1,7 @@
 :root{
   --bg:#F3EED9; --paper:#FBF8EC; --ink:#790B1B; --ink-soft:#8f3a45; --gold:#D1970C;
   --sand:#BFA48B; --line:#e2d9bd; --blue:#004782; --muted:#7d6a5c; --ok:#3f7a3a;
-  --t1:#790B1B; --t2:#004782; --t3:#C08400; --t4:#5E7A44; --t5:#9C7A5C; --t6:#6B3F7A;
+  --t1:#790B1B; --t2:#004782; --t3:#A86F00; --t4:#5E7A44; --t5:#8A6648; --t6:#6B3F7A;
   --r:14px; --nav:64px;
   font-family:'Satoshi',system-ui,-apple-system,sans-serif;
 }
@@ -156,8 +156,14 @@ table.rank tr.dach td:first-child{box-shadow:inset 3px 0 0 var(--blue)}
 /* calendar entries: show the full text, wrapping onto as many lines as needed */
 .bar{white-space:normal;text-overflow:clip;overflow:visible;overflow-wrap:break-word;word-break:normal;hyphens:auto;flex:none}
 .bar.ok::after{content:none}
-.bar.ok{box-shadow:inset -3px 0 0 var(--ok)}
+
 @media (max-width:600px){
   .day{padding:3px 1px}
   .bar{font-size:9.5px;line-height:1.2;padding:2px 2px 2px 3px;border-left-width:2px;letter-spacing:-.01em}
 }
+/* post entries filled with their tag colour; occasions stay light gold */
+.bar.post{background:var(--c);color:#fff;border-left:0;font-weight:600}
+.bar.post .tick{font-weight:900}
+.bar.occ.round{background:rgba(209,151,12,.22);color:#6b4b00;font-weight:700}
+.item.posttint{background:color-mix(in srgb,var(--c) 10%,#fff)}
+.item.posttint .stripe{width:6px}

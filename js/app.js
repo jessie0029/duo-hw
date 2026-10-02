@@ -184,7 +184,7 @@ const sameMonth = (a, b) => a.getFullYear() === b.getFullYear() && a.getMonth() 
 
 function postBar(p) {
   const col = TAG_COLOR[(p.tags || [])[0]] || 'var(--ink)';
-  return `<div class="bar ${p.approved ? 'ok' : ''}" style="--c:${col}" data-post="${p.id}">${esc(p.title || 'Untitled')}</div>`;
+  return `<div class="bar post ${p.approved ? 'ok' : ''}" style="--c:${col}" data-post="${p.id}">${p.approved ? '<b class="tick">✓</b> ' : ''}${esc(p.title || 'Untitled')}</div>`;
 }
 function occBar(o) {
   return `<div class="bar occ ${o.round ? 'round' : ''}" data-occid="${esc(o.id)}" data-date="${o.date}">${o.round ? '★ ' : ''}${esc(o.title)}</div>`;
@@ -225,7 +225,7 @@ function weekList(s) {
 }
 function postItem(p) {
   const col = TAG_COLOR[(p.tags || [])[0]] || 'var(--ink)';
-  return `<div class="item" style="--c:${col}" data-post="${p.id}"><div class="stripe"></div><div class="body">
+  return `<div class="item posttint" style="--c:${col}" data-post="${p.id}"><div class="stripe"></div><div class="body">
     <div class="t">${esc(p.title || 'Untitled')}</div>
     <div class="meta"><span class="pill">${TYPES[p.type] || ''}</span>${(p.tags || []).map(t => `<span class="tagpill" style="--c:${TAG_COLOR[t]}">${t}</span>`).join('')}
     ${p.approved ? '<span class="pill ok">Approved ✓</span>' : '<span class="pill">Not approved</span>'}
