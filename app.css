@@ -153,3 +153,11 @@ table.rank tr.dach td:first-child{box-shadow:inset 3px 0 0 var(--blue)}
 .filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:2px 0 10px}
 .filters .chip{justify-content:center;padding:6px 4px;font-size:12.5px;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .filters .chip .dot{flex:none}
+/* calendar entries: show the full text, wrapping onto as many lines as needed */
+.bar{white-space:normal;text-overflow:clip;overflow:visible;overflow-wrap:break-word;word-break:normal;hyphens:auto;flex:none}
+.bar.ok::after{content:none}
+.bar.ok{box-shadow:inset -3px 0 0 var(--ok)}
+@media (max-width:600px){
+  .day{padding:3px 1px}
+  .bar{font-size:9.5px;line-height:1.2;padding:2px 2px 2px 3px;border-left-width:2px;letter-spacing:-.01em}
+}
