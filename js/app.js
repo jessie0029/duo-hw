@@ -290,13 +290,13 @@ function openPost(p) {
       <div class="small muted" id="aiMsg" style="margin-top:6px">${store.get('settings', 'ai')?.key ? 'Gemini rewrites the caption using your caption rules. Check the result before saving.' : 'Add your free Gemini API key in Settings to use the built-in caption assistant.'}</div>
       <ul class="ainotes" id="aiNotes"></ul>
     </div>
-    <div style="margin-top:14px"><label class="check"><input type="checkbox" id="pOk" ${p.approved ? 'checked' : ''}>Approved by the duo</label></div>
+    <div class="row" style="margin-top:14px"><label class="check"><input type="checkbox" id="pOk" ${p.approved ? 'checked' : ''}>Approved by the duo</label><button class="btn ghost sm" data-copycap>⧉ Copy captions</button></div>
     <div class="sheet-foot">
       ${isNew ? '<span></span>' : '<button class="btn danger" data-del>Delete</button>'}
       <div class="row"><button class="btn ghost" data-close>Cancel</button><button class="btn" data-save>Save</button></div>
     </div>`,
     async e => {
-      const t = e.target.closest('[data-type],[data-t],[data-save],[data-del],[data-studio],[data-ai],[data-undo]');
+      const t = e.target.closest('[data-type],[data-t],[data-save],[data-del],[data-studio],[data-ai],[data-undo],[data-copycap]');
       if (!t) return;
       if (t.dataset.undo) {
         if (t.dataset.undo === 'en' && p._enBefore !== undefined) { $('#pEn').value = p._enBefore; delete p._enBefore; }
@@ -337,6 +337,16 @@ function openPost(p) {
         } catch (err) {
           msg.textContent = err.message || 'Something went wrong. Try again.';
         } finally { btns.forEach(b => b.disabled = false); }
+      } else if ('copycap' in t.dataset) {
+        const de = $('#pDe').value.trim(), en = $('#pEn').value.trim();
+        const text = [de, en].filter(Boolean).join('\n\n');
+        if (!text) return toast('No captions to copy yet');
+        try { await navigator.clipboard.writeText(text); }
+        catch {
+          const ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+          document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch {} ta.remove();
+        }
+        toast(de && en ? 'German + English captions copied' : 'Caption copied');
       } else if ('studio' in t.dataset) {
         const text = $('#pEn').value.trim();
         try { if (text) { await navigator.clipboard.writeText(text); toast('English caption copied'); } } catch {}
