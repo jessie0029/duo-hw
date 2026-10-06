@@ -167,3 +167,8 @@ table.rank tr.dach td:first-child{box-shadow:inset 3px 0 0 var(--blue)}
 .bar.occ.round{background:rgba(209,151,12,.22);color:#6b4b00;font-weight:700}
 .item.posttint{background:color-mix(in srgb,var(--c) 10%,#fff)}
 .item.posttint .stripe{width:6px}
+.thcount{font-style:normal;font-weight:700;letter-spacing:0;text-transform:none;color:var(--muted);font-size:12px}
+.thcount.over{color:#a3261b}
+textarea.short{min-height:90px}
+label.f>span.spread{display:flex}
+.thcount{white-space:nowrap;margin-left:8px}

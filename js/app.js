@@ -1,7 +1,7 @@
 import { store } from './store.js';
 import { presetsForYear } from './presets.js';
 import { CAPTION_STUDIO_URL, VAPID_KEY } from './config.js';
-import { pickModel, pickModels, usedModel, polishEnglish, toGerman } from './captions.js';
+import { pickModel, pickModels, usedModel, polishEnglish, toGerman, toThreads, charCount } from './captions.js';
 
 /* ---------- constants ---------- */
 export const TAGS = [
@@ -242,6 +242,7 @@ function openSheet(html, onClick) {
   const sh = $('#sheet'), bd = $('#sheetBackdrop');
   sh.innerHTML = `<div class="grab"></div>${html}`;
   sh.hidden = bd.hidden = false;
+  updThCount();
   sh.scrollTop = 0;
   sh.onclick = e => { if (e.target.closest('[data-close]')) return closeSheet(); onClick && onClick(e); };
   bd.onclick = closeSheet;
@@ -267,6 +268,15 @@ function openDay(ds) {
     });
 }
 
+function updThCount() {
+  const ta = document.getElementById('pTh'), out = document.getElementById('thCount');
+  if (!ta || !out) return;
+  const n = charCount(ta.value);
+  out.textContent = n ? `${n} / 500` : '';
+  out.classList.toggle('over', n > 500);
+}
+document.addEventListener('input', e => { if (e.target && e.target.id === 'pTh') updThCount(); });
+
 function openPost(p) {
   p = { type: 'reel', tags: [], platforms: null, title: '', captionEn: '', captionDe: '', approved: false, ...p };
   if (!p.platforms) p.platforms = [...DEFAULT_PLATFORMS[p.type]];
@@ -284,8 +294,10 @@ function openPost(p) {
     <div class="row" id="pTags">${TAGS.map(([t, col]) => `<button class="chip ${tagsSel.has(t) ? 'on' : ''}" data-t="${t}"><span class="dot" style="background:${col}"></span>${t}</button>`).join('')}</div>
     <label class="f"><span>Caption – English</span><textarea id="pEn" placeholder="Draft caption in English">${esc(p.captionEn)}</textarea></label>
     <label class="f"><span>Caption – German</span><textarea id="pDe" placeholder="Deutsche Fassung">${esc(p.captionDe)}</textarea></label>
+    <label class="f"><span class="spread">Caption – Threads (DE, max. 500) <em id="thCount" class="thcount"></em></span><textarea id="pTh" class="short" placeholder="Kurzfassung für Threads">${esc(p.captionThreads || '')}</textarea></label>
+    <div class="row" style="margin-top:6px"><button class="btn ghost sm" data-copyth>⧉ Copy Threads caption</button></div>
     <div class="aibox">
-      <div class="row"><button class="btn gold sm" data-ai="en">✨ Polish English</button><button class="btn gold sm" data-ai="de">✨ English → German</button>
+      <div class="row"><button class="btn gold sm" data-ai="en">✨ Polish English</button><button class="btn gold sm" data-ai="de">✨ English → German</button><button class="btn gold sm" data-ai="th">✨ German → Threads</button>
       ${CAPTION_STUDIO_URL ? '<button class="btn ghost sm" data-studio>Caption Studio (Claude)</button>' : ''}</div>
       <div class="small muted" id="aiMsg" style="margin-top:6px">${store.get('settings', 'ai')?.key ? 'Gemini rewrites the caption using your caption rules. Check the result before saving.' : 'Add your free Gemini API key in Settings to use the built-in caption assistant.'}</div>
       <ul class="ainotes" id="aiNotes"></ul>
@@ -296,11 +308,12 @@ function openPost(p) {
       <div class="row"><button class="btn ghost" data-close>Cancel</button><button class="btn" data-save>Save</button></div>
     </div>`,
     async e => {
-      const t = e.target.closest('[data-type],[data-t],[data-save],[data-del],[data-studio],[data-ai],[data-undo],[data-copycap]');
+      const t = e.target.closest('[data-type],[data-t],[data-save],[data-del],[data-studio],[data-ai],[data-undo],[data-copycap],[data-copyth]');
       if (!t) return;
       if (t.dataset.undo) {
         if (t.dataset.undo === 'en' && p._enBefore !== undefined) { $('#pEn').value = p._enBefore; delete p._enBefore; }
         if (t.dataset.undo === 'de' && p._deBefore !== undefined) { $('#pDe').value = p._deBefore; delete p._deBefore; }
+        if (t.dataset.undo === 'th' && p._thBefore !== undefined) { $('#pTh').value = p._thBefore; delete p._thBefore; updThCount(); }
         $('#aiMsg').textContent = 'Restored your previous text.'; $('#aiNotes').innerHTML = '';
         return;
       }
@@ -315,8 +328,9 @@ function openPost(p) {
         const ai = store.get('settings', 'ai');
         const msg = $('#aiMsg'), notes = $('#aiNotes');
         if (!ai?.key) { msg.innerHTML = 'No Gemini key yet. Go to <b>Settings → Caption assistant</b> to add it.'; return; }
-        const src = $('#pEn').value.trim();
-        if (!src) { msg.textContent = 'Write the English caption first.'; $('#pEn').focus(); return; }
+        const mode = t.dataset.ai;
+        const src = (mode === 'th' ? $('#pDe') : $('#pEn')).value.trim();
+        if (!src) { msg.textContent = mode === 'th' ? 'Write or create the German caption first.' : 'Write the English caption first.'; (mode === 'th' ? $('#pDe') : $('#pEn')).focus(); return; }
         const btns = document.querySelectorAll('[data-ai]'); btns.forEach(b => b.disabled = true);
         const context = [TYPES[p.type], $('#pTitle').value.trim(), [...tagsSel].join(', ')].filter(Boolean).join(' · ');
         notes.innerHTML = '';
@@ -327,6 +341,10 @@ function openPost(p) {
             r = await polishEnglish(ai.key, models, src, context, st => { msg.textContent = st; });
             if (!p._enBefore) p._enBefore = $('#pEn').value;
             $('#pEn').value = r.text;
+          } else if (mode === 'th') {
+            r = await toThreads(ai.key, models, src, context, st => { msg.textContent = st; });
+            if (p._thBefore === undefined) p._thBefore = $('#pTh').value;
+            $('#pTh').value = r.text; updThCount();
           } else {
             r = await toGerman(ai.key, models, src, context, step => { msg.textContent = step; });
             if (!p._deBefore) p._deBefore = $('#pDe').value;
@@ -337,6 +355,12 @@ function openPost(p) {
         } catch (err) {
           msg.textContent = err.message || 'Something went wrong. Try again.';
         } finally { btns.forEach(b => b.disabled = false); }
+      } else if ('copyth' in t.dataset) {
+        const text = $('#pTh').value.trim();
+        if (!text) return toast('No Threads caption yet');
+        try { await navigator.clipboard.writeText(text); }
+        catch { const ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch {} ta.remove(); }
+        toast('Threads caption copied');
       } else if ('copycap' in t.dataset) {
         const de = $('#pDe').value.trim(), en = $('#pEn').value.trim();
         const text = [de, en].filter(Boolean).join('\n\n');
@@ -362,9 +386,10 @@ function openPost(p) {
           tags: TAGS.map(x => x[0]).filter(x => tagsSel.has(x)),
           captionEn: $('#pEn').value,
           captionDe: $('#pDe').value,
+          captionThreads: $('#pTh').value,
           approved: $('#pOk').checked,
         };
-        delete o._enBefore; delete o._deBefore;
+        delete o._enBefore; delete o._deBefore; delete o._thBefore;
         if (!o.title) { $('#pTitle').focus(); return toast('Give the post a title'); }
         store.put('posts', o);
         closeSheet(); toast(isNew ? 'Post idea saved' : 'Saved');

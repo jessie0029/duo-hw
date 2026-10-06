@@ -46,3 +46,14 @@ Unsere Tochter ist inzwischen schon ein Kindergartenkind – und wir könnten ni
 Und jetzt gibt es noch eine schöne Neuigkeit:
 Ab der Saison 2026/27 möchten wir PIANO DUO HUA & WEI wieder verstärkt in Europa aufbauen und freuen uns sehr darauf, alte Freunde und Kollegen wiederzusehen, neue Kontakte zu knüpfen und natürlich wieder auf europäischen Bühnen zu stehen.`,
 ];
+
+export const THREADS_MAX = 500;
+export const THREADS_RULES = [
+  'This is a shorter German version of the caption for Threads.',
+  'Hard limit: at most 500 characters in total, counting letters, spaces, line breaks, emojis and hashtags. Aim for about 380–480 characters.',
+  'Keep the most important information (who, what, when and where, the key message) and drop the details.',
+  'Keep the same tone as the full caption; native German, Austrian vocabulary preferred.',
+  'Use no more than 4 emojis, with at least 1 emoji at the very start of the text.',
+  'End with the hashtags #piano #klavier #pianoduo.',
+  'Do not add any information that is not in the full caption.',
+];

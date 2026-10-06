@@ -1,6 +1,7 @@
 // Built-in caption assistant using the Google Gemini API (free tier).
 // The API key is stored in the user's (encrypted) settings, never in the code.
-import { EN_RULES, DE_RULES, EN_SAMPLES, DE_SAMPLES } from './caption-rules.js';
+import { EN_RULES, DE_RULES, EN_SAMPLES, DE_SAMPLES, THREADS_RULES, THREADS_MAX } from './caption-rules.js';
+export const charCount = t => [...(t || '')].length;
 
 const API = 'https://generativelanguage.googleapis.com/v1beta';
 const samples = arr => arr.map((s, i) => `--- Sample ${i + 1} ---\n${s}`).join('\n\n');
@@ -125,4 +126,16 @@ export async function polishEnglish(key, models, draft, context, onStatus) {
 export async function toGerman(key, models, english, context, onStatus) {
   onStatus && onStatus('Translating and polishing…');
   return ask(key, models, `Create the German version of this English social media caption by ${WHO}.\n\n${DE_BRIEF}\n${ctx(context)}\nWork in two steps internally: (1) translate the caption faithfully into German; (2) review your translation and improve the flow and sentence structure so it reads as if a native German speaker (Austrian vocabulary preferred) had written it from scratch, applying every rule above. Do not add content or information. Return only the final result of step 2.\n\nReply with only JSON: {"text": "<final German caption>", "notes": ["<up to 4 very short notes in English on choices you made>"]}\n\nEnglish caption:\n"""\n${english}\n"""`, onStatus);
+}
+
+// Shorten the German caption into a Threads version (max 500 characters); retries once if too long.
+export async function toThreads(key, models, german, context, onStatus) {
+  const base = `Here is the full German social media caption by ${WHO}.\n\n${DE_BRIEF}\n\nRules for the Threads version:\n- ${THREADS_RULES.join('\n- ')}\n${ctx(context)}\nTask: write the Threads version of this caption following every rule above.\n\nReply with only JSON: {"text": "<Threads caption in German>"}\n\nFull German caption:\n"""\n${german}\n"""`;
+  onStatus && onStatus('Shortening for Threads…');
+  let r = await ask(key, models, base, onStatus);
+  if (charCount(r.text) > THREADS_MAX) {
+    onStatus && onStatus(`Too long (${charCount(r.text)} characters). Shortening again…`);
+    r = await ask(key, models, base + `\n\nYour previous version had ${charCount(r.text)} characters, which is over the limit. Make it clearly shorter, under 460 characters:\n"""\n${r.text}\n"""`, onStatus);
+  }
+  return r;
 }
