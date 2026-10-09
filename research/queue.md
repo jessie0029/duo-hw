@@ -9,7 +9,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Lucas & Arthur Jussen 2022
 - [x] Lucas & Arthur Jussen 2019
 - [x] KlavierDuo Kutrowatz 2015–2018 (kutrowatz.art past events, pages 2–3)
-- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items
+- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval)
 - [x] Lucas & Arthur Jussen 2021 (from /nl/ page)
 - [x] Lucas & Arthur Jussen 2020
 - [x] Lucas & Arthur Jussen 2018
@@ -24,9 +24,9 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Lucas & Arthur Jussen 2026 (to 1 Oct)
 - [x] Anna & Ines Walachowski 2022–2026 (walachowski.com/all-events, regional DACH presenters)
 - [x] GrauSchumacher Piano Duo (grau-schumacher.de unreachable; 26 concerts from orchestra/festival/presenter pages — redo from site archive when reachable)
-- [ ] Yaara Tal & Andreas Groethuysen
-- [ ] Silver-Garburg Piano Duo
-- [ ] Ferhan & Ferzan Önder (Vienna-based)
+- [x] Yaara Tal & Andreas Groethuysen (no duo archive online; 3 concerts from presenter pages — Klavier-Festival Ruhr Herne 2022, BAdSK München 2026, Aulakonzerte Göttingen 2026; weigold-boehm.de lists 2026/27 projects without venues)
+- [x] Silver-Garburg Piano Duo (silvergarburg.com/schedule redirect loop from cloud; 3 concerts from presenter pages — redo from site when reachable)
+- [x] Ferhan & Ferzan Önder (Vienna-based) (no archive found on own site; 5 concerts from festival/presenter pages)
 - [ ] Katia & Marielle Labèque
 - [ ] Duo Genova & Dimitrov
 - [ ] Klavierduo Stenzl
@@ -76,3 +76,10 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Baayon Duo (four hands, Villa Irmgard Heringsdorf, Usedom) — members unnamed; find site
 - [ ] Maggio della Musica (Napoli, Villa Pignatelli) — Schiavo Marchegiani 11 Oct 2026; check past seasons for duo bookings
 - [ ] Bacharacher Meister-Konzerte (Mittelrheinhalle Bacharach) — booked Carles & Sofia 2026; check series archive for other duos
+- [ ] Piano Duo Festival Amsterdam (Het Concertgemaal, Amsterdam) — Silver-Garburg 10 Oct 2026; check festival line-ups for other duos
+- [ ] Monheimer Kulturwerke (Kulturraffinerie K714, Monheim am Rhein) — Önder + Kyiv SO Poulenc 16 May 2027; check programme for other duo bookings
+- [ ] Aulakonzerte Göttingen (Kammermusik-Gesellschaft Göttingen) — Tal & Groethuysen 11 Oct 2026; check past seasons for duos
+- [ ] Kitzbüheler Sommerkonzerte — Silver-Garburg 5 Aug 2026; check past editions
+- [ ] Klavierduo Gugg (Tereza Gugg-Kalabova & Johannes Gugg, Upper Austria) — Jeunesse Ried 27 Nov 2026; find duo site / concert list
+- [ ] Dúo Curbelo (piano four hands, Canary Islands) — teneriffa-news article 8 Oct 2026 not readable; ULPGC Paraninfo (Las Palmas) concert with Alianza Francesa, no date given
+- [ ] Jeunesse Österreich — regional four-hand bookings (Ried im Innkreis); check other Jeunesse series
