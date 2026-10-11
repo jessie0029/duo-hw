@@ -9,7 +9,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Lucas & Arthur Jussen 2022
 - [x] Lucas & Arthur Jussen 2019
 - [x] KlavierDuo Kutrowatz 2015–2018 (kutrowatz.art past events, pages 2–3)
-- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval)
+- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked
 - [x] Lucas & Arthur Jussen 2021 (from /nl/ page)
 - [x] Lucas & Arthur Jussen 2020
 - [x] Lucas & Arthur Jussen 2018
@@ -27,11 +27,11 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Yaara Tal & Andreas Groethuysen (no duo archive online; 3 concerts from presenter pages — Klavier-Festival Ruhr Herne 2022, BAdSK München 2026, Aulakonzerte Göttingen 2026; weigold-boehm.de lists 2026/27 projects without venues)
 - [x] Silver-Garburg Piano Duo (silvergarburg.com/schedule redirect loop from cloud; 3 concerts from presenter pages — redo from site when reachable)
 - [x] Ferhan & Ferzan Önder (Vienna-based) (no archive found on own site; 5 concerts from festival/presenter pages)
-- [ ] Katia & Marielle Labèque
-- [ ] Duo Genova & Dimitrov
-- [ ] Klavierduo Stenzl
+- [x] Katia & Marielle Labèque (26 European concerts 2011–2025 from Bachtrack review index; Weigold & Böhm PDFs have no dated list)
+- [x] Duo Genova & Dimitrov (no archive found; own site not fetchable; infranken review of Coburg HUK-Foyer season finale, May 2017, gives no exact date)
+- [x] Klavierduo Stenzl (no archive found; 1 concert from hmt Rostock 25-Jahre-Klavierduo booklet 2024, which also lists ~20 young duos from their class)
 - [ ] Piano Duo Takahashi / Lehmann (write the duo name without "|" in .psv files)
-- [ ] Duo d'Accord
+- [x] Duo d'Accord (no archive found; duodaccord.de not fetchable; Arithmeum Bonn 2009 added)
 - [ ] Christina & Michelle Naughton (European dates)
 - [ ] Klavierduo Trenkner–Speidel
 - [ ] Duo Egri & Pertis
@@ -83,3 +83,11 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Klavierduo Gugg (Tereza Gugg-Kalabova & Johannes Gugg, Upper Austria) — Jeunesse Ried 27 Nov 2026; find duo site / concert list
 - [ ] Dúo Curbelo (piano four hands, Canary Islands) — teneriffa-news article 8 Oct 2026 not readable; ULPGC Paraninfo (Las Palmas) concert with Alianza Francesa, no date given
 - [ ] Jeunesse Österreich — regional four-hand bookings (Ried im Innkreis); check other Jeunesse series
+- [ ] Konstanze Hollitzer & Christian Hornef (Leipzig four-hands duo) — Mendelssohn-Haus Leipzig 2026, Zabeltitzer Palaiskonzert 23 Aug 2026 (regioactive/mvp pages not fetchable); find duo site
+- [ ] Clavier-Salon Göttingen — "Klavierduo-Soirée" series with young prize-winning duos; check other Vorschau PDFs (clavier-salon-goettingen.de/download/)
+- [ ] Mozart-Gesellschaft Stuttgart — duo imPuls 2012 (Fellbach); check other Mozart_Progr.YYYY.pdf years for duo bookings
+- [ ] duo imPuls (Barbara & Sebastian Bartmann) — find duo site / concert list
+- [ ] Alexei Volodin & Edith Peña — four-hand/two-piano partnership (Laudinella St. Moritz 2024, Novi Sad 2025, Saarländisches Staatsorchester K. 365 2024/25 — date not on staatstheater.saarland page)
+- [ ] Arithmeum Bonn concert archive (with WDR 3) — 9 archive pages; check all for piano duos
+- [ ] hmt Rostock piano duo class alumni (Duo Seo/Kato, Duo ShinPark, Klavierduo Crewir, Novi Duo, Duo Motus, Godziński brothers, Gründling sisters) — check for duo sites with European dates
+- [ ] Duo Smirnova-Kowollik — Weißenburg Wildbadsaal 3 Oct 2026 "Dialog der Seele" (regioactive not fetchable; instrumentation unconfirmed)
