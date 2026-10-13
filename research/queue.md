@@ -9,7 +9,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Lucas & Arthur Jussen 2022
 - [x] Lucas & Arthur Jussen 2019
 - [x] KlavierDuo Kutrowatz 2015–2018 (kutrowatz.art past events, pages 2–3)
-- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked
+- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked; 13 Oct 2026 run: still blocked
 - [x] Lucas & Arthur Jussen 2021 (from /nl/ page)
 - [x] Lucas & Arthur Jussen 2020
 - [x] Lucas & Arthur Jussen 2018
@@ -30,12 +30,12 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Katia & Marielle Labèque (26 European concerts 2011–2025 from Bachtrack review index; Weigold & Böhm PDFs have no dated list)
 - [x] Duo Genova & Dimitrov (no archive found; own site not fetchable; infranken review of Coburg HUK-Foyer season finale, May 2017, gives no exact date)
 - [x] Klavierduo Stenzl (no archive found; 1 concert from hmt Rostock 25-Jahre-Klavierduo booklet 2024, which also lists ~20 young duos from their class)
-- [ ] Piano Duo Takahashi / Lehmann (write the duo name without "|" in .psv files)
+- [x] Piano Duo Takahashi / Lehmann (Norie Takahashi & Björn Lehmann; takahashi-lehmann.com not fetchable from cloud; 1 concert from Tagesspiegel listing — redo from site when reachable)
 - [x] Duo d'Accord (no archive found; duodaccord.de not fetchable; Arithmeum Bonn 2009 added)
-- [ ] Christina & Michelle Naughton (European dates)
-- [ ] Klavierduo Trenkner–Speidel
-- [ ] Duo Egri & Pertis
-- [ ] Sergei Babayan & Daniil Trifonov (two-piano tours)
+- [x] Christina & Michelle Naughton (no archive found — search results only US dates)
+- [x] Klavierduo Trenkner–Speidel (no archive found)
+- [x] Duo Egri & Pertis (7 concerts of their own Crosstalks series at Budapest Music Center 2019–2026; no other venues found)
+- [x] Sergei Babayan & Daniil Trifonov (3 European concerts: Wigmore 2016, Klavier-Festival Ruhr Essen + Wiener Konzerthaus May 2023; rest of 2023 Rachmaninoff tour still unlisted)
 
 ## Festivals and promoters
 - [ ] Schubertiade Schwarzenberg / Hohenems — piano duo evenings
@@ -91,3 +91,8 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Arithmeum Bonn concert archive (with WDR 3) — 9 archive pages; check all for piano duos
 - [ ] hmt Rostock piano duo class alumni (Duo Seo/Kato, Duo ShinPark, Klavierduo Crewir, Novi Duo, Duo Motus, Godziński brothers, Gründling sisters) — check for duo sites with European dates
 - [ ] Duo Smirnova-Kowollik — Weißenburg Wildbadsaal 3 Oct 2026 "Dialog der Seele" (regioactive not fetchable; instrumentation unconfirmed)
+- [ ] Martin Stadtfeld & Shin-Heae Kang — Karlsruhe Meisterkonzerte 25 Apr 2027 (Bach/Mozart/Schubert/Rachmaninoff); check other 2026/27 duo dates
+- [ ] Klavierduo Bauerecker/Stöber (Dorrit Bauerecker & Christoph Stöber, Köln, since 2023) — Klassik im Burghaus Bielstein (Kulturkreis Wiehl) early Oct 2026, date not stated; Unerhörte Musik Berlin (BKA) 2026; find duo site
+- [ ] Berliner Symphoniker "Konzerte in der Philharmonie" — book soloist duos (Schiavo Marchegiani K. 365, 15 Nov 2026); check past seasons (Berlin outreach target)
+- [ ] Budapest Music Center — hosts Egri & Pertis series; check BMC programme for visiting duos
+- [ ] Allgemeine Zeitung (Mainz) 12 Oct 2026 "Klavierduo spielt Bach und Schubert" — article not found via search; duo unidentified
