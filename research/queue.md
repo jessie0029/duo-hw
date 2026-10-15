@@ -9,7 +9,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Lucas & Arthur Jussen 2022
 - [x] Lucas & Arthur Jussen 2019
 - [x] KlavierDuo Kutrowatz 2015–2018 (kutrowatz.art past events, pages 2–3)
-- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked; 13 Oct 2026 run: still blocked
+- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked; 13 Oct 2026 run: still blocked; 15 Oct 2026 run: still blocked
 - [x] Lucas & Arthur Jussen 2021 (from /nl/ page)
 - [x] Lucas & Arthur Jussen 2020
 - [x] Lucas & Arthur Jussen 2018
@@ -38,9 +38,9 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Sergei Babayan & Daniil Trifonov (3 European concerts: Wigmore 2016, Klavier-Festival Ruhr Essen + Wiener Konzerthaus May 2023; rest of 2023 Rachmaninoff tour still unlisted)
 
 ## Festivals and promoters
-- [ ] Schubertiade Schwarzenberg / Hohenems — piano duo evenings
-- [ ] Klavier-Festival Ruhr — duo recitals by year
-- [ ] Kissinger Sommer — duo concerts
+- [x] Schubertiade Schwarzenberg / Hohenems — piano duo evenings (4 new concerts 2022–2026 in schubertiade.psv + Jussen already listed; /de/spielzeitarchiv/YYYY.html year archives 2005–2020 and 2024 not fetchable — redo when reachable; Tal & Groethuysen have ~13 Schubertiade productions)
+- [x] Klavier-Festival Ruhr — duo recitals by year (5 new concerts in klavier-festival-ruhr.psv; German-path /konzertarchiv-YYYY/ pages not fetchable. Undated leads: Argerich & Zilberstein Essen July 2012; Liga Korne & Lorenzo Soulès 'Hallelujah Junction' Bochum 2024; Buniatishvili & Sodi Braide 2022; Tal & Groethuysen 17 KFR appearances before 2022)
+- [x] Kissinger Sommer — duo concerts (kissingersommer.de not fetchable; T&G 9 Jul 2022 added, Jussen 2022/2024 already listed; 2005–2021 not covered)
 - [ ] Festspiele Mecklenburg-Vorpommern — duo concerts
 - [ ] Schleswig-Holstein Musik Festival — duo concerts
 - [ ] Rheingau Musik Festival — duo concerts
@@ -96,3 +96,13 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Berliner Symphoniker "Konzerte in der Philharmonie" — book soloist duos (Schiavo Marchegiani K. 365, 15 Nov 2026); check past seasons (Berlin outreach target)
 - [ ] Budapest Music Center — hosts Egri & Pertis series; check BMC programme for visiting duos
 - [ ] Allgemeine Zeitung (Mainz) 12 Oct 2026 "Klavierduo spielt Bach und Schubert" — article not found via search; duo unidentified
+- [x] Duo B!z'art (Geoffrey Baptiste & André Roe, Belgium) — duobizart.be not fetchable; 7 concerts from UK/IE presenter pages (Music Arran, Ramsey Music Society, Newport Music Club, Sandbach Concert Series, Orkney Arts Society, UCC Cork, Dunblane Arts Guild) + Falkirk 23 Oct 2026 (news)
+- [ ] Diána Fuchs & Hiroyo Masumura (Hungarian-Japanese four-hands duo) — Enns 23 Oct 2026; "Classic in the Krypt" (Vienna?) undated; find duo site
+- [ ] Klassik in Jeans (Klavierhaus Weinberger, Enns, Upper Austria) — books four-hand duos (Duo Delirium 2024, Fuchs & Masumura 2026); check tips.at archive for more
+- [ ] Duo Delirium (Marie-Astrid Wybou & Bernhard Jan, four hands, Vienna/Belgium; Ehrbar Saal Wien) — find duo site
+- [ ] K&K Klavierduo (Kanon & Kotone Yokoyama, twins from Kyoto) — Freiberg am Neckar 18 Nov 2026; find duo site / concert list
+- [ ] Duo pianistico Mél Bonis (Forlì) — forlitoday article 14 Oct 2026 not fetchable; performers/date unknown
+- [ ] Grand Hotel Quisisana, Sala Capri (Capri) — four-hands concert in memory of Prof. Vincenzo Cuomo (ilmattino 13 Oct 2026, robots-blocked); performers/date unknown
+- [ ] Klavierduo Maria & Sofia "Goldene Klänge" (Hannover, hannover.de 14 Oct 2026) — page not found/fetchable; performers/date unknown
+- [ ] Klavierduo Neeb "2 x 88 Tasten" (Musikschule Anneliese-Geske-Haus, Erftstadt) — mvp.de listing not fetchable
+- [ ] "Rachmaninoff – Leidenschaft und Sehnsucht" Klavierduo-Konzert (oberoesterreich.at event 430297384) — not fetchable; performers unknown
