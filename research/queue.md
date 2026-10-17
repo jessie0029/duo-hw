@@ -9,7 +9,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Lucas & Arthur Jussen 2022
 - [x] Lucas & Arthur Jussen 2019
 - [x] KlavierDuo Kutrowatz 2015–2018 (kutrowatz.art past events, pages 2–3)
-- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked; 13 Oct 2026 run: still blocked; 15 Oct 2026 run: still blocked
+- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked; 13 Oct 2026 run: still blocked; 15 Oct 2026 run: still blocked; 17 Oct 2026 run: still blocked, added Weissensee Piano Nights 2009 from pressetext
 - [x] Lucas & Arthur Jussen 2021 (from /nl/ page)
 - [x] Lucas & Arthur Jussen 2020
 - [x] Lucas & Arthur Jussen 2018
@@ -41,10 +41,10 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Schubertiade Schwarzenberg / Hohenems — piano duo evenings (4 new concerts 2022–2026 in schubertiade.psv + Jussen already listed; /de/spielzeitarchiv/YYYY.html year archives 2005–2020 and 2024 not fetchable — redo when reachable; Tal & Groethuysen have ~13 Schubertiade productions)
 - [x] Klavier-Festival Ruhr — duo recitals by year (5 new concerts in klavier-festival-ruhr.psv; German-path /konzertarchiv-YYYY/ pages not fetchable. Undated leads: Argerich & Zilberstein Essen July 2012; Liga Korne & Lorenzo Soulès 'Hallelujah Junction' Bochum 2024; Buniatishvili & Sodi Braide 2022; Tal & Groethuysen 17 KFR appearances before 2022)
 - [x] Kissinger Sommer — duo concerts (kissingersommer.de not fetchable; T&G 9 Jul 2022 added, Jussen 2022/2024 already listed; 2005–2021 not covered)
-- [ ] Festspiele Mecklenburg-Vorpommern — duo concerts
-- [ ] Schleswig-Holstein Musik Festival — duo concerts
-- [ ] Rheingau Musik Festival — duo concerts
-- [ ] Grafenegg Festival — duo concerts
+- [x] Festspiele Mecklenburg-Vorpommern — duo concerts (Jussen already listed 2013–2025; Dörken sisters Rügen March 2025 added in doerken.psv; 2019 Gesamtprogramm also has Labèque + Katja Riemann open air at Rostock Zoo, undated)
+- [x] Schleswig-Holstein Musik Festival — duo concerts (no archive found; shmf.de has no searchable past programme)
+- [x] Rheingau Musik Festival — duo concerts (no archive found; lead: Hyuk Lee & Hyo Lee, Schloss Johannisberg Metternich-Saal 15 Aug 2026 — regioactive not fetchable)
+- [x] Grafenegg Festival — duo concerts (Labèque + Tonkünstler/Gabel Poulenc, festival opening 14 Aug 2025 added; Jussen 2019 already listed; no searchable archive)
 - [ ] Liszt Festival Raiding — duo concerts
 - [ ] Kulturfreunde Bayreuth, Albert Konzerte Freiburg, Meisterkonzerte series — duo bookings
 
@@ -71,7 +71,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Logos Duo / Augustinum residences — check Augustinum concert series (many Augustinum Wohnstifte host duo concerts)
 - [x] Carles & Sofia Piano Duo (Carles Lama & Sofia Cabruja, Girona; agent Massa Konzertmanagement Berlin) — carlesandsofia.com not fetchable from cloud; 5 concerts from presenter pages + news (Saluzzo 10 Oct 2026). Revisit site concert archive when reachable
 - [ ] Clara & Marie Becker (Hamburg twin duo) — find duo website / concert list
-- [ ] Duo Pianoforte (Jonas Stark & Gabriel Yeo) — Nürnberg Meistersingerhalle 17 Dec 2026; find duo site
+- [x] Duo Pianoforte (Jonas Stark & Gabriel Yeo) — 16 more 2026/27 DMW Konzertförderung dates added (towns only) from deutscher-musikwettbewerb.de/zuhoeren/aktuelle-konzerte; duo site still not found
 - [ ] Parnassius Piano Duo (Simon Callaghan & Hiroaki Takenouchi, UK) — check duo site for concert archive
 - [ ] Baayon Duo (four hands, Villa Irmgard Heringsdorf, Usedom) — members unnamed; find site
 - [ ] Maggio della Musica (Napoli, Villa Pignatelli) — Schiavo Marchegiani 11 Oct 2026; check past seasons for duo bookings
@@ -106,3 +106,10 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Klavierduo Maria & Sofia "Goldene Klänge" (Hannover, hannover.de 14 Oct 2026) — page not found/fetchable; performers/date unknown
 - [ ] Klavierduo Neeb "2 x 88 Tasten" (Musikschule Anneliese-Geske-Haus, Erftstadt) — mvp.de listing not fetchable
 - [ ] "Rachmaninoff – Leidenschaft und Sehnsucht" Klavierduo-Konzert (oberoesterreich.at event 430297384) — not fetchable; performers unknown
+- [x] Danae & Kiveli Dörken (Duo Dörken, Ariel Artists) — 3 concerts added; arielartists.com lists 2023/24 Helsingborg SO, Baden-Baden Philharmonie (Bruch op. 88a), Fürth, Finsterwalde, Koblenz, Sommerliche Musiktage Hitzacker without dates — find dates
+- [x] Cristina Marton-Argerich & Antonia Miller — Budapest 2025 + Vechta 29 Nov 2026 added; no duo site; bio names Zürich, Isarphilharmonie München, Pietrasanta in Concerto, Pordenone, León, Radovljica, YC Chamber Artists Augsburg (Carnival); "Nachklang" Hamburg (New Living Home Stellingen, 29 Aug 2026) not fetchable
+- [x] Klavierduo Markus & Pascal Kaufmann (Saxony) — konzertduo-kaufmann.de: 4 piano-duo dates 2027 added (rest piano+organ); Bad Schandauer Orgel- und Musiksommer "Tiefen-beseelt" 2026 undated
+- [ ] Pianistenclub München — "Drei Klavierduos" evening, Bürgersaal Fürstenried 19 Nov 2026 (duos not named; 2025 edition had four duos)
+- [ ] Konzertförderung Deutscher Musikwettbewerb — funds regional tours of DMW duo laureates; check other years' concert lists for piano duos (excellent list of small DACH presenters)
+- [ ] Malte Mevissen & Yury Ilinov — "Klangbrücken: Vier Hände, ein Flügel" (Berlin, tip-berlin listing not fetchable)
+- [ ] Dongkyu Leo Kim & Juae Ha (Korean four-hands duo) — Mendelssohn-Haus Leipzig 2024; look for further dates
