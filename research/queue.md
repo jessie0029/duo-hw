@@ -9,7 +9,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Lucas & Arthur Jussen 2022
 - [x] Lucas & Arthur Jussen 2019
 - [x] KlavierDuo Kutrowatz 2015–2018 (kutrowatz.art past events, pages 2–3)
-- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked; 13 Oct 2026 run: still blocked; 15 Oct 2026 run: still blocked; 17 Oct 2026 run: still blocked, added Weissensee Piano Nights 2009 from pressetext
+- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked; 13 Oct 2026 run: still blocked; 15 Oct 2026 run: still blocked; 17 Oct 2026 run: still blocked, added Weissensee Piano Nights 2009 from pressetext; 19 Oct 2026 run: still blocked, but 15 Kutrowatz duo concerts 2018–2025 added from Liszt Festival Raiding programme PDFs (liszt-festival-raiding.psv)
 - [x] Lucas & Arthur Jussen 2021 (from /nl/ page)
 - [x] Lucas & Arthur Jussen 2020
 - [x] Lucas & Arthur Jussen 2018
@@ -45,11 +45,11 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Schleswig-Holstein Musik Festival — duo concerts (no archive found; shmf.de has no searchable past programme)
 - [x] Rheingau Musik Festival — duo concerts (no archive found; lead: Hyuk Lee & Hyo Lee, Schloss Johannisberg Metternich-Saal 15 Aug 2026 — regioactive not fetchable)
 - [x] Grafenegg Festival — duo concerts (Labèque + Tonkünstler/Gabel Poulenc, festival opening 14 Aug 2025 added; Jussen 2019 already listed; no searchable archive)
-- [ ] Liszt Festival Raiding — duo concerts
-- [ ] Kulturfreunde Bayreuth, Albert Konzerte Freiburg, Meisterkonzerte series — duo bookings
+- [x] Liszt Festival Raiding — duo concerts (17 concerts 2018–2025 in liszt-festival-raiding.psv from lisztfestival.at/ueber-uns/das-festival/konzert-archiv/ season PDFs: KlavierDuo Kutrowatz (artistic directors since 2009) + Klavierduo Ania & Sophie Druml; 2011–2017 PDFs hosted on filesusr.com not fetchable — redo when reachable)
+- [x] Kulturfreunde Bayreuth, Albert Konzerte Freiburg, Meisterkonzerte series — duo bookings (Albert Konzerte: Argerich & Margulis, Konzerthaus Freiburg 18 Oct 2026 added to news file; Karlsruhe Meisterkonzerte Stadtfeld & Kang 2027 already a lead; Kulturfreunde Bayreuth: no archive found)
 
 ## Orchestras (two-piano concertos)
-- [ ] Search orchestra archives for Poulenc Concerto for two pianos (DACH)
+- [ ] Search orchestra archives for Poulenc Concerto for two pianos (DACH) — 19 Oct 2026: generic searches only re-found Gießen (Becker, already listed); try orchestra-specific archive pages next
 - [ ] Search orchestra archives for Mozart K. 365 (DACH)
 - [ ] Search orchestra archives for Bruch op. 88a and Mendelssohn double concertos
 - [ ] Search orchestra archives for Saint-Saëns Carnival of the Animals with named piano duos
@@ -113,3 +113,9 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Konzertförderung Deutscher Musikwettbewerb — funds regional tours of DMW duo laureates; check other years' concert lists for piano duos (excellent list of small DACH presenters)
 - [ ] Malte Mevissen & Yury Ilinov — "Klangbrücken: Vier Hände, ein Flügel" (Berlin, tip-berlin listing not fetchable)
 - [ ] Dongkyu Leo Kim & Juae Ha (Korean four-hands duo) — Mendelssohn-Haus Leipzig 2024; look for further dates
+- [ ] Klavierduo Ania & Sophie Druml (Vienna sisters, also violin/cello) — Raiding 2024/2025, Mozarteum Salzburg 17 Dec 2026 added (druml.psv); Musiktage Mondsee 2026 matinee and Bad Elster (freiepresse) not readable; find duo site
+- [ ] Ludmila Berlinskaya & Arthur Ancelle (Paris) — 4 concerts in berlinskaya-ancelle.psv; Bachtrack lists Salle Cortot Jan 2017, Bagatelle Sep 2017, Liszt en Provence Aug 2018, Musée d'Orsay Nov 2025 without exact dates; find duo site archive
+- [ ] Rungis Piano-Piano Festival (France, festival devoted to piano duos; 6th edition 2025/26, incl. Théâtre des Champs-Élysées concerts) — check all editions' line-ups
+- [ ] Raritäten der Klaviermusik, Husum (piano-festival-husum.com) — books two-piano duos (Berlinskaya/Ancelle 2022, 2026); check per-concert pages of other years
+- [ ] Rudolf Firkušný Piano Festival (Prague, Rudolfinum) — Kissin & Schiff duo 3 Nov 2026; check past editions for duos
+- [ ] Evgeny Kissin & András Schiff duo tour 2026 — Prague 3 Nov + Hamburg 22 Nov added; look for further European stops (proarte.de/en/concerts/evgeny-kissin-sir-andras-schiff/2057)
