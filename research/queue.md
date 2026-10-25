@@ -62,15 +62,15 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Akihiro Sano & Mizuki Watanabe (four hands, Kärnten) — Villa Kino Pörtschach 23 Jul 2026 already in news file; no other dates/archive found
 - [x] Internationale Musiktage / Kammermusiktage Homburg (Saar) (no archive found — 23 Oct 2026: no past duo bookings found) — 2026: Geister Duo 1 Oct added (news file); festival led by Vogler Quartett since 2002, check past editions for duo bookings
 - [x] Ultraschall Berlin festival archive (23 Oct 2026: GrauSchumacher/DSO 2015, 2019, 2022, 2026 already listed; 2019 II and 2024 DSO concerts checked — no two-piano works; ultraschallberlin.de not fetchable from cloud) — regular two-piano concertos with DSO (GrauSchumacher)
-- [ ] Kulturgranit (Konzerthaus Blaibach) — duo bookings (Oct 2026: GrauSchumacher 15/18 Oct, Pacheco & Tristano 23 Oct added; past seasons still to check)
-- [ ] Ingmar Piano Duo · Duo Clavichord (via Karsten Witt) — check for European dates
+- [x] Kulturgranit (Konzerthaus Blaibach) — duo bookings (Oct 2026: GrauSchumacher 15/18 Oct, Pacheco & Tristano 23 Oct added; no archive found — 25 Oct 2026: Aug–Dec 2021 brochure on blaibach.de has no duo concert; festivalsindeutschland lists no programme)
+- [x] Ingmar Piano Duo · Duo Clavichord (via Karsten Witt) (no archive found — 25 Oct 2026: Ingmar = Slobodanka Stevic & Aleksandar Gligic, Serbia; Wikipedia gives only 2009 EPTA/Rome competition, no dated concerts or site)
 - [x] Berlin Piano Duo Festival (pianoduofestival.com, run by Duo Shalamov) — 2023 edition added; look for 2024–2026 editions (Berlin = Jessie's home base)
 - [x] Duo Shalamov — shalamov.psv: Gewandhaus Leipzig 31 Dec 2020, Elbphilharmonie Kleiner Saal 14 May 2021; duoshalamov.com not fetchable — redo when reachable
-- [ ] Logos Duo (Carlos Bujosa & Jia Yuan Chong) — Augustinum Mölln 2026; no duo website found yet
-- [ ] Klavierduo Oskar (Susanna De Secondi & Elias Opferkuch) — klavierduo-oskar.de, DMW 2025 finalist; concert list not readable
+- [x] Logos Duo (Carlos Bujosa & Jia Yuan Chong) — Augustinum Mölln 2026 (no archive found — 25 Oct 2026: no site; Windsor Festival lists a 'Lógos Duo' lunchtime concert without members/date)
+- [x] Klavierduo Oskar (Susanna De Secondi & Elias Opferkuch) — klavierduo-oskar.psv: Lübeck MOF 'Neue Horizonte' Feb 2024, Soroptimist Aalen benefit Elchingen Oct 2024, Oberstdorfer Musiksommer Aug 2026; klavierduo-oskar.de shows no dates; duoventidue.de robots-blocked
 - [ ] Logos Duo / Augustinum residences — check Augustinum concert series (many Augustinum Wohnstifte host duo concerts)
 - [x] Carles & Sofia Piano Duo (Carles Lama & Sofia Cabruja, Girona; agent Massa Konzertmanagement Berlin) — carlesandsofia.com not fetchable from cloud; 5 concerts from presenter pages + news (Saluzzo 10 Oct 2026). Revisit site concert archive when reachable
-- [ ] Clara & Marie Becker (Hamburg twin duo) — find duo website / concert list (Bamberg Musikschule 20 Jun 2026 already in news file)
+- [x] Clara & Marie Becker (Hamburg twin duo) — clara-marie-becker.psv: 19 dates 2026 from claramariebecker.com/calendar (Stuttgarter Philharmoniker K. 365, Philharmonisches Orchester Gießen Poulenc, Frankfurter Solisten, Karolinenfest, Bendestorfer Klaviertage, Bad Wildungen Klaviertage, Mare Musik Festival Cuxhaven); journal (/journal, 'Ältere Einträge') has undated 2024–25 posts — check for dates
 - [x] Duo Pianoforte (Jonas Stark & Gabriel Yeo) — 16 more 2026/27 DMW Konzertförderung dates added (towns only) from deutscher-musikwettbewerb.de/zuhoeren/aktuelle-konzerte; duo site still not found
 - [x] Parnassius Piano Duo (no archive found — simoncallaghan.com/schedule lists no duo dates with Takenouchi) (Simon Callaghan & Hiroaki Takenouchi, UK) — check duo site for concert archive
 - [ ] Baayon Duo (four hands, Villa Irmgard Heringsdorf, Usedom) — members unnamed; find site
@@ -137,3 +137,10 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Brundibár Arts Festival (Newcastle upon Tyne) — four-hand works with Simon Callaghan & partners Feb 2027; not a fixed duo
 - [ ] Righini & Zadra (Brahms string quintets for piano four hands, Da Vinci Classics CD 2026) — find European concert dates
 - [ ] Tickhill Music Society (South Yorkshire) — Frith Rolfe 1 Oct 2026; check past seasons for duos
+- [ ] Duo Aventaggiato Matarrese (Carla Aventaggiato & Maurizio Matarrese, Puglia) — Barletta Autunno Musicale 2025 added; Ravello 2015 (robots-blocked); find duo site / more dates
+- [ ] Duo Asteria (Sara Galbiati & Laura Gianantonio, Luino) — Casa Paolo, Brezzo di Bedero 24 Oct 2026 (Accademia Musicale Pietro Bertani); check Canonica di Brezzo di Bedero season for other duos
+- [ ] Jean-Efflam & Andrea Nemecz Bavouzet (four hands) — Poschiavo 31 Jul 2026; look for further European duo dates
+- [ ] Daria Podushko & Andrey Denisenko (Hamburg duo) — Ernst Barlach Haus 27 Sep 2026; find duo site
+- [ ] Duo Roverelli Braconi (four hands, Italy) — classictic listing (Facoltà Valdese di Teologia, Rome), undated
+- [ ] Karolinenfest Kirchheimbolanden (founded 2024 by Clara & Marie Becker) — check all three editions for other duos
+- [ ] Salzburger Nachrichten 23 Oct 2026 "Klassik pur-Konzert: Vierhändig & Vielsaitig" and DrehpunktKultur 23 Oct 2026 "Leidenschaftliches aus Frankreich" — not found by search, sn.at / drehpunktkultur.at not fetchable; possibly Druml (Mozarteum, already listed)
