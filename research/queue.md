@@ -68,15 +68,15 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Duo Shalamov — shalamov.psv: Gewandhaus Leipzig 31 Dec 2020, Elbphilharmonie Kleiner Saal 14 May 2021; duoshalamov.com not fetchable — redo when reachable
 - [x] Logos Duo (Carlos Bujosa & Jia Yuan Chong) — Augustinum Mölln 2026 (no archive found — 25 Oct 2026: no site; Windsor Festival lists a 'Lógos Duo' lunchtime concert without members/date)
 - [x] Klavierduo Oskar (Susanna De Secondi & Elias Opferkuch) — klavierduo-oskar.psv: Lübeck MOF 'Neue Horizonte' Feb 2024, Soroptimist Aalen benefit Elchingen Oct 2024, Oberstdorfer Musiksommer Aug 2026; klavierduo-oskar.de shows no dates; duoventidue.de robots-blocked
-- [ ] Logos Duo / Augustinum residences — check Augustinum concert series (many Augustinum Wohnstifte host duo concerts)
+- [x] Logos Duo / Augustinum residences (no archive found — 27 Oct 2026: no Augustinum programme archive found by search; similar GDA Wohnstift Neustadt booked Anstett & Urba 26 May 2026, added to news file)
 - [x] Carles & Sofia Piano Duo (Carles Lama & Sofia Cabruja, Girona; agent Massa Konzertmanagement Berlin) — carlesandsofia.com not fetchable from cloud; 5 concerts from presenter pages + news (Saluzzo 10 Oct 2026). Revisit site concert archive when reachable
 - [x] Clara & Marie Becker (Hamburg twin duo) — clara-marie-becker.psv: 19 dates 2026 from claramariebecker.com/calendar (Stuttgarter Philharmoniker K. 365, Philharmonisches Orchester Gießen Poulenc, Frankfurter Solisten, Karolinenfest, Bendestorfer Klaviertage, Bad Wildungen Klaviertage, Mare Musik Festival Cuxhaven); journal (/journal, 'Ältere Einträge') has undated 2024–25 posts — check for dates
 - [x] Duo Pianoforte (Jonas Stark & Gabriel Yeo) — 16 more 2026/27 DMW Konzertförderung dates added (towns only) from deutscher-musikwettbewerb.de/zuhoeren/aktuelle-konzerte; duo site still not found
 - [x] Parnassius Piano Duo (no archive found — simoncallaghan.com/schedule lists no duo dates with Takenouchi) (Simon Callaghan & Hiroaki Takenouchi, UK) — check duo site for concert archive
-- [ ] Baayon Duo (four hands, Villa Irmgard Heringsdorf, Usedom) — members unnamed; find site
-- [ ] Maggio della Musica (Napoli, Villa Pignatelli) — Schiavo Marchegiani 11 Oct 2026; check past seasons for duo bookings
-- [ ] Bacharacher Meister-Konzerte (Mittelrheinhalle Bacharach) — booked Carles & Sofia 2026; check series archive for other duos
-- [ ] Piano Duo Festival Amsterdam (Het Concertgemaal, Amsterdam) — Silver-Garburg 10 Oct 2026; check festival line-ups for other duos
+- [x] Baayon Duo (Dorota & Paweł Motyczyński, Poland; CD 'First Date', DUX) — baayon-duo.psv: Villa Irmgard Heringsdorf 1 Jan 2026; 29 Oct 2026 repeat (regioactive) not fetchable; no duo site found
+- [x] Maggio della Musica (Napoli, Villa Pignatelli) — maggio-della-musica.psv: Campanella & Leone, Palazzo Reale 5 May 2011 (bnl.it 2011 programme); other seasons not found as programmes (iltaccodibacco 2016 event pages unchecked)
+- [x] Bacharacher Meister-Konzerte (no archive found — 27 Oct 2026: rheinburgenweg.com event pages 2026 show only Carles & Sofia as piano duo; Calliope Duo = violin/piano)
+- [x] Piano Duo Festival Amsterdam — pianoduo-festival-amsterdam.psv: Amal 2021 (Concertgebouw), Scholtes & Janssens + Ignatov twins 2024 (Amstelkerk); 2017 line-up undated (see #note)
 - [ ] Monheimer Kulturwerke (Kulturraffinerie K714, Monheim am Rhein) — Önder + Kyiv SO Poulenc 16 May 2027; check programme for other duo bookings
 - [ ] Aulakonzerte Göttingen (Kammermusik-Gesellschaft Göttingen) — Tal & Groethuysen 11 Oct 2026; check past seasons for duos
 - [ ] Kitzbüheler Sommerkonzerte — Silver-Garburg 5 Aug 2026; check past editions
@@ -144,3 +144,10 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Duo Roverelli Braconi (four hands, Italy) — classictic listing (Facoltà Valdese di Teologia, Rome), undated
 - [ ] Karolinenfest Kirchheimbolanden (founded 2024 by Clara & Marie Becker) — check all three editions for other duos
 - [ ] Salzburger Nachrichten 23 Oct 2026 "Klassik pur-Konzert: Vierhändig & Vielsaitig" and DrehpunktKultur 23 Oct 2026 "Leidenschaftliches aus Frankreich" — not found by search, sn.at / drehpunktkultur.at not fetchable; possibly Druml (Mozarteum, already listed)
+- [ ] Evgeny Kissin & András Schiff — further 2026 stops: Milan (Società del Quartetto?) and Geneva (Les Grands Interprètes, geneve.com, no date on page); Verbier Salle des Combins (localcities.ch not fetchable)
+- [ ] Pianoduo Scholtes & Janssens (Amsterdam, artistic leaders of Pianoduo Festival Amsterdam) — find duo site / concert list
+- [ ] Ibrahim & Hassan Ignatov (twin piano duo, NL) — find duo site / concert list
+- [ ] Anna Anstett & Sandra Urba (Pfalz four-hands duo) — further dates
+- [ ] GDA Wohnstifte (senior residences: Neustadt/Weinstraße and others) — Festsaal concerts with piano duos; check other GDA houses
+- [ ] Musik in Brandenburgischen Schlössern / Berliner Schlosskonzerte — "Klaviergala zu vier Händen" Maria Magdalena Pitu-Jokisch & Naoko Fukumoto, 29/30 Aug 2026 (berlin.de pages not fetchable) — Berlin-area outreach target
+- [ ] New Generation e.V. Hamburg (New Living Home Hotel, Lokstedt) — "Klavierkonzert zu vier Händen" Antonio Di Dedda & Rainer Thomsen (undated); also hosts "Nachklang" series (Marton-Argerich & Miller)
