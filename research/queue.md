@@ -77,13 +77,13 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Maggio della Musica (Napoli, Villa Pignatelli) — maggio-della-musica.psv: Campanella & Leone, Palazzo Reale 5 May 2011 (bnl.it 2011 programme); other seasons not found as programmes (iltaccodibacco 2016 event pages unchecked)
 - [x] Bacharacher Meister-Konzerte (no archive found — 27 Oct 2026: rheinburgenweg.com event pages 2026 show only Carles & Sofia as piano duo; Calliope Duo = violin/piano)
 - [x] Piano Duo Festival Amsterdam — pianoduo-festival-amsterdam.psv: Amal 2021 (Concertgebouw), Scholtes & Janssens + Ignatov twins 2024 (Amstelkerk); 2017 line-up undated (see #note)
-- [ ] Monheimer Kulturwerke (Kulturraffinerie K714, Monheim am Rhein) — Önder + Kyiv SO Poulenc 16 May 2027; check programme for other duo bookings
-- [ ] Aulakonzerte Göttingen (Kammermusik-Gesellschaft Göttingen) — Tal & Groethuysen 11 Oct 2026; check past seasons for duos
-- [ ] Kitzbüheler Sommerkonzerte — Silver-Garburg 5 Aug 2026; check past editions
+- [x] Monheimer Kulturwerke (Kulturraffinerie K714, Monheim am Rhein) — Önder + Kyiv SO Poulenc 16 May 2027 (no archive found — 29 Oct 2026: no other duo bookings found by search)
+- [x] Aulakonzerte Göttingen (Kammermusik-Gesellschaft Göttingen) — Tal & Groethuysen 11 Oct 2026; 29 Oct 2026: T&G also 10 Feb 2013 (2012/13 Saison-Plan); 2018/19 announcements checked, no other duos; uni Konzertarchiv only has choir concerts with piano four hands
+- [x] Kitzbüheler Sommerkonzerte — Silver-Garburg 5 Aug 2026 (opening, Ravel La Valse); 29 Oct 2026: 2020 and 2022 programmes have no piano duo
 - [x] Klavierduo Gugg (Tereza Gugg-Kalabova & Johannes Gugg, Upper Austria) — gugg.psv: 7 concerts (Tallinn, ACF London, Czech Radio Prague, Jeunesse Schwaz/St. Johann/Zell am See as Jeunesse Featured Artist 2026/27, Friedrichshafen K42); guggpianoduo.com not fetchable from cloud — redo when reachable
-- [ ] Dúo Curbelo (piano four hands, Canary Islands) — teneriffa-news article 8 Oct 2026 not readable; ULPGC Paraninfo (Las Palmas) concert with Alianza Francesa, no date given
-- [ ] Jeunesse Österreich — regional four-hand bookings (Ried im Innkreis); check other Jeunesse series
-- [ ] Konstanze Hollitzer & Christian Hornef (Leipzig four-hands duo) — Mendelssohn-Haus Leipzig 2026, Zabeltitzer Palaiskonzert 23 Aug 2026 (regioactive/mvp pages not fetchable); find duo site
+- [x] Dúo Curbelo (piano four hands, Canary Islands) — curbelo.psv: Paraninfo ULPGC 25 Sep 2008 (Músicas en el Paraninfo leaflet); 2026 Alianza Francesa concert still undated; ecured.cu bio robots-blocked
+- [x] Jeunesse Österreich — regional four-hand bookings (29 Oct 2026: Gugg Ried 27 Nov 2026 added; other Jeunesse branches = Gugg tour already listed)
+- [x] Konstanze Hollitzer & Christian Hornef (Leipzig four-hands duo) — hollitzer-hornef.psv: Mendelssohn-Haus 13 Apr 2025 (+ Hollitzer & Campos Jareño 7 Sep 2025); Zabeltitz 23 Aug 2026 still not fetchable; no duo site found
 - [ ] Clavier-Salon Göttingen — "Klavierduo-Soirée" series with young prize-winning duos; check other Vorschau PDFs (clavier-salon-goettingen.de/download/)
 - [ ] Mozart-Gesellschaft Stuttgart — duo imPuls 2012 (Fellbach); check other Mozart_Progr.YYYY.pdf years for duo bookings
 - [ ] duo imPuls (Barbara & Sebastian Bartmann) — find duo site / concert list
@@ -151,3 +151,11 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] GDA Wohnstifte (senior residences: Neustadt/Weinstraße and others) — Festsaal concerts with piano duos; check other GDA houses
 - [ ] Musik in Brandenburgischen Schlössern / Berliner Schlosskonzerte — "Klaviergala zu vier Händen" Maria Magdalena Pitu-Jokisch & Naoko Fukumoto, 29/30 Aug 2026 (berlin.de pages not fetchable) — Berlin-area outreach target
 - [ ] New Generation e.V. Hamburg (New Living Home Hotel, Lokstedt) — "Klavierkonzert zu vier Händen" Antonio Di Dedda & Rainer Thomsen (undated); also hosts "Nachklang" series (Marton-Argerich & Miller)
+- [ ] Margarita Höhenrieder & Antti Siirala — Zug 30 Oct 2026 ("Mozart und Tango", Zuger Zeitung not fetchable; likely K. 365 + Choveaux tango, partner unconfirmed); Berliner Philharmonie 11 Apr 2027 (programme not listed) — check
+- [x] Margarita Höhenrieder & Kit Armstrong — hoehenrieder-armstrong.psv: 5 four-hand/two-piano concerts Feldafing 2014–2018 + Hirson 2015 (from margarita-hoehenrieder.de/konzerte)
+- [ ] Ania & Sophie Druml — Cazino Music Festival, Constanța Casino (RO), weekend 31 Oct–1 Nov 2026; instrumentation unconfirmed (festival run by Ioan Holender)
+- [ ] Alessio Bax & Lucille Chung — Gstaad Menuhin Festival (Zweisimmen) + La Rioja Festival 2026 added (news file); find further European duo dates
+- [ ] Duo Pianistico Milhaud (Ansaldi Polle & Chiambretto) — 1st prize four hands, Concorso Pianistico Rospigliosi 2026; Venerdì Musicali Pistoia 18 Dec 2026
+- [ ] Associazione Amici dell'Opera di Pistoia — "Venerdì Musicali al Seminario" books piano duos (2 in autumn 2026); Jan–May 2026 pages not fetchable
+- [ ] Concorso Pianistico Rospigliosi (Lamporecchio) — four-hand section; laureate duos are leads
+- [ ] Klavier-Duo Beldi/Kubo ("Klavier zu vier Händen", rausgegangen.de not fetchable) and Hamburg "Klavierkonzert zu vier Händen" (hamburg-tourism.de not fetchable) — identify
