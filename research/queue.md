@@ -84,10 +84,10 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Dúo Curbelo (piano four hands, Canary Islands) — curbelo.psv: Paraninfo ULPGC 25 Sep 2008 (Músicas en el Paraninfo leaflet); 2026 Alianza Francesa concert still undated; ecured.cu bio robots-blocked
 - [x] Jeunesse Österreich — regional four-hand bookings (29 Oct 2026: Gugg Ried 27 Nov 2026 added; other Jeunesse branches = Gugg tour already listed)
 - [x] Konstanze Hollitzer & Christian Hornef (Leipzig four-hands duo) — hollitzer-hornef.psv: Mendelssohn-Haus 13 Apr 2025 (+ Hollitzer & Campos Jareño 7 Sep 2025); Zabeltitz 23 Aug 2026 still not fetchable; no duo site found
-- [ ] Clavier-Salon Göttingen — "Klavierduo-Soirée" series with young prize-winning duos; check other Vorschau PDFs (clavier-salon-goettingen.de/download/)
-- [ ] Mozart-Gesellschaft Stuttgart — duo imPuls 2012 (Fellbach); check other Mozart_Progr.YYYY.pdf years for duo bookings
-- [ ] duo imPuls (Barbara & Sebastian Bartmann) — find duo site / concert list
-- [ ] Alexei Volodin & Edith Peña — four-hand/two-piano partnership (Laudinella St. Moritz 2024, Novi Sad 2025, Saarländisches Staatsorchester K. 365 2024/25 — date not on staatstheater.saarland page)
+- [x] Clavier-Salon Göttingen — "Klavierduo-Soirée" series with young prize-winning duos (31 Oct 2026: 18 Vorschau PDFs 2014–2024 checked; only Barnaś & Pollhammer 2 Jun 2018 added; rest are solo/violin-piano duo evenings or concerto reductions)
+- [x] Mozart-Gesellschaft Stuttgart — duo imPuls 2012 (Fellbach); 31 Oct 2026: only the 2012 PDF is indexed; Anvik & Wiek, Musikhochschule Stuttgart 19 Oct 2025 added (stuttgart-tourist.de)
+- [x] duo imPuls (Barbara & Sebastian Bartmann) (no archive found — 31 Oct 2026: no duo site; Sebastian Bartmann appears only as Bach arranger/organist)
+- [x] Alexei Volodin & Edith Peña — four-hand/two-piano partnership (Laudinella St. Moritz 2024, Novi Sad 2025, Saarländisches Staatsorchester K. 365 2024/25 — date not on staatstheater.saarland page) (31 Oct 2026: no further Peña dates found; Volodin's other duo partner Claire Huangci → huangci-volodin.psv)
 - [ ] Arithmeum Bonn concert archive (with WDR 3) — 9 archive pages; check all for piano duos
 - [ ] hmt Rostock piano duo class alumni (Duo Seo/Kato, Duo ShinPark, Klavierduo Crewir, Novi Duo, Duo Motus, Godziński brothers, Gründling sisters) — check for duo sites with European dates
 - [ ] Duo Smirnova-Kowollik — Weißenburg Wildbadsaal 3 Oct 2026 "Dialog der Seele" (regioactive not fetchable; instrumentation unconfirmed)
@@ -159,3 +159,11 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Associazione Amici dell'Opera di Pistoia — "Venerdì Musicali al Seminario" books piano duos (2 in autumn 2026); Jan–May 2026 pages not fetchable
 - [ ] Concorso Pianistico Rospigliosi (Lamporecchio) — four-hand section; laureate duos are leads
 - [ ] Klavier-Duo Beldi/Kubo ("Klavier zu vier Händen", rausgegangen.de not fetchable) and Hamburg "Klavierkonzert zu vier Händen" (hamburg-tourism.de not fetchable) — identify
+- [ ] Claire Huangci & Alexei Volodin (two pianos; Künstlersekretariat Astrid Schoerke) — huangci-volodin.psv: Elbphilharmonie 2020, Theater Lindau 18 Jan 2027; Taunus Zeitung review 30 Oct 2025 (Bad Homburg/Kronberg?) — find date and further stops
+- [ ] Weltklassik am Klavier (DACH concert series in spa towns, Augustinum residences, Kurhäuser) — books piano duos (Gasratov, Churbanova); check weltklassik.de programme for all duo dates — excellent list of regional venues
+- [ ] Duo Timur & Ruslan Gasratov — Freiburg Augustinum 21 Nov + Bad Dürrheim 6 Dec 2026 added; find duo site / further dates
+- [ ] Duo Churbanova (Anastasia & Polina Churbanova) — Bad Ems Dec 2027 added; find further Weltklassik dates
+- [ ] Katarina Knazovicka & Anna Khomichko (two pianos, Switzerland) — KuK Aarau 29 Nov 2026 added; find duo site
+- [ ] Duo Colafelice – Di Lecce (Leonardo Colafelice & Cristina Di Lecce, Puglia) — Ascoli Piceno Festival 1 Nov 2026 added; no duo site found
+- [ ] Ascoli Piceno Festival — "Young Stars" section and piano days; check past editions for duos
+- [ ] Klavierduo Christine Rahn (Pirmasens/Pfalz; "Klavierduoabend Zauber der Kindheit", rheinpfalz review "Klavierduo Rahn") — christinerahn.de robots-blocked; find dates elsewhere
