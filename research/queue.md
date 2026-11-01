@@ -88,10 +88,10 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Mozart-Gesellschaft Stuttgart — duo imPuls 2012 (Fellbach); 31 Oct 2026: only the 2012 PDF is indexed; Anvik & Wiek, Musikhochschule Stuttgart 19 Oct 2025 added (stuttgart-tourist.de)
 - [x] duo imPuls (Barbara & Sebastian Bartmann) (no archive found — 31 Oct 2026: no duo site; Sebastian Bartmann appears only as Bach arranger/organist)
 - [x] Alexei Volodin & Edith Peña — four-hand/two-piano partnership (Laudinella St. Moritz 2024, Novi Sad 2025, Saarländisches Staatsorchester K. 365 2024/25 — date not on staatstheater.saarland page) (31 Oct 2026: no further Peña dates found; Volodin's other duo partner Claire Huangci → huangci-volodin.psv)
-- [ ] Arithmeum Bonn concert archive (with WDR 3) — 9 archive pages; check all for piano duos
-- [ ] hmt Rostock piano duo class alumni (Duo Seo/Kato, Duo ShinPark, Klavierduo Crewir, Novi Duo, Duo Motus, Godziński brothers, Gründling sisters) — check for duo sites with European dates
-- [ ] Duo Smirnova-Kowollik — Weißenburg Wildbadsaal 3 Oct 2026 "Dialog der Seele" (regioactive not fetchable; instrumentation unconfirmed)
-- [ ] Martin Stadtfeld & Shin-Heae Kang — Karlsruhe Meisterkonzerte 25 Apr 2027 (Bach/Mozart/Schubert/Rachmaninoff); check other 2026/27 duo dates
+- [x] Arithmeum Bonn concert archive (with WDR 3) — 9 archive pages; check all for piano duos (1 Nov 2026: page 1 = Mar 2023–Oct 2026 and page 8 = 2001–2004 checked, no piano duos; pages 2–7 (2005–2023) not fetchable from cloud (needs URL approval) — redo when reachable)
+- [x] hmt Rostock piano duo class alumni (Duo Seo/Kato, Duo ShinPark, Klavierduo Crewir, Novi Duo, Duo Motus, Godziński brothers, Gründling sisters) — check for duo sites with European dates (1 Nov 2026: Duo ShinPark → shinpark.psv, 2 MUK Wien recitals 2015/2018; no duo sites found for the others)
+- [x] Duo Smirnova-Kowollik — Weißenburg Wildbadsaal 3 Oct 2026 "Dialog der Seele" (regioactive not fetchable; instrumentation unconfirmed) (no archive found — 1 Nov 2026: mvp.de and guidle (Kehl date) listings not fetchable either; Lisa Smirnova is a pianist, partner instrument still unconfirmed)
+- [x] Martin Stadtfeld & Shin-Heae Kang — Karlsruhe Meisterkonzerte 25 Apr 2027 (Bach/Mozart/Schubert/Rachmaninoff); check other 2026/27 duo dates (1 Nov 2026: no other joint dates found; rheinpfalz 'Gespür für Feinheiten' Kaiserslautern review robots-blocked)
 - [ ] Klavierduo Bauerecker/Stöber (Dorrit Bauerecker & Christoph Stöber, Köln, since 2023) — Klassik im Burghaus Bielstein (Kulturkreis Wiehl) early Oct 2026, date not stated; Unerhörte Musik Berlin (BKA) 2026; find duo site
 - [ ] Berliner Symphoniker "Konzerte in der Philharmonie" — book soloist duos (Schiavo Marchegiani K. 365, 15 Nov 2026); check past seasons (Berlin outreach target)
 - [ ] Budapest Music Center — hosts Egri & Pertis series; check BMC programme for visiting duos
@@ -128,7 +128,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Ludmil Angelov & François Chaplin — Poulenc with Sofia PO 12 Nov 2026; check for other duo dates
 - [ ] Duo Jatekok (Adélaïde Panaget & Naïri Badal, France) — duojatekok.com concert archive
 - [ ] Frith Rolfe Piano Duo (Benjamin Frith & Heidi Rolfe, UK) and Emma Abbate & Julian Perkins (UK) — find duo concert lists (UK music clubs)
-- [ ] Klavierduo Shin Park (Mijung Shin & Sangwook Park) — Bibliothekssaal Ochsenhausen early 2020 (schwaebische.de, undated); Bergkirchen (lz.de, robots-blocked)
+- [x] Klavierduo Shin Park (Mijung Shin & Sangwook Park) — Bibliothekssaal Ochsenhausen early 2020 (schwaebische.de, undated); Bergkirchen (lz.de, robots-blocked) (1 Nov 2026: shinpark.psv from MUK Wien programme PDFs)
 - [ ] Bachtrack per-work listings (work=8017 K. 365, Poulenc FP 61, Carnival) — re-check every few weeks for new two-piano concerto bookings
 - [x] Beatrice & Eleonora Dallagnese (twin duo, Verona; Massa Konzertmanagement) — dallagnese.psv: 4 concerts 2017–2024 + Teatro Miela Trieste 21 Oct 2026 (news); bedallagnese.com not fetchable — redo when reachable. Lead: Cineteatro La Fenice Ancona (mentelocale article 142448, year unclear)
 - [ ] Associazione Chamber Music Trieste — "Cromatismi" series (Teatro Miela) books four-hand duos; check past editions
@@ -167,3 +167,15 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Duo Colafelice – Di Lecce (Leonardo Colafelice & Cristina Di Lecce, Puglia) — Ascoli Piceno Festival 1 Nov 2026 added; no duo site found
 - [ ] Ascoli Piceno Festival — "Young Stars" section and piano days; check past editions for duos
 - [ ] Klavierduo Christine Rahn (Pirmasens/Pfalz; "Klavierduoabend Zauber der Kindheit", rheinpfalz review "Klavierduo Rahn") — christinerahn.de robots-blocked; find dates elsewhere
+- [ ] Dotter-Stiftung Darmstadt (Dotter-Konzerte, Ernst-Ludwig-Saal Eberstadt) — Cerezo Falces & Ledesma two-piano orchestral transcriptions Sep 2024; check other Dotter-Konzerte for duos
+- [ ] Magdalena Cerezo Falces & Eric Ledesma (Spanish two-piano duo, orchestral transcriptions) — find duo site / concert list
+- [ ] Yichang & Yifei Tang (piano duo) — Magdeburg Gesellschaftshaus 20 Feb 2027; find further dates
+- [ ] Gesellschaftshaus Magdeburg "Klaviermusik" series — check other seasons for duos
+- [ ] Klavierduo Madárdal (Katharina & Daniel Berrío Quintero) — Philippsburg 2025; Philippsburger Konzertverein (also Mar 2023 concert with Katharina) — find further dates
+- [ ] Mona & Rica Bard (two-piano sisters, Pfalz) — Freinsheim 2019; find further dates
+- [ ] Von-Busch-Hof konzertant (Freinsheim) — check other seasons for piano duos
+- [ ] Gert Hecher & Ema Jedličková-Gogová (fortepiano duo, Vienna/Brno) — Münster 2018; find further dates
+- [ ] Musikhochschule Münster "Auf der Suche nach dem vollkommenen Klang" (Sammlung Beetz historical pianos) — check other editions for duos
+- [ ] Marlies Debacker & Martyna Zakrzewska (two pianos, Köln; Feldman/Thomalla/Roos) — LOFT Köln, undated (musik-in-koeln.de); find dates
+- [ ] Martha Argerich & Jura Margulis — Stuttgart Liederhalle "Meisterpianisten" Feb 2026 (stuttgarter-zeitung review 13 Feb 2026, exact date not given); find date and other stops
+- [ ] Piano Buddies (Klavier-Kamasutra comedy duo; Wassenberg Oct 2026) — entertainment, not classical; ignore unless classical dates appear
