@@ -92,9 +92,9 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] hmt Rostock piano duo class alumni (Duo Seo/Kato, Duo ShinPark, Klavierduo Crewir, Novi Duo, Duo Motus, Godziński brothers, Gründling sisters) — check for duo sites with European dates (1 Nov 2026: Duo ShinPark → shinpark.psv, 2 MUK Wien recitals 2015/2018; no duo sites found for the others)
 - [x] Duo Smirnova-Kowollik — Weißenburg Wildbadsaal 3 Oct 2026 "Dialog der Seele" (regioactive not fetchable; instrumentation unconfirmed) (no archive found — 1 Nov 2026: mvp.de and guidle (Kehl date) listings not fetchable either; Lisa Smirnova is a pianist, partner instrument still unconfirmed)
 - [x] Martin Stadtfeld & Shin-Heae Kang — Karlsruhe Meisterkonzerte 25 Apr 2027 (Bach/Mozart/Schubert/Rachmaninoff); check other 2026/27 duo dates (1 Nov 2026: no other joint dates found; rheinpfalz 'Gespür für Feinheiten' Kaiserslautern review robots-blocked)
-- [ ] Klavierduo Bauerecker/Stöber (Dorrit Bauerecker & Christoph Stöber, Köln, since 2023) — Klassik im Burghaus Bielstein (Kulturkreis Wiehl) early Oct 2026, date not stated; Unerhörte Musik Berlin (BKA) 2026; find duo site
-- [ ] Berliner Symphoniker "Konzerte in der Philharmonie" — book soloist duos (Schiavo Marchegiani K. 365, 15 Nov 2026); check past seasons (Berlin outreach target)
-- [ ] Budapest Music Center — hosts Egri & Pertis series; check BMC programme for visiting duos
+- [x] Klavierduo Bauerecker/Stöber (Dorrit Bauerecker & Christoph Stöber, Köln, since 2023) — Klassik im Burghaus Bielstein (Kulturkreis Wiehl) early Oct 2026, date not stated; Unerhörte Musik Berlin (BKA) 2026; find duo site (no archive found — 3 Nov 2026: no duo site; BKA Unerhörte Musik 6 Oct 2026 added to news file; Bielstein date still unconfirmed)
+- [x] Berliner Symphoniker "Konzerte in der Philharmonie" — book soloist duos (Schiavo Marchegiani K. 365, 15 Nov 2026); check past seasons (Berlin outreach target) (no archive found — 3 Nov 2026: Bachtrack performer listing shows only the Nov 2026 K. 365; no past-season archive online)
+- [x] Budapest Music Center — hosts Egri & Pertis series; check BMC programme for visiting duos (no archive found — 3 Nov 2026: search found no visiting duos at BMC; Müpa Budapest booked Balog & Érdi + Budapest Strings K. 365 in Jan 2020 → balog-erdi.psv)
 - [ ] Allgemeine Zeitung (Mainz) 12 Oct 2026 "Klavierduo spielt Bach und Schubert" — article not found via search; duo unidentified
 - [x] Duo B!z'art (Geoffrey Baptiste & André Roe, Belgium) — duobizart.be not fetchable; 7 concerts from UK/IE presenter pages (Music Arran, Ramsey Music Society, Newport Music Club, Sandbach Concert Series, Orkney Arts Society, UCC Cork, Dunblane Arts Guild) + Falkirk 23 Oct 2026 (news)
 - [ ] Diána Fuchs & Hiroyo Masumura (Hungarian-Japanese four-hands duo) — Enns 23 Oct 2026; "Classic in the Krypt" (Vienna?) undated; find duo site
@@ -126,7 +126,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Earthquake piano matinees (K42 Friedrichshafen, Kulturbüro) — books young pianists incl. duos; check past seasons
 - [ ] Margarita Höhenrieder & Antti Siirala — K. 365 with Wiener Concert-Verein 2 Nov 2026; check other joint dates
 - [ ] Ludmil Angelov & François Chaplin — Poulenc with Sofia PO 12 Nov 2026; check for other duo dates
-- [ ] Duo Jatekok (Adélaïde Panaget & Naïri Badal, France) — duojatekok.com concert archive
+- [x] Duo Jatekok (Adélaïde Panaget & Naïri Badal, France) — duo-jatekok.psv: ~145 European concerts 2019–2027 from duojatekok.com/en/concerts (French scènes nationales/theatres, Orchestre National Avignon-Provence, 2027 'Rammstein on the Beach' tour incl. Berlin Kesselhaus, Hamburg Gruenspan, Köln Gloria, Dresden, München, Arbon); Rammstein stadium support slots skipped
 - [ ] Frith Rolfe Piano Duo (Benjamin Frith & Heidi Rolfe, UK) and Emma Abbate & Julian Perkins (UK) — find duo concert lists (UK music clubs)
 - [x] Klavierduo Shin Park (Mijung Shin & Sangwook Park) — Bibliothekssaal Ochsenhausen early 2020 (schwaebische.de, undated); Bergkirchen (lz.de, robots-blocked) (1 Nov 2026: shinpark.psv from MUK Wien programme PDFs)
 - [ ] Bachtrack per-work listings (work=8017 K. 365, Poulenc FP 61, Carnival) — re-check every few weeks for new two-piano concerto bookings
@@ -179,3 +179,9 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Marlies Debacker & Martyna Zakrzewska (two pianos, Köln; Feldman/Thomalla/Roos) — LOFT Köln, undated (musik-in-koeln.de); find dates
 - [ ] Martha Argerich & Jura Margulis — Stuttgart Liederhalle "Meisterpianisten" Feb 2026 (stuttgarter-zeitung review 13 Feb 2026, exact date not given); find date and other stops
 - [ ] Piano Buddies (Klavier-Kamasutra comedy duo; Wassenberg Oct 2026) — entertainment, not classical; ignore unless classical dates appear
+- [ ] Duo Aries (Mario Carraro & Silvia Belfiore, Italy; contemporary two-piano repertoire) — Sassari musicaNOVA 4 Nov 2026 added; no duo site found; Belfiore has bandcamp/Farnesina embassy tours
+- [ ] József Balog & Tamás Érdi (Hungary) — Müpa 2020 added; Liszt Academy 2020 date cancelled; look for later duo dates
+- [ ] Kulturkreis Deutschlandsberg (Styria) — booked Leonskaja & Drake four hands 6 Jun 2025; check other seasons for duos
+- [ ] Pierre Boulez Saal Berlin — Leonskaja & Drake Schubert four hands 20 May 2027; check past seasons for piano duos (Berlin outreach target)
+- [ ] Maria-Magdalena Pitu-Jokisch (Berliner Schlosskonzerte) — four-hands programmes with changing partners (Wehner-Schaller, Fukumoto); check berlin.de listings for more dates
+- [ ] Piano Duo Festival Berlin (Exploratorium, 4–5 Nov 2026) — free-improvisation duos on two pianos; not classical, low priority
