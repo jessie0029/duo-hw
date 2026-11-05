@@ -95,12 +95,12 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Klavierduo Bauerecker/Stöber (Dorrit Bauerecker & Christoph Stöber, Köln, since 2023) — Klassik im Burghaus Bielstein (Kulturkreis Wiehl) early Oct 2026, date not stated; Unerhörte Musik Berlin (BKA) 2026; find duo site (no archive found — 3 Nov 2026: no duo site; BKA Unerhörte Musik 6 Oct 2026 added to news file; Bielstein date still unconfirmed)
 - [x] Berliner Symphoniker "Konzerte in der Philharmonie" — book soloist duos (Schiavo Marchegiani K. 365, 15 Nov 2026); check past seasons (Berlin outreach target) (no archive found — 3 Nov 2026: Bachtrack performer listing shows only the Nov 2026 K. 365; no past-season archive online)
 - [x] Budapest Music Center — hosts Egri & Pertis series; check BMC programme for visiting duos (no archive found — 3 Nov 2026: search found no visiting duos at BMC; Müpa Budapest booked Balog & Érdi + Budapest Strings K. 365 in Jan 2020 → balog-erdi.psv)
-- [ ] Allgemeine Zeitung (Mainz) 12 Oct 2026 "Klavierduo spielt Bach und Schubert" — article not found via search; duo unidentified
+- [x] Allgemeine Zeitung (Mainz) 12 Oct 2026 "Klavierduo spielt Bach und Schubert" — article not found via search; duo unidentified — 5 Nov 2026: (no archive found), dropped
 - [x] Duo B!z'art (Geoffrey Baptiste & André Roe, Belgium) — duobizart.be not fetchable; 7 concerts from UK/IE presenter pages (Music Arran, Ramsey Music Society, Newport Music Club, Sandbach Concert Series, Orkney Arts Society, UCC Cork, Dunblane Arts Guild) + Falkirk 23 Oct 2026 (news)
-- [ ] Diána Fuchs & Hiroyo Masumura (Hungarian-Japanese four-hands duo) — Enns 23 Oct 2026; "Classic in the Krypt" (Vienna?) undated; find duo site
-- [ ] Klassik in Jeans (Klavierhaus Weinberger, Enns, Upper Austria) — books four-hand duos (Duo Delirium 2024, Fuchs & Masumura 2026); check tips.at archive for more
-- [ ] Duo Delirium (Marie-Astrid Wybou & Bernhard Jan, four hands, Vienna/Belgium; Ehrbar Saal Wien) — find duo site
-- [ ] K&K Klavierduo (Kanon & Kotone Yokoyama, twins from Kyoto) — Freiberg am Neckar 18 Nov 2026; find duo site / concert list
+- [x] Diána Fuchs & Hiroyo Masumura (Hungarian-Japanese four-hands duo) — Enns 23 Oct 2026; "Classic in the Krypt" (Vienna?) undated; find duo site — 5 Nov 2026: no duo site; classictic 'Classic in the Krypt' listing has no date/venue (no archive found)
+- [x] Klassik in Jeans (Klavierhaus Weinberger, Enns, Upper Austria) — books four-hand duos (Duo Delirium 2024, Fuchs & Masumura 2026); check tips.at archive for more — 5 Nov 2026: other tips.at editions checked are solo recitals (Arghamanyan 2016, Badura-Skoda, Eichinger, Kachnov); only the two duo dates already listed
+- [x] Duo Delirium (Marie-Astrid Wybou & Bernhard Jan, four hands, Vienna/Belgium; Ehrbar Saal Wien) — find duo site — 5 Nov 2026: no duo site; 2 Vienna dates from Ehrbar Saal (Vienna Piano School series) in duo-delirium.psv; also played Conservatoire de Bruxelles, Vienna Piano Summer Festival, Musicorum Belgium (undated)
+- [x] K&K Klavierduo (Kanon & Kotone Yokoyama, twins from Kyoto) — Freiberg am Neckar 18 Nov 2026; find duo site / concert list — 5 Nov 2026: knsclassical.com bio only (Witzhelden Wilms recital, Lions Club Stuttgart benefit concerts, undated; 1st prize Wilms Competition 2023, Rome 2023; Duetissimo Kraków 2024 4th prize) (no archive found)
 - [ ] Duo pianistico Mél Bonis (Forlì) — forlitoday article 14 Oct 2026 not fetchable; performers/date unknown
 - [ ] Grand Hotel Quisisana, Sala Capri (Capri) — four-hands concert in memory of Prof. Vincenzo Cuomo (ilmattino 13 Oct 2026, robots-blocked); performers/date unknown
 - [x] Klavierduo Maria & Sofia "Goldene Klänge" (Maria Shvydkiv & Sofia Chaikina) — Bürgerhaus Misburg Hannover 13 Nov 2026 added
@@ -185,3 +185,11 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Pierre Boulez Saal Berlin — Leonskaja & Drake Schubert four hands 20 May 2027; check past seasons for piano duos (Berlin outreach target)
 - [ ] Maria-Magdalena Pitu-Jokisch (Berliner Schlosskonzerte) — four-hands programmes with changing partners (Wehner-Schaller, Fukumoto); check berlin.de listings for more dates
 - [ ] Piano Duo Festival Berlin (Exploratorium, 4–5 Nov 2026) — free-improvisation duos on two pianos; not classical, low priority
+- [ ] Wei Xie & Thomas Kreuzberger (four hands, Vienna/China) — Schwaz 2025 + Innsbruck 28 Nov 2026 added (news-2026-11.psv); no duo site found; look for further Austrian dates
+- [ ] Henrik Althaus & Valentin Behr (four hands, Buxtehude Kulturforum Sonntagscafé 8 Nov 2026) — find further dates
+- [ ] Kulturforum am Hafen Buxtehude — books four-hand duos (Becker Sisters, Klavier-Duo Sönke & Ulrich, Althaus & Behr); check kreiszeitung-wochenblatt.de listings for dates
+- [ ] Vienna Piano School series at Ehrbar Saal (Vienna) — check ehrbarsaal.at concert listings for other piano duos
+- [ ] Klavierduo Maria & Sofia (Maria Shvydkiv & Sofia Chaikina, Hannover; Ukrainian/Italian-trained) — Bürgerhaus Misburg 13 Nov 2026 added; find further dates
+- [ ] Nigel Clayton & Imma Setiadi (UK piano duets) — Benslow Music, Hitchin, Fri 13 Feb (year not stated, likely 2027); confirm
+- [ ] "2 duos, 2 pianos, 4 mains, 8 mains" Paris 29 Nov 2026 (agendaculturel.fr not fetchable) — identify duos
+- [ ] Wiener Jeunesse Orchester, Theater an der Wien — possible two-piano concerto programme (wien.info not fetchable); check
