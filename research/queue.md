@@ -101,18 +101,18 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Klassik in Jeans (Klavierhaus Weinberger, Enns, Upper Austria) — books four-hand duos (Duo Delirium 2024, Fuchs & Masumura 2026); check tips.at archive for more — 5 Nov 2026: other tips.at editions checked are solo recitals (Arghamanyan 2016, Badura-Skoda, Eichinger, Kachnov); only the two duo dates already listed
 - [x] Duo Delirium (Marie-Astrid Wybou & Bernhard Jan, four hands, Vienna/Belgium; Ehrbar Saal Wien) — find duo site — 5 Nov 2026: no duo site; 2 Vienna dates from Ehrbar Saal (Vienna Piano School series) in duo-delirium.psv; also played Conservatoire de Bruxelles, Vienna Piano Summer Festival, Musicorum Belgium (undated)
 - [x] K&K Klavierduo (Kanon & Kotone Yokoyama, twins from Kyoto) — Freiberg am Neckar 18 Nov 2026; find duo site / concert list — 5 Nov 2026: knsclassical.com bio only (Witzhelden Wilms recital, Lions Club Stuttgart benefit concerts, undated; 1st prize Wilms Competition 2023, Rome 2023; Duetissimo Kraków 2024 4th prize) (no archive found)
-- [ ] Duo pianistico Mél Bonis (Forlì) — forlitoday article 14 Oct 2026 not fetchable; performers/date unknown
-- [ ] Grand Hotel Quisisana, Sala Capri (Capri) — four-hands concert in memory of Prof. Vincenzo Cuomo (ilmattino 13 Oct 2026, robots-blocked); performers/date unknown
+- [x] Duo pianistico Mél Bonis (Forlì) — forlitoday article 14 Oct 2026 not fetchable; performers/date unknown — 7 Nov 2026: Festival Música al Gironès, Fundació Valvi Girona 19 Mar 2026 added (news-2026-11); members still unnamed, no duo site (no archive found)
+- [x] Grand Hotel Quisisana, Sala Capri (Capri) (no archive found — 7 Nov 2026: search finds nothing) — four-hands concert in memory of Prof. Vincenzo Cuomo (ilmattino 13 Oct 2026, robots-blocked); performers/date unknown
 - [x] Klavierduo Maria & Sofia "Goldene Klänge" (Maria Shvydkiv & Sofia Chaikina) — Bürgerhaus Misburg Hannover 13 Nov 2026 added
-- [ ] Klavierduo Neeb "2 x 88 Tasten" (Musikschule Anneliese-Geske-Haus, Erftstadt) — mvp.de listing not fetchable
-- [ ] "Rachmaninoff – Leidenschaft und Sehnsucht" Klavierduo-Konzert (oberoesterreich.at event 430297384) — not fetchable; performers unknown
+- [x] Klavierduo Neeb "2 x 88 Tasten" (Musikschule Anneliese-Geske-Haus, Erftstadt) — mvp.de listing not fetchable — 7 Nov 2026: Sophie & Vincent Neeb (audite artists) → neeb.psv (Triesen 2017, Stendal 2018); klavierduo-neeb.com not fetchable from cloud — redo when reachable (Erftstadt 27 Sep 2026)
+- [x] "Rachmaninoff – Leidenschaft und Sehnsucht" Klavierduo-Konzert (oberoesterreich.at event 430297384) — not fetchable; performers unknown (no archive found — 7 Nov 2026: still not fetchable, no other listing)
 - [x] Danae & Kiveli Dörken (Duo Dörken, Ariel Artists) — 3 concerts added; arielartists.com lists 2023/24 Helsingborg SO, Baden-Baden Philharmonie (Bruch op. 88a), Fürth, Finsterwalde, Koblenz, Sommerliche Musiktage Hitzacker without dates — find dates
 - [x] Cristina Marton-Argerich & Antonia Miller — Budapest 2025 + Vechta 29 Nov 2026 added; no duo site; bio names Zürich, Isarphilharmonie München, Pietrasanta in Concerto, Pordenone, León, Radovljica, YC Chamber Artists Augsburg (Carnival); "Nachklang" Hamburg (New Living Home Stellingen, 29 Aug 2026) not fetchable
 - [x] Klavierduo Markus & Pascal Kaufmann (Saxony) — konzertduo-kaufmann.de: 4 piano-duo dates 2027 added (rest piano+organ); Bad Schandauer Orgel- und Musiksommer "Tiefen-beseelt" 2026 undated
-- [ ] Pianistenclub München — "Drei Klavierduos" evening, Bürgersaal Fürstenried 19 Nov 2026 (duos not named; 2025 edition had four duos)
+- [x] Pianistenclub München — "Drei Klavierduos" evening, Bürgersaal Fürstenried 19 Nov 2026 (duos not named; 2025 edition had four duos) — 7 Nov 2026: pianistenclub-muenchen.psv from programme PDFs (duo evenings 2024, 2025, 2026); older PDFs (herbst_2023, Frühjahr 2022/2024) unchecked
 - [ ] Konzertförderung Deutscher Musikwettbewerb — funds regional tours of DMW duo laureates; check other years' concert lists for piano duos (excellent list of small DACH presenters)
 - [ ] Malte Mevissen & Yury Ilinov — "Klangbrücken: Vier Hände, ein Flügel" (Berlin, tip-berlin listing not fetchable)
-- [ ] Dongkyu Leo Kim & Juae Ha (Korean four-hands duo) — Mendelssohn-Haus Leipzig 2024; look for further dates
+- [x] Dongkyu Leo Kim & Juae Ha (Korean four-hands duo) — Mendelssohn-Haus Leipzig 2024; 7 Nov 2026: Schloss Britz Berlin Dec 2024 added; berlin.de 'Nothing old under the sun' 23 Nov 2024 not fetchable; no duo site (no archive found)
 - [ ] Klavierduo Ania & Sophie Druml (Vienna sisters, also violin/cello) — Raiding 2024/2025, Mozarteum Salzburg 17 Dec 2026 added (druml.psv); Musiktage Mondsee 2026 matinee and Bad Elster (freiepresse) not readable; find duo site
 - [ ] Ludmila Berlinskaya & Arthur Ancelle (Paris) — 4 concerts in berlinskaya-ancelle.psv; Bachtrack lists Salle Cortot Jan 2017, Bagatelle Sep 2017, Liszt en Provence Aug 2018, Musée d'Orsay Nov 2025 without exact dates; find duo site archive
 - [ ] Rungis Piano-Piano Festival (France, festival devoted to piano duos; 6th edition 2025/26, incl. Théâtre des Champs-Élysées concerts) — check all editions' line-ups
@@ -193,3 +193,10 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Nigel Clayton & Imma Setiadi (UK piano duets) — Benslow Music, Hitchin, Fri 13 Feb (year not stated, likely 2027); confirm
 - [ ] "2 duos, 2 pianos, 4 mains, 8 mains" Paris 29 Nov 2026 (agendaculturel.fr not fetchable) — identify duos
 - [ ] Wiener Jeunesse Orchester, Theater an der Wien — possible two-piano concerto programme (wien.info not fetchable); check
+- [x] Wang Piano Duo (Susan & Sarah Wang, Schwerin twins) — wang-piano-duo.psv: 14 European dates 2015–2019 from wangpianoduo.com events archive
+- [ ] Klavierduo Festival Bad Herrenalb (International Piano Duo Festival/Competition, with Südwestdeutsches Kammerorchester Pforzheim) — check line-ups of past editions
+- [ ] Kyburgiade (Kyburg, CH) — booked Wang Piano Duo 2019; check other years for duos
+- [ ] Çağla Gürsoy & Grigory Gruzman (Weimar) — Dotter-Konzert Darmstadt 14 Mar 2027 added; look for further four-hand dates
+- [ ] London Piano Festival (Kings Place; founded by Katya Apekisheva & Charles Owen, who open it as a duo) — check all editions for duo concerts with exact dates
+- [ ] Denzlingen Kultur- und Bürgerhaus "Klavierabend zu vier Händen" 15 Nov 2026 (regioactive not fetchable; Denzlinger Kulturkreis?) — identify duo
+- [ ] Klavierduo Ani & Nia Sulkhanishvili (ARD-Musikwettbewerb) — find duo site / concert list
