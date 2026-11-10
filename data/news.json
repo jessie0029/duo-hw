@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T22:28:30.675Z",
+ "updated": "2026-11-10T07:27:49.394Z",
  "items": [
   {
    "title": "Duo präsentiert den einzigartigen Klang des Cembalos",
@@ -359,6 +359,15 @@
    "sourceUrl": "https://www.aachener-zeitung.de",
    "date": "2026-10-29T08:45:55.000Z",
    "keyword": "Klavier zu vier Händen",
+   "lang": "de"
+  },
+  {
+   "title": "Axel Zwingenberger & Henning Pertiet",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE11eWUwYWFGajZFUDVxSk9RX1ZrNkp2a0ZSVi14ZHI0WXpoZTllTVFta1lDMDNWeDNiUTNVeXAwVGhOdjNhT3QxYmZTc3VYX3UyLWtlNm05UE1lZHZ6UHBzTDhTdHRkWWlXeDR4d19maVlQb1U?oc=5",
+   "source": "SPOT Bremen",
+   "sourceUrl": "https://spot-bremen.de",
+   "date": "2026-10-29T07:31:35.000Z",
+   "keyword": "zwei Klaviere",
    "lang": "de"
   },
   {
@@ -1341,15 +1350,6 @@
    "date": "2026-10-07T12:28:25.000Z",
    "keyword": "two pianos",
    "lang": "en"
-  },
-  {
-   "title": "Boogie Woogie Night in Timmendorfer Strand",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVkczd3ZrWkhIbGV5QjJVTFhfYmp0RTY2MDl3ZW43aTMxNmYtRm9RUWhwU2VDN3Z3NG5Dem5PbWtQWXhHVzBHYTlMcUl6MlM4c2F0UmJxZEJ0M0FONFAzRWMybTl4bHFwMWJ1R3Y4b1VQb0pGWDlsenBfbTlhYmJNdzU2ZGd0ODVuQkZOcTJJd2dwbDc3NWZv?oc=5",
-   "source": "Travemünde Aktuell",
-   "sourceUrl": "https://travemuende-aktuell.de",
-   "date": "2026-10-07T09:32:12.000Z",
-   "keyword": "zwei Klaviere",
-   "lang": "de"
   }
  ]
 }
