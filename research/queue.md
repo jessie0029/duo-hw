@@ -9,7 +9,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Lucas & Arthur Jussen 2022
 - [x] Lucas & Arthur Jussen 2019
 - [x] KlavierDuo Kutrowatz 2015–2018 (kutrowatz.art past events, pages 2–3)
-- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — 21 Oct 2026 run: still blocked (needs URL approval); Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked; 13 Oct 2026 run: still blocked; 15 Oct 2026 run: still blocked; 17 Oct 2026 run: still blocked, added Weissensee Piano Nights 2009 from pressetext; 23 Oct 2026 run: skipped (still blocked in earlier runs); 19 Oct 2026 run: still blocked, but 15 Kutrowatz duo concerts 2018–2025 added from Liszt Festival Raiding programme PDFs (liszt-festival-raiding.psv)
+- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — 21 Oct 2026 run: still blocked (needs URL approval); Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked; 13 Oct 2026 run: still blocked; 15 Oct 2026 run: still blocked; 17 Oct 2026 run: still blocked, added Weissensee Piano Nights 2009 from pressetext; 23 Oct 2026 run: skipped (still blocked in earlier runs); 19 Oct 2026 run: still blocked, but 15 Kutrowatz duo concerts 2018–2025 added from Liszt Festival Raiding programme PDFs (liszt-festival-raiding.psv); 13 Nov 2026 run: kutrowatz.art still blocked (permission withdrawn)
 - [x] Lucas & Arthur Jussen 2021 (from /nl/ page)
 - [x] Lucas & Arthur Jussen 2020
 - [x] Lucas & Arthur Jussen 2018
@@ -120,12 +120,12 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Rudolf Firkušný Piano Festival (Prague, Rudolfinum) — Kissin & Schiff duo 3 Nov 2026; 11 Nov 2026: Jussen 4 Nov 2023 (already listed, festival tagged), Košárek & Levíček 12 Nov 2025 (Brubeck two pianos) added; 2024 and 2025 otherwise solo recitals
 - [x] Evgeny Kissin & András Schiff duo tour 2026 — Prague 3 Nov + Hamburg 22 Nov added; 11 Nov 2026: kissin-schiff.psv adds Verbier 28 Jul, Geneva Victoria Hall 28 Oct, Luxembourg 12 Nov, Munich Isarphilharmonie 18 Nov
 - [ ] Anne Dezombre & Hugues Leclère (Paris, four hands, "L'âge d'or de la musique française") — 3 concerts in news file (San Severo, Beausoleil, Lake Como Festival); Leclère directs Nancyphonies festival — check Nancyphonies line-ups; no duo site found
-- [ ] Klavierduo Park (Chaelin Park & Geunpyo Park, HfM Detmold) — WDR 3 Campus-Konzert 22 Oct 2026; no duo site found
-- [ ] WDR 3 Campus-Konzerte (Detmold, Münster, Köln, Essen) — regularly feature student piano duos; check uni-muenster.de press releases archive
-- [ ] Jeunesse Österreich Featured Artists — Gugg duo tours Jeunesse branches 2026/27 (Ried, Schwaz, St. Johann, Zell am See); check jeunesse.at programme for other branches
+- [x] Klavierduo Park (Chaelin Park & Geunpyo Park, HfM Detmold) — WDR 3 Campus-Konzert 22 Oct 2026; no duo site found — 13 Nov 2026 run: (no archive found) — members only on competition sites
+- [x] WDR 3 Campus-Konzerte (Detmold, Münster, Köln, Essen) — regularly feature student piano duos; check uni-muenster.de press releases archive — 13 Nov 2026 run: Münster December campus concerts 2022–2025 checked, no piano duos (no archive found)
+- [x] Jeunesse Österreich Featured Artists — Gugg duo tours Jeunesse branches 2026/27 (Ried, Schwaz, St. Johann, Zell am See); check jeunesse.at programme for other branches — 13 Nov 2026 run: Pressemappe 26/27 read; added Gugg Poulenc with Wiener Jeunesse Orchester, Musikverein 20 Sep 2026 (news-2026-11.psv); no other duos in the season
 - [ ] Earthquake piano matinees (K42 Friedrichshafen, Kulturbüro) — books young pianists incl. duos; check past seasons
-- [ ] Margarita Höhenrieder & Antti Siirala — K. 365 with Wiener Concert-Verein 2 Nov 2026; check other joint dates
-- [ ] Ludmil Angelov & François Chaplin — Poulenc with Sofia PO 12 Nov 2026; check for other duo dates
+- [x] Margarita Höhenrieder & Antti Siirala — K. 365 with Wiener Concert-Verein 2 Nov 2026; check other joint dates — 13 Nov 2026 run: margarita-hoehenrieder.de blog lists only the Wiener Concert-Verein recording (Brahms-Saal, Nov 2024); no further joint dates (no archive found)
+- [x] Ludmil Angelov & François Chaplin — Poulenc with Sofia PO 12 Nov 2026; check for other duo dates — 13 Nov 2026 run: Bachtrack/agency pages list no other joint dates (no archive found)
 - [x] Duo Jatekok (Adélaïde Panaget & Naïri Badal, France) — duo-jatekok.psv: ~145 European concerts 2019–2027 from duojatekok.com/en/concerts (French scènes nationales/theatres, Orchestre National Avignon-Provence, 2027 'Rammstein on the Beach' tour incl. Berlin Kesselhaus, Hamburg Gruenspan, Köln Gloria, Dresden, München, Arbon); Rammstein stadium support slots skipped
 - [ ] Frith Rolfe Piano Duo (Benjamin Frith & Heidi Rolfe, UK) and Emma Abbate & Julian Perkins (UK) — find duo concert lists (UK music clubs)
 - [x] Klavierduo Shin Park (Mijung Shin & Sangwook Park) — Bibliothekssaal Ochsenhausen early 2020 (schwaebische.de, undated); Bergkirchen (lz.de, robots-blocked) (1 Nov 2026: shinpark.psv from MUK Wien programme PDFs)
@@ -192,7 +192,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Klavierduo Maria & Sofia (Maria Shvydkiv & Sofia Chaikina, Hannover; Ukrainian/Italian-trained) — Bürgerhaus Misburg 13 Nov 2026 added; find further dates
 - [ ] Nigel Clayton & Imma Setiadi (UK piano duets) — Benslow Music, Hitchin, Fri 13 Feb (year not stated, likely 2027); confirm
 - [ ] "2 duos, 2 pianos, 4 mains, 8 mains" Paris 29 Nov 2026 (agendaculturel.fr not fetchable) — identify duos
-- [ ] Wiener Jeunesse Orchester, Theater an der Wien — possible two-piano concerto programme (wien.info not fetchable); check
+- [x] Wiener Jeunesse Orchester, Theater an der Wien — possible two-piano concerto programme (wien.info not fetchable); check — 13 Nov 2026 run: two-piano concerto was Gugg/Poulenc at Musikverein 20 Sep 2026 (added); wien.info still not fetchable
 - [x] Wang Piano Duo (Susan & Sarah Wang, Schwerin twins) — wang-piano-duo.psv: 14 European dates 2015–2019 from wangpianoduo.com events archive
 - [ ] Klavierduo Festival Bad Herrenalb (International Piano Duo Festival/Competition, with Südwestdeutsches Kammerorchester Pforzheim) — check line-ups of past editions
 - [ ] Kyburgiade (Kyburg, CH) — booked Wang Piano Duo 2019; check other years for duos
@@ -211,3 +211,12 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Steingraeber Haus Bayreuth (Kammermusiksaal) — rents/hosts two-piano recitals; check its event calendar for other duos
 - [ ] Anne Hoff & Sebastian Krahnert (four hands) — Temnitzkirche 21 Nov 2026 added; Temnitzkirche concert series (Brandenburg, near Berlin) — check for other duos
 - [ ] Karel Košárek & Jiří Levíček (Czech pianists, two pianos) — Firkušný Festival 2025; look for further duo dates
+- [ ] Scilla Aprea & Marina Vivo (Naples four-hands duo; Associazione Giuseppe Martucci, Enrico Volpe) — Capri 9 Oct + Piedimonte Matese 13 Nov 2026 added; no duo site found
+- [ ] Associazione Giuseppe Martucci (Campania; Capri Quisisana + Piedimonte Matese season) — check other seasons for piano duos
+- [ ] K&K Klavierduo (Kanon & Kotone Yokoyama, Stuttgart; KNS Classical) — Freiberg am Neckar 18 Nov 2026 added; Galeriekonzert Kornwestheim 14 Mar 2027 (regioactive not fetchable); Witzhelden Wilms concert, Stuttgart Lions Club — find dates
+- [ ] Duo Four Te (Weltklassik am Klavier four-hands duo, "Twilight" programme) — Meerbusch-Lank + Bad Dürrheim 2027 added; members unknown; more Weltklassik dates likely
+- [ ] Lehnert family pianists (Agnes, Babett, Marie & Florentine Lehnert; "Duo Lehnert") — C. Bechstein Centrum Leipzig 26 Sep 2026 two-piano programme (Mozart, Chopin concertos in two-piano version); line-up per piece unclear — identify the duo
+- [ ] Gulnora Alimova & Ricardo Áli Álvarez Acuña (Mannheim) — Musikhochschule Mannheim matinee 22 Nov 2026 added; check muho-mannheim.de calendar for further Klavierduo concerts
+- [ ] Keiko Kawabata & Ryosuke Yanase (Duo K & R, HMT Rostock) — Steingraeber Bayreuth 2019 added; find duo site
+- [ ] Treffpunkt Wien series (Kleiner Ehrbar Saal) — Rina Yokoyama & Nagomi Suganuma 2025 added; check other editions
+- [ ] Denzlinger Kulturkreis — Gasratov 15 Nov 2026 added; check other seasons for piano duos
