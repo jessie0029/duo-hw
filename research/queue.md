@@ -134,12 +134,12 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Associazione Chamber Music Trieste — "Cromatismi" series (Teatro Miela) books four-hand duos; check past editions — 15 Nov 2026 run: 2025 and 2026 Cromatismi brochures checked: only Duo Dallagnese 21 Oct 2026 (already listed)
 - [x] Viotti Festival Vercelli — Dallagnese 2024; check other summer editions for duos — 15 Nov 2026 run: summer brochures 2022 and 2025 and 2023/24 season: no further piano duos
 - [x] Piano Duo Elaeis (South Tyrol) — Hofburg Brixen 30 Jul 2011 (elaeis.psv); members unknown, find duo site (no archive found — 17 Nov 2026: only the 2011 stol.it article exists)
-- [ ] Brundibár Arts Festival (Newcastle upon Tyne) — four-hand works with Simon Callaghan & partners Feb 2027; not a fixed duo
-- [ ] Righini & Zadra (Brahms string quintets for piano four hands, Da Vinci Classics CD 2026) — find European concert dates
+- [x] Brundibár Arts Festival (Newcastle upon Tyne) — four-hand works with Simon Callaghan & partners Feb 2027; not a fixed duo — 19 Nov 2026 run: simoncallaghan.com concerts read; Brundibár 2/3 Feb 2027 partner pieces with Nemtsova/Kawamura not clearly piano-duo (not added); Callaghan & Danny Driver two-piano recital Leeds 9 Feb 2027 added (callaghan-driver.psv)
+- [x] Righini & Zadra (Brahms string quintets for piano four hands, Da Vinci Classics CD 2026) — find European concert dates — 19 Nov 2026 run: Federica Righini & Riccardo Zadra; interlude.hk / Da Vinci pages list no concerts (no archive found)
 - [x] Tickhill Music Society (South Yorkshire) — Frith Rolfe 1 Oct 2026; check past seasons for duos (no archive found — 17 Nov 2026: press reviews only; Frith Rolfe 2 May 2024 already listed; a 'Jinah & Raymond' duo review (worksopguardian) is undated)
-- [ ] Duo Aventaggiato Matarrese (Carla Aventaggiato & Maurizio Matarrese, Puglia) — Barletta Autunno Musicale 2025 added; Ravello 2015 (robots-blocked); find duo site / more dates
-- [ ] Duo Asteria (Sara Galbiati & Laura Gianantonio, Luino) — Casa Paolo, Brezzo di Bedero 24 Oct 2026 (Accademia Musicale Pietro Bertani); check Canonica di Brezzo di Bedero season for other duos
-- [ ] Jean-Efflam & Andrea Nemecz Bavouzet (four hands) — Poschiavo 31 Jul 2026; look for further European duo dates
+- [x] Duo Aventaggiato Matarrese (Carla Aventaggiato & Maurizio Matarrese, Puglia) — Barletta Autunno Musicale 2025 added; Ravello 2015 (robots-blocked); find duo site / more dates — 19 Nov 2026 run: Camerata Musicale Barese "I Grandi Maestri" Bari 15 Jun 2019 added; no duo site found
+- [x] Duo Asteria (Sara Galbiati & Laura Gianantonio, Luino) — Casa Paolo, Brezzo di Bedero 24 Oct 2026 (Accademia Musicale Pietro Bertani); check Canonica di Brezzo di Bedero season for other duos — 19 Nov 2026 run: no further dates or season archive found (no archive found)
+- [x] Jean-Efflam & Andrea Nemecz Bavouzet (four hands) — Poschiavo 31 Jul 2026; look for further European duo dates — 19 Nov 2026 run: bavouzet.com lists no Nemecz duo dates; added Bavouzet's Wigmore Hall duo recitals with Shishkin (2022) and F.-F. Guy (2023) (bavouzet.psv); Ferme de Saint-Maurice "à deux" with Shishkin 14 Jul 2022 only on bachtrack (not fetchable)
 - [ ] Daria Podushko & Andrey Denisenko (Hamburg duo) — Ernst Barlach Haus 27 Sep 2026; find duo site
 - [ ] Duo Roverelli Braconi (four hands, Italy) — classictic listing (Facoltà Valdese di Teologia, Rome), undated
 - [ ] Karolinenfest Kirchheimbolanden (founded 2024 by Clara & Marie Becker) — check all three editions for other duos
@@ -238,3 +238,8 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Klavierduo Adrienne Soós & Ivo Haag (Switzerland) — myswitzerland.com listings; find dates
 - [ ] Dublin Piano Series (Ireland) — multi-pianist two-piano/four-hand evenings (2026: "2 Pianos, 4 Hands"; Nov 2026 "Passionate Variations" not found); Dearbhla & Finghin Collins duo recital (journalofmusic listing 13-02-23) — find venue/date
 - [ ] Yeh & Wille Piano Duo — Elbphilharmonie archive entry; find dates
+- [ ] Evgenia Rubinova & Michail Lifits (two pianos) — Parktheater Augsburg 22 Nov 2026 "Lebensstürme" (news file); evgeniarubinova.com has no duo archive, operabase shows no duo dates — find further duo stops
+- [ ] Klavierduo Eckerle — klavierduo-eckerle.de/en/concerts (not fetchable from cloud, needs URL approval); possibly the Rosenheim benefit duo of 28 Nov 2026 (rosenheim24 article not found by search)
+- [ ] Stabilis Duo (Viola Lenzi & Isabella Gori, four hands) — St Nicholas Church Brighton 2026 (fringereview, undated); find dates
+- [ ] Marino Tirimo & Atsuko Kawakami (piano duo) — Chichester Music Society review (sussexexpress not fetchable); find dates
+- [ ] Bavouzet & Dmitry Shishkin — Ferme de Saint-Maurice, Collonge-Bellerive 14 Jul 2022 (bachtrack); further duo dates
