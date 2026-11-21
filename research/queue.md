@@ -9,7 +9,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Lucas & Arthur Jussen 2022
 - [x] Lucas & Arthur Jussen 2019
 - [x] KlavierDuo Kutrowatz 2015–2018 (kutrowatz.art past events, pages 2–3)
-- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — 21 Oct 2026 run: still blocked (needs URL approval); Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked; 13 Oct 2026 run: still blocked; 15 Oct 2026 run: still blocked; 17 Oct 2026 run: still blocked, added Weissensee Piano Nights 2009 from pressetext; 23 Oct 2026 run: skipped (still blocked in earlier runs); 19 Oct 2026 run: still blocked, but 15 Kutrowatz duo concerts 2018–2025 added from Liszt Festival Raiding programme PDFs (liszt-festival-raiding.psv); 13 Nov 2026 run: kutrowatz.art still blocked (permission withdrawn)
+- [ ] KlavierDuo Kutrowatz 2018–today (kutrowatz.art past events, page 1) — 21 Oct 2026 run: still blocked (needs URL approval); Oct 2026 run: site not fetchable from cloud (needs URL approval); alt sources: burgenland.at 40-Jahre gala, kultur.net Kasematten Wr. Neustadt, niederfellabrunn.at past performers; 7 Oct 2026 run: still not attempted (cloud fetch needs approval), skipped to Jussen items; 9 Oct 2026 run: kutrowatz.art fetch still blocked (needs URL approval); 11 Oct 2026 run: still blocked; 13 Oct 2026 run: still blocked; 15 Oct 2026 run: still blocked; 17 Oct 2026 run: still blocked, added Weissensee Piano Nights 2009 from pressetext; 23 Oct 2026 run: skipped (still blocked in earlier runs); 19 Oct 2026 run: still blocked, but 15 Kutrowatz duo concerts 2018–2025 added from Liszt Festival Raiding programme PDFs (liszt-festival-raiding.psv); 13 Nov 2026 run: kutrowatz.art still blocked (permission withdrawn) ; 21 Nov 2026 run: not retried (still blocked)
 - [x] Lucas & Arthur Jussen 2021 (from /nl/ page)
 - [x] Lucas & Arthur Jussen 2020
 - [x] Lucas & Arthur Jussen 2018
@@ -140,13 +140,13 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Duo Aventaggiato Matarrese (Carla Aventaggiato & Maurizio Matarrese, Puglia) — Barletta Autunno Musicale 2025 added; Ravello 2015 (robots-blocked); find duo site / more dates — 19 Nov 2026 run: Camerata Musicale Barese "I Grandi Maestri" Bari 15 Jun 2019 added; no duo site found
 - [x] Duo Asteria (Sara Galbiati & Laura Gianantonio, Luino) — Casa Paolo, Brezzo di Bedero 24 Oct 2026 (Accademia Musicale Pietro Bertani); check Canonica di Brezzo di Bedero season for other duos — 19 Nov 2026 run: no further dates or season archive found (no archive found)
 - [x] Jean-Efflam & Andrea Nemecz Bavouzet (four hands) — Poschiavo 31 Jul 2026; look for further European duo dates — 19 Nov 2026 run: bavouzet.com lists no Nemecz duo dates; added Bavouzet's Wigmore Hall duo recitals with Shishkin (2022) and F.-F. Guy (2023) (bavouzet.psv); Ferme de Saint-Maurice "à deux" with Shishkin 14 Jul 2022 only on bachtrack (not fetchable)
-- [ ] Daria Podushko & Andrey Denisenko (Hamburg duo) — Ernst Barlach Haus 27 Sep 2026; find duo site
+- [x] Daria Podushko & Andrey Denisenko (Hamburg duo) — Ernst Barlach Haus 27 Sep 2026; find duo site — 21 Nov 2026 run: (no archive found) — no duo site or further dates found by search
 - [ ] Duo Roverelli Braconi (four hands, Italy) — classictic listing (Facoltà Valdese di Teologia, Rome), undated
-- [ ] Karolinenfest Kirchheimbolanden (founded 2024 by Clara & Marie Becker) — check all three editions for other duos
+- [x] Karolinenfest Kirchheimbolanden (founded 2024 by Clara & Marie Becker) — check all three editions for other duos — 21 Nov 2026 run: (no archive found) — mvp.de listing pages show no line-ups; rheinpfalz articles paywalled
 - [ ] Salzburger Nachrichten 23 Oct 2026 "Klassik pur-Konzert: Vierhändig & Vielsaitig" and DrehpunktKultur 23 Oct 2026 "Leidenschaftliches aus Frankreich" — not found by search, sn.at / drehpunktkultur.at not fetchable; possibly Druml (Mozarteum, already listed)
 - [x] Evgeny Kissin & András Schiff — further 2026 stops: Geneva + Verbier added (kissin-schiff.psv, 11 Nov 2026); Milan stop not found
-- [ ] Pianoduo Scholtes & Janssens (Amsterdam, artistic leaders of Pianoduo Festival Amsterdam) — find duo site / concert list
-- [ ] Ibrahim & Hassan Ignatov (twin piano duo, NL) — find duo site / concert list
+- [x] Pianoduo Scholtes & Janssens (Amsterdam, artistic leaders of Pianoduo Festival Amsterdam) — find duo site / concert list — 21 Nov 2026 run: scholtes-janssens.psv (Hilversum Omroep Muziek 2021, Pianoduo Festival closing 2022 with Silver-Garburg, Concertgebouw Canto Ostinato 4 Apr 2027); no duo concert archive found
+- [x] Ibrahim & Hassan Ignatov (twin piano duo, NL) — find duo site / concert list — 21 Nov 2026 run: ignatov.psv (11 dates 2024–2026 from hassan-ibrahim-ignatov.com/upcoming-concerts: Salle Cortot, Varna, Ruse, Warsaw MIK …; programmes not listed)
 - [ ] Anna Anstett & Sandra Urba (Pfalz four-hands duo) — further dates
 - [ ] GDA Wohnstifte (senior residences: Neustadt/Weinstraße and others) — Festsaal concerts with piano duos; check other GDA houses
 - [ ] Musik in Brandenburgischen Schlössern / Berliner Schlosskonzerte — "Klaviergala zu vier Händen" Maria Magdalena Pitu-Jokisch & Naoko Fukumoto, 29/30 Aug 2026 (berlin.de pages not fetchable) — Berlin-area outreach target
@@ -166,13 +166,13 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Katarina Knazovicka & Anna Khomichko (two pianos, Switzerland) — KuK Aarau 29 Nov 2026 added; find duo site
 - [ ] Duo Colafelice – Di Lecce (Leonardo Colafelice & Cristina Di Lecce, Puglia) — Ascoli Piceno Festival 1 Nov 2026 added; no duo site found
 - [ ] Ascoli Piceno Festival — "Young Stars" section and piano days; check past editions for duos
-- [ ] Klavierduo Christine Rahn (Pirmasens/Pfalz; "Klavierduoabend Zauber der Kindheit", rheinpfalz review "Klavierduo Rahn") — christinerahn.de robots-blocked; find dates elsewhere
+- [ ] Klavierduo Christine Rahn (Pirmasens/Pfalz; "Klavierduoabend Zauber der Kindheit", rheinpfalz review "Klavierduo Rahn") — christinerahn.de robots-blocked; find dates elsewhere — 21 Nov 2026 run: Bad Dürkheim Haus Catoir 4 Dec 2022 (Pfälzische Musikgesellschaft) added to news-2026-11.psv
 - [ ] Dotter-Stiftung Darmstadt (Dotter-Konzerte, Ernst-Ludwig-Saal Eberstadt) — Cerezo Falces & Ledesma two-piano orchestral transcriptions Sep 2024; check other Dotter-Konzerte for duos
 - [ ] Magdalena Cerezo Falces & Eric Ledesma (Spanish two-piano duo, orchestral transcriptions) — find duo site / concert list
 - [ ] Yichang & Yifei Tang (piano duo) — Magdeburg Gesellschaftshaus 20 Feb 2027; find further dates
 - [ ] Gesellschaftshaus Magdeburg "Klaviermusik" series — check other seasons for duos
 - [ ] Klavierduo Madárdal (Katharina & Daniel Berrío Quintero) — Philippsburg 2025; Philippsburger Konzertverein (also Mar 2023 concert with Katharina) — find further dates
-- [ ] Mona & Rica Bard (two-piano sisters, Pfalz) — Freinsheim 2019; find further dates
+- [ ] Mona & Rica Bard (two-piano sisters, Pfalz) — Freinsheim 2019; find further dates — 21 Nov 2026 run: Karlsruher Meisterkonzerte, Konzerthaus Karlsruhe 18 Nov 2018 added
 - [ ] Von-Busch-Hof konzertant (Freinsheim) — check other seasons for piano duos
 - [ ] Gert Hecher & Ema Jedličková-Gogová (fortepiano duo, Vienna/Brno) — Münster 2018; find further dates
 - [ ] Musikhochschule Münster "Auf der Suche nach dem vollkommenen Klang" (Sammlung Beetz historical pianos) — check other editions for duos
@@ -243,3 +243,10 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Stabilis Duo (Viola Lenzi & Isabella Gori, four hands) — St Nicholas Church Brighton 2026 (fringereview, undated); find dates
 - [ ] Marino Tirimo & Atsuko Kawakami (piano duo) — Chichester Music Society review (sussexexpress not fetchable); find dates
 - [ ] Bavouzet & Dmitry Shishkin — Ferme de Saint-Maurice, Collonge-Bellerive 14 Jul 2022 (bachtrack); further duo dates
+- [ ] Genova & Dimitrov (Aglika Genova & Liuben Dimitrov, Hannover two-piano duo) — Konzertverein Bozen 11 Apr 2025 added (genova-dimitrov.psv); Bonner Schumannfest 2026 bio; duo site genova-dimitrov.com / pianoduo.info — check concert archive; BNR SO Sofia Bartók concerto (Kamdzhalov, ~2015, undated)
+- [ ] Duo Convergenza (MUK Vienna, "Eleganz und Euphorie" 1 Jun 2026, K. 448 / Saint-Saëns op. 35 / Firebird arr. Wastor) — venue not stated in programme PDF; identify members and dates
+- [ ] Echos Festival (Piedmont/Monferrato, Accademia Filarmonica) — Schiavo Marchegiani 8 May 2026 added (city not stated on page); check other editions for duos
+- [ ] Prospettive Music Festival (LAMS Matera) — Schiavo Marchegiani "Venti anni in duo", Santuario di San Francesco di Paola, Nov 2026 (sassilive/suditaliavideo pages not fetchable, date unknown); also 2023 edition (Chiesa di San Giovanni Battista, date not stated)
+- [ ] Martin Miehe & Stephan Hilsberg (four hands, Berlin; visitberlin Feb 2026 listing without dates) — find dates
+- [ ] Jussen × Academy of St Martin in the Fields tour May 2026 — Düsseldorf Tonhalle (KTK Heinersdorff, day not stated) still missing
+- [ ] Martha Argerich, Mikhail Pletnev & Yunchan Lim (Lucerne, luzern.com not fetchable) — check whether duo/two-piano works
