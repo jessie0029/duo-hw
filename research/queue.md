@@ -141,13 +141,13 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [x] Duo Asteria (Sara Galbiati & Laura Gianantonio, Luino) — Casa Paolo, Brezzo di Bedero 24 Oct 2026 (Accademia Musicale Pietro Bertani); check Canonica di Brezzo di Bedero season for other duos — 19 Nov 2026 run: no further dates or season archive found (no archive found)
 - [x] Jean-Efflam & Andrea Nemecz Bavouzet (four hands) — Poschiavo 31 Jul 2026; look for further European duo dates — 19 Nov 2026 run: bavouzet.com lists no Nemecz duo dates; added Bavouzet's Wigmore Hall duo recitals with Shishkin (2022) and F.-F. Guy (2023) (bavouzet.psv); Ferme de Saint-Maurice "à deux" with Shishkin 14 Jul 2022 only on bachtrack (not fetchable)
 - [x] Daria Podushko & Andrey Denisenko (Hamburg duo) — Ernst Barlach Haus 27 Sep 2026; find duo site — 21 Nov 2026 run: (no archive found) — no duo site or further dates found by search
-- [ ] Duo Roverelli Braconi (four hands, Italy) — classictic listing (Facoltà Valdese di Teologia, Rome), undated
+- [x] Duo Roverelli Braconi (four hands, Italy) — classictic listing (Facoltà Valdese di Teologia, Rome), undated — 23 Nov 2026 run: Mirko Roverelli & Monaldo Braconi; somo.social shows Sat 9 May (Hertz/Czerny/Liszt programme) but no year on any page, so not added (no archive found)
 - [x] Karolinenfest Kirchheimbolanden (founded 2024 by Clara & Marie Becker) — check all three editions for other duos — 21 Nov 2026 run: (no archive found) — mvp.de listing pages show no line-ups; rheinpfalz articles paywalled
 - [ ] Salzburger Nachrichten 23 Oct 2026 "Klassik pur-Konzert: Vierhändig & Vielsaitig" and DrehpunktKultur 23 Oct 2026 "Leidenschaftliches aus Frankreich" — not found by search, sn.at / drehpunktkultur.at not fetchable; possibly Druml (Mozarteum, already listed)
 - [x] Evgeny Kissin & András Schiff — further 2026 stops: Geneva + Verbier added (kissin-schiff.psv, 11 Nov 2026); Milan stop not found
 - [x] Pianoduo Scholtes & Janssens (Amsterdam, artistic leaders of Pianoduo Festival Amsterdam) — find duo site / concert list — 21 Nov 2026 run: scholtes-janssens.psv (Hilversum Omroep Muziek 2021, Pianoduo Festival closing 2022 with Silver-Garburg, Concertgebouw Canto Ostinato 4 Apr 2027); no duo concert archive found
 - [x] Ibrahim & Hassan Ignatov (twin piano duo, NL) — find duo site / concert list — 21 Nov 2026 run: ignatov.psv (11 dates 2024–2026 from hassan-ibrahim-ignatov.com/upcoming-concerts: Salle Cortot, Varna, Ruse, Warsaw MIK …; programmes not listed)
-- [ ] Anna Anstett & Sandra Urba (Pfalz four-hands duo) — further dates
+- [x] Anna Anstett & Sandra Urba (Pfalz four-hands duo) — further dates — 23 Nov 2026 run: searches find only the GDA Neustadt concert already listed (no archive found)
 - [ ] GDA Wohnstifte (senior residences: Neustadt/Weinstraße and others) — Festsaal concerts with piano duos; check other GDA houses
 - [ ] Musik in Brandenburgischen Schlössern / Berliner Schlosskonzerte — "Klaviergala zu vier Händen" Maria Magdalena Pitu-Jokisch & Naoko Fukumoto, 29/30 Aug 2026 (berlin.de pages not fetchable) — Berlin-area outreach target
 - [ ] New Generation e.V. Hamburg (New Living Home Hotel, Lokstedt) — "Klavierkonzert zu vier Händen" Antonio Di Dedda & Rainer Thomsen (undated); also hosts "Nachklang" series (Marton-Argerich & Miller)
@@ -170,7 +170,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Dotter-Stiftung Darmstadt (Dotter-Konzerte, Ernst-Ludwig-Saal Eberstadt) — Cerezo Falces & Ledesma two-piano orchestral transcriptions Sep 2024; check other Dotter-Konzerte for duos
 - [ ] Magdalena Cerezo Falces & Eric Ledesma (Spanish two-piano duo, orchestral transcriptions) — find duo site / concert list
 - [ ] Yichang & Yifei Tang (piano duo) — Magdeburg Gesellschaftshaus 20 Feb 2027; find further dates
-- [ ] Gesellschaftshaus Magdeburg "Klaviermusik" series — check other seasons for duos
+- [x] Gesellschaftshaus Magdeburg "Klaviermusik" series — check other seasons for duos — 23 Nov 2026 run: 2026/27 brochure has only the Tang duo (already listed); earlier seasons not online (no archive found)
 - [ ] Klavierduo Madárdal (Katharina & Daniel Berrío Quintero) — Philippsburg 2025; Philippsburger Konzertverein (also Mar 2023 concert with Katharina) — find further dates
 - [ ] Mona & Rica Bard (two-piano sisters, Pfalz) — Freinsheim 2019; find further dates — 21 Nov 2026 run: Karlsruher Meisterkonzerte, Konzerthaus Karlsruhe 18 Nov 2018 added
 - [ ] Von-Busch-Hof konzertant (Freinsheim) — check other seasons for piano duos
@@ -250,3 +250,9 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Martin Miehe & Stephan Hilsberg (four hands, Berlin; visitberlin Feb 2026 listing without dates) — find dates
 - [ ] Jussen × Academy of St Martin in the Fields tour May 2026 — Düsseldorf Tonhalle (KTK Heinersdorff, day not stated) still missing
 - [ ] Martha Argerich, Mikhail Pletnev & Yunchan Lim (Lucerne, luzern.com not fetchable) — check whether duo/two-piano works
+- [x] Sugiko Chinen & Luca A. M. Colombo (Milan four-hands duo; sugikochinenandlucacolombo.com/past-concerts) — 7 duo concerts 2024–25 added (chinen-colombo.psv); Colombo also plays violin-piano with Marco Reiss (Seven Arts Bari 21 Nov 2026 — not a piano duo)
+- [ ] Universität Bremen Mittagskonzerte (Theatersaal, free lunchtime series) — 2 four-hands duos in WS 2025/26 (Bollero & Wainz, Gade & Solare); check other semesters — Juan María Solare (Bremen pianist-composer) plays four hands regularly
+- [ ] Freundeskreis für Musik und Kunst Marl ("PIANO! – Klassik im KuZ Erlöserkirche", piano-ek.net) — Hrynevych & Shykyta Feb 2026 added; 26 Dec 2026 Schubert D 940 with Aiki Mori / Volker Zwetzschke / Oleg Poliansky (pairing not stated); Zwetzschke & Poliansky duo since 2013/14 — find duo dates
+- [ ] Prospettive Music Festival Matera (LAMS Matera / Ass. R. D'Ambrosio) — Schiavo-Marchegiani 22 Nov 2026 added; check other editions for duos
+- [ ] Unione Musicale di Torino — Jussen 25 Nov 2026 added; also Alberto Miodini & Pierpaolo Maurizzi 7 Mar 2027 (check if duo); check past seasons for piano duos
+- [x] Associazione Seven Arts Bari (Concerti di Primavera/d'Autunno, Casa del Mutilato) — Argentieri–Caragiulo 7 Mar 2026 added; 8 Feb 2026 was eight hands (Aventaggiato, Matarrese, Dibattista, Liso), not added
