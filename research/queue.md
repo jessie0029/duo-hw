@@ -154,12 +154,12 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Margarita Höhenrieder & Antti Siirala — Zug 30 Oct 2026 ("Mozart und Tango", Zuger Zeitung not fetchable; likely K. 365 + Choveaux tango, partner unconfirmed); Berliner Philharmonie 11 Apr 2027 (programme not listed) — check — 25 Nov 2026 run: margarita-hoehenrieder.de/blog read: K. 365 + Choveaux Tango op. 261 with Siirala, Wiener Concert-Verein (CD Solo Musica SM497, Musikverein Brahms-Saal recording Nov 2024; no dated concert); /concerts and /termine not fetchable
 - [x] Margarita Höhenrieder & Kit Armstrong — hoehenrieder-armstrong.psv: 5 four-hand/two-piano concerts Feldafing 2014–2018 + Hirson 2015 (from margarita-hoehenrieder.de/konzerte)
 - [ ] Ania & Sophie Druml — Cazino Music Festival, Constanța Casino (RO), weekend 31 Oct–1 Nov 2026; instrumentation unconfirmed (festival run by Ioan Holender)
-- [ ] Alessio Bax & Lucille Chung — Gstaad Menuhin Festival (Zweisimmen) + La Rioja Festival 2026 added (news file); find further European duo dates
+- [ ] Alessio Bax & Lucille Chung — Gstaad Menuhin Festival (Zweisimmen) + La Rioja Festival 2026 added (news file); find further European duo dates — 27 Nov 2026 run: no new dated European duo concerts verified (alessiobax.com/schedule not fetchable); Wigmore Hall lunchtime duo recital page wigmore-hall.org.uk/whats-on/202411111300 (date only in URL, 11 Nov 2024?) — confirm; artsmg lists Verbier, Við Djúpið, Pau Casals, Torroella, Pamplona, Lübecker Kammermusikfest, Schloss Elmau, Incontri in Terra di Siena (undated)
 - [ ] Duo Pianistico Milhaud (Ansaldi Polle & Chiambretto) — 1st prize four hands, Concorso Pianistico Rospigliosi 2026; Venerdì Musicali Pistoia 18 Dec 2026
 - [ ] Associazione Amici dell'Opera di Pistoia — "Venerdì Musicali al Seminario" books piano duos (2 in autumn 2026); Jan–May 2026 pages not fetchable
 - [ ] Concorso Pianistico Rospigliosi (Lamporecchio) — four-hand section; laureate duos are leads
 - [ ] Klavier-Duo Beldi/Kubo ("Klavier zu vier Händen", rausgegangen.de not fetchable) and Hamburg "Klavierkonzert zu vier Händen" (hamburg-tourism.de not fetchable) — identify
-- [ ] Claire Huangci & Alexei Volodin (two pianos; Künstlersekretariat Astrid Schoerke) — huangci-volodin.psv: Elbphilharmonie 2020, Theater Lindau 18 Jan 2027; Taunus Zeitung review 30 Oct 2025 (Bad Homburg/Kronberg?) — find date and further stops
+- [x] Claire Huangci & Alexei Volodin (two pianos; Künstlersekretariat Astrid Schoerke) — huangci-volodin.psv: Elbphilharmonie 2020, Theater Lindau 18 Jan 2027; Taunus Zeitung review 30 Oct 2025 (Bad Homburg/Kronberg?) — find date and further stops — 27 Nov 2026 run: Oberursel 26 Oct 2025 (Chopin-Gesellschaft Taunus — the Taunus Zeitung review), Seon/Seetal Classics 20 Sep 2026, Liestal/Baselbieter Konzerte 19 Jan 2027 added
 - [ ] Weltklassik am Klavier (DACH concert series in spa towns, Augustinum residences, Kurhäuser) — books piano duos (Gasratov, Churbanova); check weltklassik.de programme for all duo dates — excellent list of regional venues — 25 Nov 2026 run: termine list (2026 only) read; Duo Four Te Binzen 31 Dec 2026 + Aachen 2 Jun 2024 added; Laetitia & Philip Hahn programme is solo repertoire (not added); 2027 calendar and archive not reachable; Churbanova, Camón & Higuchi, Baumann & Mordvinov listed as duos without dates
 - [ ] Duo Timur & Ruslan Gasratov — Freiburg Augustinum 21 Nov + Bad Dürrheim 6 Dec 2026 added; find duo site / further dates
 - [ ] Duo Churbanova (Anastasia & Polina Churbanova) — Bad Ems Dec 2027 added; find further Weltklassik dates
@@ -182,7 +182,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Duo Aries (Mario Carraro & Silvia Belfiore, Italy; contemporary two-piano repertoire) — Sassari musicaNOVA 4 Nov 2026 added; no duo site found; Belfiore has bandcamp/Farnesina embassy tours
 - [ ] József Balog & Tamás Érdi (Hungary) — Müpa 2020 added; Liszt Academy 2020 date cancelled; look for later duo dates
 - [ ] Kulturkreis Deutschlandsberg (Styria) — booked Leonskaja & Drake four hands 6 Jun 2025; check other seasons for duos
-- [ ] Pierre Boulez Saal Berlin — Leonskaja & Drake Schubert four hands 20 May 2027; check past seasons for piano duos (Berlin outreach target)
+- [x] Pierre Boulez Saal Berlin — Leonskaja & Drake Schubert four hands 20 May 2027; check past seasons for piano duos (Berlin outreach target) — 27 Nov 2026 run: pierre-boulez-saal.psv added (Argerich & Barenboim 2017, Wendeberg & Hodges 2020, Aimard & Stefanovich 2023, Andsnes & Chamayou 2025, Stefanovich & Lečić 2026); Argerich & Barenboim 5 Sep 2021 (duo format unconfirmed) and Schiff & Nosrati Liebeslieder 27 Dec 2026 (with vocal quartet) not added
 - [ ] Maria-Magdalena Pitu-Jokisch (Berliner Schlosskonzerte) — four-hands programmes with changing partners (Wehner-Schaller, Fukumoto); check berlin.de listings for more dates
 - [ ] Piano Duo Festival Berlin (Exploratorium, 4–5 Nov 2026) — free-improvisation duos on two pianos; not classical, low priority
 - [ ] Wei Xie & Thomas Kreuzberger (four hands, Vienna/China) — Schwaz 2025 + Innsbruck 28 Nov 2026 added (news-2026-11.psv); no duo site found; look for further Austrian dates
@@ -213,7 +213,7 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Karel Košárek & Jiří Levíček (Czech pianists, two pianos) — Firkušný Festival 2025; look for further duo dates
 - [ ] Scilla Aprea & Marina Vivo (Naples four-hands duo; Associazione Giuseppe Martucci, Enrico Volpe) — Capri 9 Oct + Piedimonte Matese 13 Nov 2026 added; no duo site found
 - [ ] Associazione Giuseppe Martucci (Campania; Capri Quisisana + Piedimonte Matese season) — check other seasons for piano duos
-- [ ] K&K Klavierduo (Kanon & Kotone Yokoyama, Stuttgart; KNS Classical) — Freiberg am Neckar 18 Nov 2026 added; Galeriekonzert Kornwestheim 14 Mar 2027 (regioactive not fetchable); Witzhelden Wilms concert, Stuttgart Lions Club — find dates
+- [ ] K&K Klavierduo (Kanon & Kotone Yokoyama, Stuttgart; KNS Classical) — Freiberg am Neckar 18 Nov 2026 added; Galeriekonzert Kornwestheim 14 Mar 2027 (regioactive not fetchable); Witzhelden Wilms concert, Stuttgart Lions Club — find dates — 27 Nov 2026 run: Kornwestheim 14 Mar 2027 added (mvp.de)
 - [ ] Duo Four Te (Weltklassik am Klavier four-hands duo, "Twilight" programme) — Meerbusch-Lank + Bad Dürrheim 2027 added; members unknown; more Weltklassik dates likely
 - [ ] Lehnert family pianists (Agnes, Babett, Marie & Florentine Lehnert; "Duo Lehnert") — C. Bechstein Centrum Leipzig 26 Sep 2026 two-piano programme (Mozart, Chopin concertos in two-piano version); line-up per piece unclear — identify the duo
 - [ ] Gulnora Alimova & Ricardo Áli Álvarez Acuña (Mannheim) — Musikhochschule Mannheim matinee 22 Nov 2026 added; check muho-mannheim.de calendar for further Klavierduo concerts
@@ -262,3 +262,14 @@ Work top to bottom, 3–5 items per run. Tick when done; note "(no archive found
 - [ ] Stefanos Nasos & Apostolos Palios (Athens two-piano duo) — Megaron 2015, Athens Epidaurus Festival 2017 added; Megaron news 23 Nov 2026 "A Musical Mosaic for Two Pianos" (performers not confirmed); also Onassis "Piano for Two", Piano City Athens programmes (acg.edu PDFs)
 - [ ] Duo Four Te (Weinreich & Nakaishi) — Weltklassik regular; find duo site / further dates
 - [ ] Duo >con emozione< — Weihnachtskonzert Schloss Schönhausen Berlin 26 Dec 2026 (SPSG); instrumentation not stated — check
+- [ ] Sunmuk Kim & Isabella Kania (piano duo) — St. Moritz Meier Concert Hall 22 Dec 2026 added; find duo site / further dates
+- [ ] Konzertring Aalen (Stadthalle Aalen) — Walachowski 22 Jan 2027; check other seasons for piano duos
+- [ ] Galeriekonzerte Kornwestheim — K&K Klavierduo 14 Mar 2027; check other seasons for duos
+- [ ] Seetal Classics (Seon, CH) and Baselbieter Konzerte (Liestal, CH) — booked Huangci & Volodin; check archives for other duos
+- [ ] Chopin-Gesellschaft Taunus (Oberursel) — booked Huangci & Volodin 2025; check past Termine pages for duos
+- [ ] Yaara Tal & Andreas Groethuysen — Kölner Kammerorchester / Christoph Poppen, Kölner Philharmonie 23 May 2027, K. 365 (Bachtrack listing, detail page not fetchable) — confirm
+- [ ] Nordwestdeutsche Philharmonie / Frank Beermann, Hamm 3 Jul 2027, Mozart K. 365 — soloists not named (Bachtrack) — identify
+- [ ] Klavierduo Sequi & Hofer (Landesmusikschule Wels, AT) — find dates
+- [ ] Kolesnikov & Tsoy (piano duo) — check for European dates
+- [ ] Claire Huangci & Cristina Gomez Godoy — duo recital Berlin 15 Sep 2015 (clairehuangci.com, venue not given) — confirm
+- [ ] Festival archives with Bax & Chung duo appearances: Incontri in Terra di Siena (La Foce), Schloss Elmau, Lübecker Kammermusikfest, Torroella de Montgrí, Pau Casals — check for other piano duos
